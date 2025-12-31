@@ -9,17 +9,11 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as DemoRouteRouteImport } from './routes/demo/route'
 import { Route as AdminRouteRouteImport } from './routes/admin/route'
 import { Route as appRouteRouteImport } from './routes/(app)/route'
 import { Route as appIndexRouteImport } from './routes/(app)/index'
 import { Route as appMobaRouteRouteImport } from './routes/(app)/moba/route'
 
-const DemoRouteRoute = DemoRouteRouteImport.update({
-  id: '/demo',
-  path: '/demo',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AdminRouteRoute = AdminRouteRouteImport.update({
   id: '/admin',
   path: '/admin',
@@ -42,13 +36,11 @@ const appMobaRouteRoute = appMobaRouteRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/admin': typeof AdminRouteRoute
-  '/demo': typeof DemoRouteRoute
   '/moba': typeof appMobaRouteRoute
   '/': typeof appIndexRoute
 }
 export interface FileRoutesByTo {
   '/admin': typeof AdminRouteRoute
-  '/demo': typeof DemoRouteRoute
   '/moba': typeof appMobaRouteRoute
   '/': typeof appIndexRoute
 }
@@ -56,33 +48,24 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/(app)': typeof appRouteRouteWithChildren
   '/admin': typeof AdminRouteRoute
-  '/demo': typeof DemoRouteRoute
   '/(app)/moba': typeof appMobaRouteRoute
   '/(app)/': typeof appIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/admin' | '/demo' | '/moba' | '/'
+  fullPaths: '/admin' | '/moba' | '/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/admin' | '/demo' | '/moba' | '/'
-  id: '__root__' | '/(app)' | '/admin' | '/demo' | '/(app)/moba' | '/(app)/'
+  to: '/admin' | '/moba' | '/'
+  id: '__root__' | '/(app)' | '/admin' | '/(app)/moba' | '/(app)/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   appRouteRoute: typeof appRouteRouteWithChildren
   AdminRouteRoute: typeof AdminRouteRoute
-  DemoRouteRoute: typeof DemoRouteRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/demo': {
-      id: '/demo'
-      path: '/demo'
-      fullPath: '/demo'
-      preLoaderRoute: typeof DemoRouteRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/admin': {
       id: '/admin'
       path: '/admin'
@@ -131,7 +114,6 @@ const appRouteRouteWithChildren = appRouteRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   appRouteRoute: appRouteRouteWithChildren,
   AdminRouteRoute: AdminRouteRoute,
-  DemoRouteRoute: DemoRouteRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
