@@ -2,38 +2,23 @@ import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
-  SidebarGroup,
-  SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuAction,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarMenuSub,
-  SidebarMenuSubButton,
-  SidebarMenuSubItem,
 } from "@/components/ui/sidebar"
 import { Link } from "@tanstack/react-router"
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
-import { ChevronRight, Swords, type LucideIcon } from "lucide-react"
+import { Swords } from "lucide-react"
+import { NavSidebarContent, type NavSidebarContentItems } from "./NavSidebarContent"
 
 
-type SidebarMenuProps = {
-  title: string,
-  url: string,
-  isActive?: boolean
-  icon?: LucideIcon
-  subItems?: SidebarMenuProps[]
-}
-
-const items: SidebarMenuProps[] = [
+const items: NavSidebarContentItems[] = [
   {
     title: "Битва бессмертных",
     url: "/moba",
     isActive: true,
     icon: Swords,
-    subItems: [
+    items: [
       {
         title: "Герои",
         url: "/moba/heroes",
@@ -79,54 +64,9 @@ function AppSidebar() {
                 </SidebarHeader>
 
                 <SidebarContent>
-                    <SidebarGroup>
-                      <SidebarGroupLabel>Разделы</SidebarGroupLabel>
-                      <SidebarGroupContent>
-                        
-                      <SidebarMenu>
-                        {items.map((item) => (
-                            <Collapsible key={item.url} defaultOpen={item.isActive}>
-                              <SidebarMenuItem>
-                                <SidebarMenuButton>
-                                  {item.icon && <item.icon />}
-                                  <Link to={item.url}>
-                                    {item.title}
-                                  </Link >
-                                </SidebarMenuButton>
-
-                                {item.subItems && (
-                                  <>
-                                    <CollapsibleTrigger asChild>
-                                      <SidebarMenuAction className="data-[state=open]:rotate-90">
-                                        <ChevronRight />
-                                      </SidebarMenuAction>
-                                    </CollapsibleTrigger>
-
-                                    <CollapsibleContent>
-                                      <SidebarMenuSub>
-                                        {item.subItems.map((subItem) => (
-                                          <SidebarMenuSubItem key={subItem.url}>
-                                            <SidebarMenuSubButton asChild>
-                                              <Link to={subItem.url}>
-                                                {subItem.title}
-                                              </Link>
-                                            </SidebarMenuSubButton>
-                                          </SidebarMenuSubItem>
-                                        ))}
-                                      </SidebarMenuSub>
-                                    </CollapsibleContent>
-                                  </>
-                                  )
-                                }
-
-                              </SidebarMenuItem>
-                            </Collapsible>
-                        ))}
-                      </SidebarMenu>
-
-                      </SidebarGroupContent>
-                    </SidebarGroup>
+                  <NavSidebarContent items={items}/>
                 </SidebarContent>
+
                 <SidebarFooter />
             </Sidebar>
         </>
