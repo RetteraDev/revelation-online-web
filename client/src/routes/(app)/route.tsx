@@ -6,6 +6,11 @@ import { AppSidebarInset } from '@/components/App/AppSidebarInset'
 
 export const Route = createFileRoute('/(app)')({
   component: App,
+  loader: () => {
+    return {
+      crumb: 'Главная',
+    };
+  },
 })
 
 function App() {

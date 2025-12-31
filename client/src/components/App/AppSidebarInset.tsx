@@ -2,6 +2,7 @@ import { Separator } from "@radix-ui/react-separator";
 import { SidebarInset, SidebarTrigger } from "../ui/sidebar";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "../ui/breadcrumb";
 import type { ReactNode } from "react";
+import { BreadcrumbNav } from "./BreadcrumbNav";
 
 type AppSidebarInsetProps = {
     children: ReactNode
@@ -18,19 +19,7 @@ function AppSidebarInset({children}: AppSidebarInsetProps) {
                         orientation="vertical"
                         className="mr-2 data-[orientation=vertical]:h-4"
                     />
-                    <Breadcrumb>
-                        <BreadcrumbList>
-                        <BreadcrumbItem className="hidden md:block">
-                            <BreadcrumbLink href="#">
-                            Building Your Application
-                            </BreadcrumbLink>
-                        </BreadcrumbItem>
-                        <BreadcrumbSeparator className="hidden md:block" />
-                        <BreadcrumbItem>
-                            <BreadcrumbPage>Data Fetching</BreadcrumbPage>
-                        </BreadcrumbItem>
-                        </BreadcrumbList>
-                    </Breadcrumb>
+                    <BreadcrumbNav/>
                 </header>
                 { children }
             </SidebarInset>
