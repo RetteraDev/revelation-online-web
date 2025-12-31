@@ -16,13 +16,14 @@ import {
 } from "@/components/ui/sidebar"
 import { Link } from "@tanstack/react-router"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
-import { ChevronRight, Command } from "lucide-react"
+import { ChevronRight, Swords, type LucideIcon } from "lucide-react"
 
 
 type SidebarMenuProps = {
   title: string,
   url: string,
   isActive?: boolean
+  icon?: LucideIcon
   subItems?: SidebarMenuProps[]
 }
 
@@ -31,6 +32,7 @@ const items: SidebarMenuProps[] = [
     title: "Битва бессмертных",
     url: "/moba",
     isActive: true,
+    icon: Swords,
     subItems: [
       {
         title: "Герои",
@@ -85,7 +87,8 @@ function AppSidebar() {
                         {items.map((item) => (
                             <Collapsible key={item.url} defaultOpen={item.isActive}>
                               <SidebarMenuItem>
-                                <SidebarMenuButton asChild>
+                                <SidebarMenuButton>
+                                  {item.icon && <item.icon />}
                                   <Link to={item.url}>
                                     {item.title}
                                   </Link >
