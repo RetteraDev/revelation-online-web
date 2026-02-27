@@ -10,5 +10,7 @@ export const Route = createFileRoute('/(app)/moba')({
 })
 
 function RouteComponent() {
-  return <Outlet/>
+  return (
+    <Outlet/>
+  )
 }

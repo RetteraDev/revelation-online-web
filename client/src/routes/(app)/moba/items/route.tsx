@@ -1,4 +1,6 @@
+import { ListTable } from '@/components/moba/ListTable';
 import { createFileRoute } from '@tanstack/react-router'
+import { ITEMS } from '@/data/moba/items';
 
 export const Route = createFileRoute('/(app)/moba/items')({
   component: RouteComponent,
@@ -10,5 +12,7 @@ export const Route = createFileRoute('/(app)/moba/items')({
 })
 
 function RouteComponent() {
-  return <div>Hello "/(app)/moba/items"!</div>
+  return (
+    <ListTable items={ITEMS} />
+  )
 }

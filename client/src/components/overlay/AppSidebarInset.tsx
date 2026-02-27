@@ -1,8 +1,7 @@
 import { Separator } from "@radix-ui/react-separator";
-import { SidebarInset, SidebarTrigger } from "../ui/sidebar";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "../ui/breadcrumb";
+import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import type { ReactNode } from "react";
-import { BreadcrumbNav } from "./BreadcrumbNav";
+import { BreadcrumbNav } from "@/components/overlay/BreadcrumbNav";
 
 type AppSidebarInsetProps = {
     children: ReactNode
@@ -21,7 +20,9 @@ function AppSidebarInset({children}: AppSidebarInsetProps) {
                     />
                     <BreadcrumbNav/>
                 </header>
-                { children }
+                <main className="w-full max-w-8xl mx-auto px-4 py-6 md:px-6 md:py-8">
+                    {children}
+                </main>
             </SidebarInset>
         </>
     )

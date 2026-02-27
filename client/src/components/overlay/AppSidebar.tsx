@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/sidebar"
 import { Link } from "@tanstack/react-router"
 import { Swords } from "lucide-react"
-import { NavSidebarContent, type NavSidebarContentItems } from "./NavSidebarContent"
+import { NavSidebarContent, type NavSidebarContentItems } from "@/components/overlay/NavSidebarContent"
 
 
 const items: NavSidebarContentItems[] = [
