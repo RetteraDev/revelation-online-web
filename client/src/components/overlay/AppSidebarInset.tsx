@@ -3,7 +3,7 @@ import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import type { ReactNode } from "react";
 import { BreadcrumbNav } from "@/components/overlay/BreadcrumbNav";
 
-type AppSidebarInsetProps = {
+interface AppSidebarInsetProps {
     children: ReactNode
 }
 

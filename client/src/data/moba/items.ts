@@ -16,7 +16,7 @@ enum MobaItemEffectName {
     MaxHealth = 'Maximum HP',
 }
 
-type MobaItemEffect = {
+interface MobaItemEffect {
     color: MobaItemEffectColor,
     name: MobaItemEffectName
     type: MobaItemEffectType,
@@ -32,28 +32,28 @@ enum MobaItemCategory {
     PHYSICAL_WEAPONS,
 }
 
-enum MobaItemId {
-    RUSTED_SWORD = '1',
-    DAGGERS = '2',
-    GLOVES = '3',
-    SICKLE = '4',
-    IRON_HALBERD = '5',
-    CRIT_GAUNTLETS = '6',
-    SKYRAZER_BROADSWORD = '7',
-    CLEAVER = '8',
-    DAGGERS_OF_FRENZY = '9',
-    SWORD_OF_JUSTICE = '10',
+const ITEM_IDS = {
+    RUSTED_SWORD: '1',
+    DAGGERS: '2',
+    GLOVES: '3',
+    SICKLE: '4',
+    IRON_HALBERD: '5',
+    CRIT_GAUNTLETS: '6',
+    SKYRAZER_BROADSWORD: '7',
+    CLEAVER: '8',
+    DAGGERS_OF_FRENZY: '9',
+    SWORD_OF_JUSTICE: '10',
 }
 
-type MobaItem = {
-    key: MobaItemId,
+interface MobaItem {
+    key: string,
     name: string,
     category: MobaItemCategory,
     color: MobaItemColor,
     icon?: string,
 
     effects: MobaItemEffect[]
-    recipe?: MobaItemId[]
+    recipe?: string[]
 
     buyPrice: number,
     sellPrice: number,
@@ -61,7 +61,7 @@ type MobaItem = {
 
 const ITEMS: MobaItem[] = [
     {
-        key: MobaItemId.RUSTED_SWORD,
+        key: ITEM_IDS.RUSTED_SWORD,
         name: 'Rusted Sword',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -80,7 +80,7 @@ const ITEMS: MobaItem[] = [
     },
 
     {
-        key: MobaItemId.DAGGERS,
+        key: ITEM_IDS.DAGGERS,
         name: 'Daggers',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -99,7 +99,7 @@ const ITEMS: MobaItem[] = [
     },
 
     {
-        key: MobaItemId.GLOVES,
+        key: ITEM_IDS.GLOVES,
         name: 'Gloves',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -118,7 +118,7 @@ const ITEMS: MobaItem[] = [
     },
 
     {
-        key: MobaItemId.SICKLE,
+        key: ITEM_IDS.SICKLE,
         name: 'Sickle',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -137,7 +137,7 @@ const ITEMS: MobaItem[] = [
     },
 
     {
-        key: MobaItemId.IRON_HALBERD,
+        key: ITEM_IDS.IRON_HALBERD,
         name: 'Iron Halberd',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -156,7 +156,7 @@ const ITEMS: MobaItem[] = [
     },
 
     {
-        key: MobaItemId.CRIT_GAUNTLETS,
+        key: ITEM_IDS.CRIT_GAUNTLETS,
         name: 'Crit Gauntlets',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -175,13 +175,13 @@ const ITEMS: MobaItem[] = [
     },
 
     {
-        key: MobaItemId.SKYRAZER_BROADSWORD,
+        key: ITEM_IDS.SKYRAZER_BROADSWORD,
         name: 'Skyraiser Broadsword',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         
         recipe: [
-            MobaItemId.RUSTED_SWORD
+            ITEM_IDS.RUSTED_SWORD
         ],
 
         effects: [
@@ -198,7 +198,7 @@ const ITEMS: MobaItem[] = [
     },
 
     {
-        key: MobaItemId.CLEAVER,
+        key: ITEM_IDS.CLEAVER,
         name: 'Cleaver',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,

@@ -4,7 +4,7 @@ import {InputGroup, InputGroupAddon, InputGroupInput} from "@/components/ui/inpu
 import { Button } from "@/components/ui/button"
 
 
-type CardsSearchProps = {
+interface CardsSearchProps {
     searchString: string
     setSearchString: (value: string) => void
 }
@@ -19,7 +19,7 @@ function CardsSearch(props: CardsSearchProps) {
     }
 
     return (
-        <InputGroup className="max-w-xs">
+        <InputGroup className="max-w-sm">
             <InputGroupInput placeholder="Поиск..." value={props.searchString} onChange={handleSearchString}/>
             <InputGroupAddon>
                 <LucideSearch />

@@ -18,7 +18,7 @@ import {
 import { Link } from "@tanstack/react-router"
 
 
-type NavSidebarContentItems = {
+interface NavSidebarContentItems {
     title: string
     url: string
     icon?: LucideIcon
@@ -27,7 +27,7 @@ type NavSidebarContentItems = {
 }
 
 
-type NavSidebarContentProps = {
+interface NavSidebarContentProps {
     items: NavSidebarContentItems[]
 }
 

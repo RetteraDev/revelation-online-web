@@ -1,5 +1,6 @@
 import { CardsList } from '@/components/common/cards/CardsList';
 import { CardsSearch } from '@/components/common/cards/CardsSearch';
+import { HeroCard } from '@/components/moba/heroes/HeroCard';
 import { HEROES } from '@/data/moba/heroes';
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react';
@@ -15,13 +16,21 @@ export const Route = createFileRoute('/(app)/moba/heroes')({
 
 function RouteComponent() {
   const [searchString, setSearchString] = useState('')
+  const heroes = HEROES
+  const filteredHeroes = searchString
+    ? heroes.filter((item) => item.name.toLowerCase().includes(searchString.toLowerCase()))
+    : heroes
 
   return (
-    <div>
-      <h3>Герои битвы бессмертных</h3>
-      <div>
+    <div className="flex flex-col gap-2">
+      <h2>Герои битвы бессмертных</h2>
+      <div className="flex flex-col gap-2">
         <CardsSearch searchString={searchString} setSearchString={setSearchString}/>
-        <CardsList items={HEROES} searchString={searchString}/>
+        <CardsList>
+          {filteredHeroes.map(hero => (
+            <HeroCard key={hero.key} hero={hero}></HeroCard>
+          ))}
+        </CardsList>
       </div>
     </div>
   )
