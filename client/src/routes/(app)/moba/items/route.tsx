@@ -1,8 +1,9 @@
 import { CardsSearch } from '@/components/common/cards/CardsSearch';
 import { CardsList } from '@/components/common/cards/CardsList';
 import { createFileRoute } from '@tanstack/react-router'
-import { ITEMS } from '@/data/moba/items';
+import { ITEMS } from '@/data/moba/items/all';
 import { useState } from 'react';
+import { ItemCard } from '@/components/moba/items/ItemCard';
 
 export const Route = createFileRoute('/(app)/moba/items')({
   component: RouteComponent,
@@ -25,7 +26,11 @@ function RouteComponent() {
       <h2>Ассортимент магазина</h2>
       <div className="flex flex-col gap-2">
         <CardsSearch searchString={searchString} setSearchString={setSearchString}/>
-        {/* <CardsList items={filteredItems}/> */}
+        <CardsList>
+          {filteredItems.map((item) => (
+            <ItemCard item={item}/>
+          ))}
+        </CardsList>
       </div>
     </div>
   )
