@@ -1,4 +1,4 @@
-import { ListTable } from '@/components/moba/ListTable';
+import { CardsList } from '@/components/common/cards/CardsList';
 import { createFileRoute } from '@tanstack/react-router'
 import { ITEMS } from '@/data/moba/items';
 
@@ -13,6 +13,6 @@ export const Route = createFileRoute('/(app)/moba/items')({
 
 function RouteComponent() {
   return (
-    <ListTable items={ITEMS} />
+    <CardsList items={ITEMS} />
   )
 }

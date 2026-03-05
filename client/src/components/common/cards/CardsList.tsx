@@ -1,19 +1,24 @@
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
-type ListTableItem = {
-    key: number,
+type CardsListItem = {
+    key: string,
     name: string
 }
 
-type ListTableProps = {
-    items: ListTableItem[]
+type CardsListProps = {
+    items: CardsListItem[]
+    searchString?: string
 }
 
 
-function ListTable({items}: ListTableProps) {
+function CardsList({items, searchString = ''}: CardsListProps) {
+    const filteredItems = searchString
+    ? items.filter((item) => item.name.toLowerCase().includes(searchString.toLowerCase()))
+    : items
+
     return (
         <div className="flex flex-row flex-wrap gap-4">
-            {items.map((item) => (
+            {filteredItems.map((item) => (
                 <Card key={item.key} className="min-w-full sm:min-w-[calc(50%-0.5rem)]">
                     <CardHeader>
                         <CardTitle>{item.name}</CardTitle>
@@ -33,6 +38,5 @@ function ListTable({items}: ListTableProps) {
 }
 
 export {
-    type ListTableProps,
-    ListTable
+    CardsList
 }

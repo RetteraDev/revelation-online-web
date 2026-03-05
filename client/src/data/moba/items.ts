@@ -33,16 +33,16 @@ enum MobaItemCategory {
 }
 
 enum MobaItemId {
-    RUSTED_SWORD = 1,
-    DAGGERS = 2,
-    GLOVES = 3,
-    SICKLE = 4,
-    IRON_HALBERD = 5,
-    CRIT_GAUNTLETS = 6,
-    SKYRAZER_BROADSWORD = 7,
-    CLEAVER = 8,
-    DAGGERS_OF_FRENZY = 9,
-    SWORD_OF_JUSTICE = 10,
+    RUSTED_SWORD = '1',
+    DAGGERS = '2',
+    GLOVES = '3',
+    SICKLE = '4',
+    IRON_HALBERD = '5',
+    CRIT_GAUNTLETS = '6',
+    SKYRAZER_BROADSWORD = '7',
+    CLEAVER = '8',
+    DAGGERS_OF_FRENZY = '9',
+    SWORD_OF_JUSTICE = '10',
 }
 
 type MobaItem = {
