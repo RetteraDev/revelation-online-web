@@ -22,15 +22,17 @@ function RouteComponent() {
     : heroes
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col">
       <h2>Герои битвы бессмертных</h2>
-      <div className="flex flex-col gap-2">
+      <div className="pt-6">
         <CardsSearch searchString={searchString} setSearchString={setSearchString}/>
-        <CardsList>
-          {filteredHeroes.map(hero => (
-            <HeroCard key={hero.key} hero={hero}></HeroCard>
-          ))}
-        </CardsList>
+        <div className='pt-6'>
+          <CardsList>
+            {filteredHeroes.map(hero => (
+              <HeroCard key={hero.key} hero={hero}></HeroCard>
+            ))}
+          </CardsList>
+        </div>
       </div>
     </div>
   )

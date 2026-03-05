@@ -19,19 +19,21 @@ function CardsSearch(props: CardsSearchProps) {
     }
 
     return (
-        <InputGroup className="max-w-sm">
-            <InputGroupInput placeholder="Поиск..." value={props.searchString} onChange={handleSearchString}/>
-            <InputGroupAddon>
-                <LucideSearch />
-            </InputGroupAddon>
-            {props.searchString && 
-                <InputGroupAddon align="inline-end">
-                    <Button variant={"link"} onClick={cleanSearchString}>
-                        <LucideX/>
-                    </Button>
+        <>
+            <InputGroup className="max-w-sm">
+                <InputGroupInput placeholder="Поиск..." value={props.searchString} onChange={handleSearchString}/>
+                <InputGroupAddon>
+                    <LucideSearch />
                 </InputGroupAddon>
-            }
-        </InputGroup>
+                {props.searchString && 
+                    <InputGroupAddon align="inline-end">
+                        <Button variant={"link"} onClick={cleanSearchString}>
+                            <LucideX/>
+                        </Button>
+                    </InputGroupAddon>
+                }
+            </InputGroup>
+        </>
     )
 }
 

@@ -3,17 +3,18 @@ import { PHYSICAL_GREEN_ITEMS } from "@/data/moba/items/physicalGreen"
 import { MAGICAL_WHITE_ITEMS } from "@/data/moba/items/magicalWhite"
 import { MAGICAL_GREEN_ITEMS } from "@/data/moba/items/magicalGreen"
 
-import type { MobaItem } from "@/data/moba/items/values"
+import { MobaItemCategory, type MobaItem } from "@/data/moba/items/values"
 
 
-const ITEMS: MobaItem[] = [
-    ...PHYSICAL_WHITE_ITEMS,
-    ...PHYSICAL_GREEN_ITEMS,
-    ...MAGICAL_WHITE_ITEMS,
-    ...MAGICAL_GREEN_ITEMS,
-]
+const ITEM_GROUPS: {[key in MobaItemCategory]: MobaItem[]} = {
+    [MobaItemCategory.PHYSICAL_WEAPONS]: [...PHYSICAL_WHITE_ITEMS, ...PHYSICAL_GREEN_ITEMS],
+    [MobaItemCategory.MAGICAL_WEAPONS]: [...MAGICAL_WHITE_ITEMS, ...MAGICAL_GREEN_ITEMS],
+    [MobaItemCategory.DEFENCE]: [],
+    [MobaItemCategory.OTHER]: [],
+    [MobaItemCategory.EXCLUSIVE]: [],
+}
 
 
 export {
-    ITEMS
+    ITEM_GROUPS
 }

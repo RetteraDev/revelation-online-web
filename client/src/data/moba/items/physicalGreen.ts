@@ -1,8 +1,8 @@
-import { ITEM_IDS, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
 
 export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     {
-        key: ITEM_IDS.GLOWING_SEA_GODS_SIGH,
+        key: MobaItemId.GLOWING_SEA_GODS_SIGH,
         name: 'Glowing Sea God’s Sigh',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -27,8 +27,8 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.IRON_HALBERD,
-            ITEM_IDS.RUSTED_SWORD,
+            MobaItemId.IRON_HALBERD,
+            MobaItemId.RUSTED_SWORD,
         ],
 
         buyPrice: 1760,
@@ -36,7 +36,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.FROST_PIKE,
+        key: MobaItemId.FROST_PIKE,
         name: 'Frost Pike',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -61,8 +61,8 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.IRON_HALBERD,
-            ITEM_IDS.RUSTED_SWORD,
+            MobaItemId.IRON_HALBERD,
+            MobaItemId.RUSTED_SWORD,
         ],
 
         buyPrice: 1980,
@@ -70,7 +70,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.SKYFEATHER,
+        key: MobaItemId.SKYFEATHER,
         name: 'Skyfeather',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -95,8 +95,8 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.SWORD_OF_JUSTICE,
-            ITEM_IDS.RUSTED_SWORD,
+            MobaItemId.SWORD_OF_JUSTICE,
+            MobaItemId.RUSTED_SWORD,
         ],
 
         buyPrice: 2100,
@@ -104,7 +104,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.SEVEN_STAR_SWORD,
+        key: MobaItemId.SEVEN_STAR_SWORD,
         name: 'Seven-Star Sword',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -133,8 +133,8 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.SKYRAZER_BROADSWORD,
-            ITEM_IDS.SICKLE,
+            MobaItemId.SKYRAZER_BROADSWORD,
+            MobaItemId.SICKLE,
         ],
 
         buyPrice: 1800,
@@ -142,7 +142,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.DUAL_BLOODLUST_BLADES,
+        key: MobaItemId.DUAL_BLOODLUST_BLADES,
         name: 'Dual Bloodlust Blades',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -173,9 +173,9 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.IRON_HALBERD,
-            ITEM_IDS.QUICK_SHOOTER,
-            ITEM_IDS.GLOVES,
+            MobaItemId.IRON_HALBERD,
+            MobaItemId.QUICK_SHOOTER,
+            MobaItemId.GLOVES,
         ],
 
         buyPrice: 2160,
@@ -183,7 +183,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.WOLFBANE_TWIN_BLADES,
+        key: MobaItemId.WOLFBANE_TWIN_BLADES,
         name: 'Wolfbane Twin Blades',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -204,8 +204,8 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.SKYRAZER_BROADSWORD,
-            ITEM_IDS.SICKLE,
+            MobaItemId.SKYRAZER_BROADSWORD,
+            MobaItemId.SICKLE,
         ],
 
         buyPrice: 1740,
@@ -213,7 +213,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.TEN_STEPS_ONE_KILL,
+        key: MobaItemId.TEN_STEPS_ONE_KILL,
         name: 'Ten steps. One kill',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -238,9 +238,9 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.SKYRAZER_BROADSWORD,
-            ITEM_IDS.RUSTED_SWORD,
-            ITEM_IDS.CRIT_GAUNTLETS,
+            MobaItemId.SKYRAZER_BROADSWORD,
+            MobaItemId.RUSTED_SWORD,
+            MobaItemId.CRIT_GAUNTLETS,
         ],
 
         buyPrice: 2140,
@@ -248,7 +248,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.DRAGONS_ROAR,
+        key: MobaItemId.DRAGONS_ROAR,
         name: 'Dragon’s Roar',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -289,9 +289,9 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.CLEAVER,
-            ITEM_IDS.SKYRAZER_BROADSWORD,
-            ITEM_IDS.NETHER_SPELLBLADE,
+            MobaItemId.CLEAVER,
+            MobaItemId.SKYRAZER_BROADSWORD,
+            MobaItemId.NETHER_SPELLBLADE,
         ],
 
         buyPrice: 2460,
@@ -299,7 +299,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.SPECTRAL_GEAR_AURORA,
+        key: MobaItemId.SPECTRAL_GEAR_AURORA,
         name: 'Spectral Gear: Aurora',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -330,9 +330,9 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.DAGGERS,
-            ITEM_IDS.DAGGERS_OF_FRENZY,
-            ITEM_IDS.DAGGERS,
+            MobaItemId.DAGGERS,
+            MobaItemId.DAGGERS_OF_FRENZY,
+            MobaItemId.DAGGERS,
         ],
 
         buyPrice: 2070,
@@ -340,7 +340,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.GREEN_TITAN_AXE,
+        key: MobaItemId.GREEN_TITAN_AXE,
         name: 'Green Titan Axe',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -373,8 +373,8 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.CLEAVER,
-            ITEM_IDS.IRON_HALBERD,
+            MobaItemId.CLEAVER,
+            MobaItemId.IRON_HALBERD,
         ],
 
         buyPrice: 2090,
@@ -382,7 +382,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.RAVENOUS_WOLF,
+        key: MobaItemId.RAVENOUS_WOLF,
         name: 'Ravenous Wolf',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -401,8 +401,8 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.SKYRAZER_BROADSWORD,
-            ITEM_IDS.SKYRAZER_BROADSWORD,
+            MobaItemId.SKYRAZER_BROADSWORD,
+            MobaItemId.SKYRAZER_BROADSWORD,
         ],
 
         buyPrice: 2950,
@@ -410,7 +410,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.SPECTRAL_GEAR_STAR_STREAM,
+        key: MobaItemId.SPECTRAL_GEAR_STAR_STREAM,
         name: 'Spectral Gear: Star Stream',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -439,9 +439,9 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.CRIT_GAUNTLETS,
-            ITEM_IDS.QUICK_SHOOTER,
-            ITEM_IDS.DAGGERS,
+            MobaItemId.CRIT_GAUNTLETS,
+            MobaItemId.QUICK_SHOOTER,
+            MobaItemId.DAGGERS,
         ],
 
         buyPrice: 2230,
@@ -449,7 +449,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.TUNGSTEN_CHELAE,
+        key: MobaItemId.TUNGSTEN_CHELAE,
         name: 'Tungsten Chelae',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -480,8 +480,8 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.DAGGERS_OF_FRENZY,
-            ITEM_IDS.DAGGERS,
+            MobaItemId.DAGGERS_OF_FRENZY,
+            MobaItemId.DAGGERS,
         ],
 
         buyPrice: 1840,

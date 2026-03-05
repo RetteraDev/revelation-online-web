@@ -1,8 +1,8 @@
-import { ITEM_IDS, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
 
 export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     {
-        key: ITEM_IDS.FLAMING_LEGION,
+        key: MobaItemId.FLAMING_LEGION,
         name: 'Flaming Legion',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -31,9 +31,9 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.THOUSAND_MORPHS,
-            ITEM_IDS.JADE_PENDANT,
-            ITEM_IDS.CHAOS_ICE,
+            MobaItemId.THOUSAND_MORPHS,
+            MobaItemId.JADE_PENDANT,
+            MobaItemId.CHAOS_ICE,
         ],
 
         buyPrice: 1950,
@@ -41,7 +41,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.CORE_OF_RUIN,
+        key: MobaItemId.CORE_OF_RUIN,
         name: 'Core of Ruin',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -70,8 +70,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.THOUSAND_MORPHS,
-            ITEM_IDS.DAWNS_SPIRIT,
+            MobaItemId.THOUSAND_MORPHS,
+            MobaItemId.DAWNS_SPIRIT,
         ],
 
         buyPrice: 2050,
@@ -79,7 +79,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.SPELL_PHYLACTERY,
+        key: MobaItemId.SPELL_PHYLACTERY,
         name: 'Spell Phylactery',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -116,9 +116,9 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.LAMBENT_CODEX,
-            ITEM_IDS.IMPS_BOLUS,
-            ITEM_IDS.TEXTS
+            MobaItemId.LAMBENT_CODEX,
+            MobaItemId.IMPS_BOLUS,
+            MobaItemId.TEXTS
         ],
 
         buyPrice: 2030,
@@ -126,7 +126,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.THOUSAND_MORPH_STAFF,
+        key: MobaItemId.THOUSAND_MORPH_STAFF,
         name: 'Thousand Morph Staff',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -151,8 +151,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.SAGE_MASK,
-            ITEM_IDS.DAWNS_SPIRIT,
+            MobaItemId.SAGE_MASK,
+            MobaItemId.DAWNS_SPIRIT,
         ],
 
         buyPrice: 2110,
@@ -160,7 +160,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.MERRYMAKER_RING,
+        key: MobaItemId.MERRYMAKER_RING,
         name: 'Merrymaker Ring',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -179,9 +179,9 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.THOUSAND_MORPHS,
-            ITEM_IDS.TEXTS,
-            ITEM_IDS.TEXTS,
+            MobaItemId.THOUSAND_MORPHS,
+            MobaItemId.TEXTS,
+            MobaItemId.TEXTS,
         ],
 
         buyPrice: 2300,
@@ -189,7 +189,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.MANA_CLAW,
+        key: MobaItemId.MANA_CLAW,
         name: 'Mana Claw',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -214,8 +214,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.THOUSAND_MORPHS,
-            ITEM_IDS.TEXTS,
+            MobaItemId.THOUSAND_MORPHS,
+            MobaItemId.TEXTS,
         ],
 
         buyPrice: 2100,
@@ -223,7 +223,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.BUTTERFLY_CANE,
+        key: MobaItemId.BUTTERFLY_CANE,
         name: 'Butterfly Cane',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -248,8 +248,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.ROUGH_CAP,
-            ITEM_IDS.THOUSAND_MORPHS,
+            MobaItemId.ROUGH_CAP,
+            MobaItemId.THOUSAND_MORPHS,
         ],
 
         buyPrice: 2100,
@@ -257,7 +257,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.MASK_OF_SILVER_AND_SHADOW,
+        key: MobaItemId.MASK_OF_SILVER_AND_SHADOW,
         name: 'Mask of Silver and Shadow',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -294,8 +294,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.SAGE_MASK,
-            ITEM_IDS.TEXTS,
+            MobaItemId.SAGE_MASK,
+            MobaItemId.TEXTS,
         ],
 
         buyPrice: 2040,
@@ -303,7 +303,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.CONCH_STAFF,
+        key: MobaItemId.CONCH_STAFF,
         name: 'Conch Staff',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -344,8 +344,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.NETHER_SPELLBLADE,
-            ITEM_IDS.TEXTS,
+            MobaItemId.NETHER_SPELLBLADE,
+            MobaItemId.TEXTS,
         ],
 
         buyPrice: 2120,
@@ -353,7 +353,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.NIMBUS_CODEX,
+        key: MobaItemId.NIMBUS_CODEX,
         name: 'Nimbus Codex',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -384,8 +384,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.ENMITY_CRYSTAL,
-            ITEM_IDS.THOUSAND_MORPHS,
+            MobaItemId.ENMITY_CRYSTAL,
+            MobaItemId.THOUSAND_MORPHS,
         ],
 
         buyPrice: 2090,
@@ -393,7 +393,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.DEMONHUNTER_SCROLL,
+        key: MobaItemId.DEMONHUNTER_SCROLL,
         name: 'Demonhunter Scroll',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -412,8 +412,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.THOUSAND_MORPHS,
-            ITEM_IDS.THOUSAND_MORPHS,
+            MobaItemId.THOUSAND_MORPHS,
+            MobaItemId.THOUSAND_MORPHS,
         ],
 
         buyPrice: 2990,
@@ -421,7 +421,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.QAMARIS_CRESCENT,
+        key: MobaItemId.QAMARIS_CRESCENT,
         name: 'Qamrai’s Cresent',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -446,8 +446,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.THOUSAND_MORPHS,
-            ITEM_IDS.LAMBENT_CODEX,
+            MobaItemId.THOUSAND_MORPHS,
+            MobaItemId.LAMBENT_CODEX,
         ],
 
         buyPrice: 1990,
@@ -455,7 +455,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.TREATISE_ON_POTENTIAL,
+        key: MobaItemId.TREATISE_ON_POTENTIAL,
         name: 'Treatise on Potential',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
@@ -480,9 +480,9 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.BLOODSOUL,
-            ITEM_IDS.BOOK_OF_TIMES,
-            ITEM_IDS.TEXTS,
+            MobaItemId.BLOODSOUL,
+            MobaItemId.BOOK_OF_TIMES,
+            MobaItemId.TEXTS,
         ],
 
         buyPrice: 2090,

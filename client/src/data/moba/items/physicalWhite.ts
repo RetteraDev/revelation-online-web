@@ -1,8 +1,8 @@
-import { ITEM_IDS, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
 
 export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     {
-        key: ITEM_IDS.RUSTED_SWORD,
+        key: MobaItemId.RUSTED_SWORD,
         name: 'Rusted Sword',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -21,7 +21,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.DAGGERS,
+        key: MobaItemId.DAGGERS,
         name: 'Daggers',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -40,7 +40,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.GLOVES,
+        key: MobaItemId.GLOVES,
         name: 'Gloves',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -59,7 +59,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.SICKLE,
+        key: MobaItemId.SICKLE,
         name: 'Sickle',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -78,7 +78,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.IRON_HALBERD,
+        key: MobaItemId.IRON_HALBERD,
         name: 'Iron Halberd',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -97,7 +97,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.CRIT_GAUNTLETS,
+        key: MobaItemId.CRIT_GAUNTLETS,
         name: 'Crit Gauntlets',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -116,7 +116,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.SKYRAZER_BROADSWORD,
+        key: MobaItemId.SKYRAZER_BROADSWORD,
         name: 'Skyraiser Broadsword',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -131,7 +131,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.RUSTED_SWORD
+            MobaItemId.RUSTED_SWORD
         ],
 
         buyPrice: 910,
@@ -139,7 +139,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.CLEAVER,
+        key: MobaItemId.CLEAVER,
         name: 'Cleaver',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -164,8 +164,8 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.RUSTED_SWORD,
-            ITEM_IDS.BLOODSOUL,
+            MobaItemId.RUSTED_SWORD,
+            MobaItemId.BLOODSOUL,
         ],
 
         buyPrice: 790,
@@ -173,7 +173,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.DAGGERS_OF_FRENZY,
+        key: MobaItemId.DAGGERS_OF_FRENZY,
         name: 'Daggers of Frenzy',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -200,8 +200,8 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.DAGGERS,
-            ITEM_IDS.GLOVES,
+            MobaItemId.DAGGERS,
+            MobaItemId.GLOVES,
         ],
 
         buyPrice: 890,
@@ -209,7 +209,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.SWORD_OF_JUSTICE,
+        key: MobaItemId.SWORD_OF_JUSTICE,
         name: 'Sword of Justice',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -236,8 +236,8 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.RUSTED_SWORD,
-            ITEM_IDS.RUSTED_SWORD,
+            MobaItemId.RUSTED_SWORD,
+            MobaItemId.RUSTED_SWORD,
         ],
 
         buyPrice: 1080,
@@ -245,7 +245,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.QUICK_SHOOTER,
+        key: MobaItemId.QUICK_SHOOTER,
         name: 'Quick Shooter',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -264,8 +264,8 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.DAGGERS,
-            ITEM_IDS.DAGGERS,
+            MobaItemId.DAGGERS,
+            MobaItemId.DAGGERS,
         ],
 
         buyPrice: 890,

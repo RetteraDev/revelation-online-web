@@ -1,8 +1,8 @@
-import { ITEM_IDS, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
 
 export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     {
-        key: ITEM_IDS.TEXTS,
+        key: MobaItemId.TEXTS,
         name: 'Texts',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -21,7 +21,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.CHAOS_ICE,
+        key: MobaItemId.CHAOS_ICE,
         name: 'Chaos Ice',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -40,7 +40,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.JADE_PENDANT,
+        key: MobaItemId.JADE_PENDANT,
         name: 'Jade Pendant',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -59,7 +59,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.LAMBENT_CODEX,
+        key: MobaItemId.LAMBENT_CODEX,
         name: 'Lambent Codex',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -84,7 +84,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.DAWNS_SPIRIT,
+        key: MobaItemId.DAWNS_SPIRIT,
         name: 'Dawn’s Spirit',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -103,7 +103,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.THOUSAND_MORPHS,
+        key: MobaItemId.THOUSAND_MORPHS,
         name: 'Thousand Morphs',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -118,7 +118,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.TEXTS,
+            MobaItemId.TEXTS,
         ],
 
         buyPrice: 820,
@@ -126,7 +126,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.BOOK_OF_TIMES,
+        key: MobaItemId.BOOK_OF_TIMES,
         name: 'Book of Times',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -147,8 +147,8 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.TEXTS,
-            ITEM_IDS.LAMBENT_CODEX,
+            MobaItemId.TEXTS,
+            MobaItemId.LAMBENT_CODEX,
         ],
 
         buyPrice: 1240,
@@ -156,7 +156,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.NETHER_SPELLBLADE,
+        key: MobaItemId.NETHER_SPELLBLADE,
         name: 'Nether Spellblade',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -181,8 +181,8 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.CHAOS_ICE,
-            ITEM_IDS.BLOODSOUL,
+            MobaItemId.CHAOS_ICE,
+            MobaItemId.BLOODSOUL,
         ],
 
         buyPrice: 730,
@@ -190,7 +190,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.SAGE_MASK,
+        key: MobaItemId.SAGE_MASK,
         name: 'Sage Mask',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -221,8 +221,8 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.TEXTS,
-            ITEM_IDS.BLOODSOUL,
+            MobaItemId.TEXTS,
+            MobaItemId.BLOODSOUL,
         ],
 
         buyPrice: 1020,
@@ -230,7 +230,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.ENMITY_CRYSTAL,
+        key: MobaItemId.ENMITY_CRYSTAL,
         name: 'Enimty Crystal',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -251,8 +251,8 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.CHAOS_ICE,
-            ITEM_IDS.BLOODSOUL,
+            MobaItemId.CHAOS_ICE,
+            MobaItemId.BLOODSOUL,
         ],
 
         buyPrice: 720,
@@ -260,7 +260,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     },
 
     {
-        key: ITEM_IDS.IMPS_BOLUS,
+        key: MobaItemId.IMPS_BOLUS,
         name: 'Imp’s Bolus',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
@@ -297,8 +297,8 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         ],
         
         recipe: [
-            ITEM_IDS.JADE_PENDANT,
-            ITEM_IDS.BLOODSOUL,
+            MobaItemId.JADE_PENDANT,
+            MobaItemId.BLOODSOUL,
         ],
 
         buyPrice: 900,
