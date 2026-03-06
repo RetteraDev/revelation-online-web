@@ -1,27 +1,27 @@
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
-import { type MobaItem, MobaItemColor, MobaItemEffectColor } from "@/data/moba/items/values"
+import { type MobaItem, MobaItemColor } from "@/data/moba/items/values"
 
 interface MobaItemCardProps {
   item: MobaItem
   onClick?: (item: MobaItem) => void
 }
 
-const itemColorStyles = {
-  [MobaItemColor.WHITE]: '',
-  [MobaItemColor.GREEN]: 'bg-green-200',
-  [MobaItemColor.EXCLUSIVE]: 'bg-violet-300',
-}
-
-const effectColorStyles = {
-  [MobaItemEffectColor.Usual]: 'text-black-300',
-  [MobaItemEffectColor.ActiveUnique]: 'text-yellow-600 font-bold',
-  [MobaItemEffectColor.PassiveUnique]: 'text-yellow-600 font-bold',
+const itemBgStyles = {
+  [MobaItemColor.WHITE]: 'rgb(198, 202, 200)',
+  [MobaItemColor.GREEN]: 'rgb(128, 204, 99)',
+  [MobaItemColor.EXCLUSIVE]: 'rgb(139, 99, 204)',
 }
 
 function ItemCard({ item }: MobaItemCardProps) {  
   return (
-    <div className="flex flex-row items-center gap-3 ">
-      <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 border border-gray-700">
+    <div 
+      className="flex flex-row items-center gap-3 px-3"
+      style={{ 
+        backgroundImage: `linear-gradient(0.25turn, ${itemBgStyles[item.color]}, rgb(68, 66, 66)), url('/moba/items/item-bg.jpeg')`,
+        backgroundSize: 'cover',
+        backgroundBlendMode: 'overlay',
+      }}
+    >
+      <div className="w-12 h-12 rounded-lg">
         {item.icon ? (
           <img
             src={item.icon}
@@ -30,13 +30,13 @@ function ItemCard({ item }: MobaItemCardProps) {
           />
         ) : (
           <div className="h-full w-full flex items-center justify-center">
-            <span className="text-gray-500 text-xs">?</span>
+            <span className="text-xl">?</span>
           </div>
         )}
       </div>
 
-      <span className={`grow p-1 font-medium ${itemColorStyles[item.color]}`}>{item.name}</span>
-      <span className="text-yellow-700">{item.buyPrice}</span>
+      <span className={`grow text-gray-100 text-shadow-lg font-medium`} style={{ WebkitTextStroke: '0.3px #000000' }}>{item.name}</span>
+      <span className="text-yellow-600">{item.buyPrice}</span>
     </div>
   )
 }
