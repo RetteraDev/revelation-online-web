@@ -3,7 +3,6 @@ import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItem
 export const BOOTS_ITEMS: MobaItem[] = [
     {
         key: MobaItemId.NOVITIATES_SHOES,
-        name: 'Novitiate’s Shoes',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Сапоги придворного гонца.png',
@@ -21,7 +20,6 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.GLORIOUS_WAR_BOOTS,
-        name: 'Glorious War Boots',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Сапоги последнего стража гавани.png',
@@ -51,7 +49,6 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.TRUE_VOYAGERS_SHOES,
-        name: 'True Voyager’s Shoes',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Скрипучие сапоги.png',
@@ -81,7 +78,6 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.LETHAL_GRASP_WADERS,
-        name: 'Lethal Grasp Waders',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Сапоги из манашелка.png',
@@ -111,7 +107,6 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.CELESTIAL_PATIENCE_WADERS,
-        name: 'Celestial Patience Waders',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Сапоги чародея.png',
@@ -141,7 +136,6 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.ADVENTURERS_WAR_BOOTS,
-        name: 'Adventurer’s War Boots',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Сапоги калахарского стрелка.png',
@@ -171,7 +165,6 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.BREEZE_SANDALS,
-        name: 'Breeze Sandals',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Туфли для чечетки.png',

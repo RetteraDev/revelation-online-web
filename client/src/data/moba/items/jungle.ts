@@ -3,7 +3,6 @@ import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItem
 export const JUNGLE_ITEMS: MobaItem[] = [
     {
         key: MobaItemId.NOVITIATES_HALBERD,
-        name: 'Novitiate’s Halberd',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Заточка.png',
@@ -29,7 +28,6 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.MERCILESS_BROADSWORD,
-        name: 'Merciless Breadsword',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Кривой нож.png',
@@ -59,7 +57,6 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.RAGING_APE_BATTLEAXE,
-        name: 'Raging Ape Battleaxe',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Черепокол.png',
@@ -89,7 +86,6 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.PROUDLIGHT_AXE,
-        name: 'Proudlight Axe',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Складная глефа.png',
@@ -119,7 +115,6 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.BROADSWORD_OF_CHRYSOS,
-        name: 'Broadsword of Cryrsos',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Пасть дракона.png',
@@ -169,7 +164,6 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.AXE_OF_THE_HEADLESS_WARRIOR,
-        name: 'Axe of the Headless Warrior',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Гнев Оро.png',
@@ -210,7 +204,6 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.WORLD_BREAKER,
-        name: 'World Breaker',
         category: MobaItemCategory.OTHER,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Я-Дао, Зубастое лезвие.png',
