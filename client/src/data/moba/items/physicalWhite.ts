@@ -16,6 +16,12 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
             }
         ],
 
+        buildsInto: [
+            MobaItemId.CLEAVER,
+            MobaItemId.SKYRAZER_BROADSWORD,
+            MobaItemId.SWORD_OF_JUSTICE,
+        ],
+
         buyPrice: 250,
         sellPrice: 149,
     },

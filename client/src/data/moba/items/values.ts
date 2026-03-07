@@ -24,6 +24,7 @@ export enum MobaItemEffectName {
     ManaRecovery = 'Mana Recovery',
     PhysicalArmor = 'Physical Armor',
     MagicalArmor = 'Magical Armor',
+    PunishmentRate = 'Punishment Rate',
 }
 
 export interface MobaItemStat {
@@ -165,7 +166,7 @@ export interface MobaItem {
     color: MobaItemColor,
     icon: string,
 
-    stats: MobaItemStat[]  // Белые характеристики 
+    stats?: MobaItemStat[]  // Белые характеристики 
     soles?: MobaItemSole[]  // Активные / пассивные уникальные умения
     recipe?: MobaItemId[]  // Из чего создаётся
     buildsInto?: MobaItemId[]  // Во что превращается

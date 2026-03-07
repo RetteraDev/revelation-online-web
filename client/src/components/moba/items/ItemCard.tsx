@@ -22,54 +22,73 @@ const itemBgStyles = {
 
 function ItemCard({ item }: ItemPreviewProps) {
     return (
-        <div className='w-full max-w-sm bg-[rgb(32,30,28)]'>
-            <ItemCardHeader item={item}/>
-            
-            <div className="flex flex-col p-3 gap-3">
-                <div className="flex flex-col gap-1">
-                    {item.stats.map((stat, index) => (
-                        <div className={`flex flex-row text-justify text-sm text-gray-100`} key={index}>
-                            <span className="grow">{stat.name}</span>
-                            <span>{prettyStatValue(stat.type, stat.value)}</span>
-                        </div>
-                    ))}
-                </div>
-
-                {item.soles && item.soles.length > 0 && (
-                    <>
-                    <div className="h-px bg-gray-600 mx-3"></div>
-
-                    <div className="flex flex-col gap-1">
-                        {item.soles.map((sole, index) => (
-                            <div className={`flex flex-col text-yellow-600 text-sm`} key={index}>
-                                <span className="font-bold">{sole.name}</span>
-                            </div>
-                        ))}
-                    </div>
-                    </>
-                )}
+        <div className='flex flex-col w-full max-w-sm bg-[rgb(32,30,28)]'>
+            <div className="mb-3">
+                <ItemCardHeader item={item}/>
             </div>
+            
+            {(item.stats || item.soles) && 
+                <div className="flex flex-col">
+                    {item.stats && 
+                        <div className="flex flex-col px-3 gap-3 mb-3">
+                            <div className="flex flex-col gap-1">
+                                {item.stats.map((stat, index) => (
+                                    <div className={`flex flex-row text-justify text-sm text-gray-100`} key={index}>
+                                        <span className="grow">{stat.name}</span>
+                                        <span>{prettyStatValue(stat.type, stat.value)}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    }
+                
+                    {item.stats && item.soles && <div className="h-px bg-gray-600 mx-3 mb-3"></div>}
+
+                    {item.soles && (
+                        <div className="flex flex-col px-3 gap-3 mb-3">
+                            <div className="flex flex-col gap-1">
+                                {item.soles.map((sole, index) => (
+                                    <div className={`flex flex-col text-yellow-600 text-sm`} key={index}>
+                                        <span className="font-bold">{sole.name}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                </div>
+            }
+                
 
             {item.buildsInto &&
             <>
                 <div
-                    className="text-gray-100"
+                    className="text-gray-100 px-3"
                     style={{ 
                         backgroundImage: `linear-gradient(rgb(82,76,63), rgb(57,52,49))`,
                     }}
                 >
-                    <span>Создаётся из</span>
+                    <span>Используется для крафта</span>
                 </div>
                     
-                <div className="flex flex-col p-3 gap-3">
-                    <div className='flex flex-row'>
-                        {item.buildsInto.map((targetItemId) => (
-                        <Link to={`/moba/items/$itemId`} params={{itemId: targetItemId}}>
-                            <div className="flex justify-center items-center w-12 h-12">
-                                <img src={getItem.get(targetItemId)!.icon} alt={item.name} className="w-10 h-10 object-cover"/>
-                            </div>
-                        </Link>
-                        ))}
+                <div className="flex flex-col p-3">
+                    <div className='flex flex-row flex-wrap gap-3'>
+                        {item.buildsInto.map((targetItemId) => {
+                            const targetItem = getItem.get(targetItemId)!
+                            console.log(targetItemId, targetItem)
+                            return (
+                                <Link to={`/moba/items/$itemId`} params={{itemId: targetItemId}}>
+                                    <div className="flex flex-col justify-center">
+                                        <div className={`flex justify-center items-center w-12 h-12`} style={{border: `1px solid ${itemBgStyles[targetItem.color]}`}}>
+                                            <img src={targetItem.icon} alt={targetItem.name} className="w-10 h-10 object-cover"/>
+                                        </div>
+                                        <div className="flex justify-center items-center gap-1">
+                                            <img src={'/moba/items/gold-small.webp'} alt="gold" className="w-3 h-3 object-cover"/>
+                                            <span className="text-yellow-600 text-xs">{targetItem.buyPrice}</span>
+                                        </div>
+                                    </div>
+                                </Link>
+                            )
+                        })}
                     </div>
                 </div>
             </>
@@ -78,7 +97,7 @@ function ItemCard({ item }: ItemPreviewProps) {
             {item.recipe &&
             <>
                 <div
-                    className="text-gray-100"
+                    className="text-gray-100 px-3 py-1"
                     style={{ 
                         backgroundImage: `linear-gradient(rgb(82,76,63), rgb(57,52,49))`,
                     }}
