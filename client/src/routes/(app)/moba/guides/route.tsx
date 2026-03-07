@@ -10,5 +10,12 @@ export const Route = createFileRoute('/(app)/moba/guides')({
 })
 
 function RouteComponent() {
-  return <div>Hello "/(app)/moba/guides"!</div>
+  return (
+    <div className="flex flex-col">
+      <h2>Гайды от игроков</h2>
+      <div className="pt-6">
+        
+      </div>
+    </div>
+  )
 }
