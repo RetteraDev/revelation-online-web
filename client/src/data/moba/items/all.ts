@@ -14,7 +14,7 @@ import { MobaItemCategory, MobaItemId, type MobaItem } from "@/data/moba/items/v
 const ITEM_GROUPS: {[key in MobaItemCategory]: MobaItem[]} = {
     [MobaItemCategory.PHYSICAL_WEAPONS]: [...PHYSICAL_WHITE_ITEMS, ...PHYSICAL_GREEN_ITEMS],
     [MobaItemCategory.MAGICAL_WEAPONS]: [...MAGICAL_WHITE_ITEMS, ...MAGICAL_GREEN_ITEMS],
-    [MobaItemCategory.DEFENCE]: [...DEFENSE_WHITE_ITEMS, ...DEFENSE_GREEN_ITEMS],
+    [MobaItemCategory.DEFENSE]: [...DEFENSE_WHITE_ITEMS, ...DEFENSE_GREEN_ITEMS],
     [MobaItemCategory.OTHER]: [...BOOTS_ITEMS, ...JUNGLE_ITEMS],
     [MobaItemCategory.EXCLUSIVE]: [...EXCLUSIVE_ITEMS],
 }
@@ -24,6 +24,8 @@ const ALL_MOBA_ITEMS: MobaItem[] = Object.values(ITEM_GROUPS).flat()
 const getItem = new Map<MobaItemId, MobaItem>(
   ALL_MOBA_ITEMS.map((item) => [item.key, item]),
 )
+
+console.log(Object.values(ITEM_GROUPS).flat())
 
 export {
     ITEM_GROUPS,

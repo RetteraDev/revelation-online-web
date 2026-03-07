@@ -1,4 +1,5 @@
 import { MobaItemColor, type MobaItem } from "@/data/moba/items/values";
+import { useItemTranslation } from "@/hooks/i18n/useItemTranslation";
 
 
 const itemBgStyles = {
@@ -13,6 +14,8 @@ interface ItemCardHeaderProps {
 
 
 export function ItemCardHeader({ item } : ItemCardHeaderProps) {
+    const { getItemName } = useItemTranslation();
+
     return (
         <div 
             className="flex flex-row items-center gap-3 px-3 relative"
@@ -23,13 +26,13 @@ export function ItemCardHeader({ item } : ItemCardHeaderProps) {
             }}
         >
             <div className="flex justify-center items-center w-12 h-12">
-                <img src={item.icon} alt={item.name} className="w-10 h-10 object-cover"/>
+                <img src={item.icon} alt={getItemName(item.key)} className="w-10 h-10 object-cover"/>
             </div>
     
             <span
                 className={`grow text-gray-100 text-shadow-lg font-medium`}
                 style={{ WebkitTextStroke: '0.3px #000000' }}
-            >{item.name}</span>
+            >{getItemName(item.key)}</span>
 
             <div className="flex justify-center items-center gap-1">
                 <img src={'/moba/items/gold-small.webp'} alt="gold" className="w-4 h-4 object-cover"/>

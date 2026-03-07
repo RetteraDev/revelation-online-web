@@ -3,7 +3,6 @@ import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItem
 export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     {
         key: MobaItemId.TEXTS,
-        name: 'Texts',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Тайны чародея.png',
@@ -22,7 +21,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.CHAOS_ICE,
-        name: 'Chaos Ice',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Ледяной нексус.png',
@@ -41,7 +39,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.JADE_PENDANT,
-        name: 'Jade Pendant',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Фалмарийский амулет.png',
@@ -60,7 +57,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.LAMBENT_CODEX,
-        name: 'Lambent Codex',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Кодекс из Сноу-Шу.png',
@@ -84,7 +80,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.DAWNS_SPIRIT,
-        name: 'Dawn’s Spirit',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Ключ Куроми.png',
@@ -103,7 +98,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.THOUSAND_MORPHS,
-        name: 'Thousand Morphs',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Посох феи.png',
@@ -126,7 +120,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.BOOK_OF_TIMES,
-        name: 'Book of Times',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Шепчущий фолиант.png',
@@ -155,7 +148,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.NETHER_SPELLBLADE,
-        name: 'Nether Spellblade',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Меч Снежной королевы.png',
@@ -191,7 +183,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.SAGE_MASK,
-        name: 'Sage Mask',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Тотем Коко.png',
@@ -232,7 +223,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.ENMITY_CRYSTAL,
-        name: 'Enimty Crystal',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Призрачный кристалл.png',
@@ -261,7 +251,6 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.IMPS_BOLUS,
-        name: 'Imp’s Bolus',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Реликварий теней.png',

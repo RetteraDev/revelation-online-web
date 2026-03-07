@@ -1,17 +1,13 @@
 // src/components/ItemPreview.tsx
 
 import { getItem } from "@/data/moba/items/all";
-import { MobaItemColor, MobaItemStatType, type MobaItem } from "@/data/moba/items/values"
+import { MobaItemColor, type MobaItem } from "@/data/moba/items/values"
 import { Link } from "@tanstack/react-router";
 import { ItemCardHeader } from "./ItemCardHeader";
+import { useItemTranslation } from "@/hooks/i18n/useItemTranslation";
 
 interface ItemPreviewProps {
   item: MobaItem;
-}
-
-function prettyStatValue(type: MobaItemStatType, value: number) {
-    const formattedValue = type === MobaItemStatType.Percent ? `${value}%` : `${value}`;
-    return value > 0 ? `+${formattedValue}` : formattedValue;
 }
 
 const itemBgStyles = {
@@ -21,6 +17,8 @@ const itemBgStyles = {
 }
 
 function ItemCard({ item }: ItemPreviewProps) {
+    const { getItemName, getStatName, formatStatValue } = useItemTranslation();
+
     return (
         <div className='flex flex-col w-full max-w-sm bg-[rgb(32,30,28)]'>
             <div className="mb-3">
@@ -34,8 +32,8 @@ function ItemCard({ item }: ItemPreviewProps) {
                             <div className="flex flex-col gap-1">
                                 {item.stats.map((stat, index) => (
                                     <div className={`flex flex-row text-justify text-sm text-gray-100`} key={index}>
-                                        <span className="grow">{stat.name}</span>
-                                        <span>{prettyStatValue(stat.type, stat.value)}</span>
+                                        <span className="grow">{getStatName(stat.name)}</span>
+                                        <span>{formatStatValue(stat.type, stat.value)}</span>
                                     </div>
                                 ))}
                             </div>
@@ -79,7 +77,7 @@ function ItemCard({ item }: ItemPreviewProps) {
                                 <Link to={`/moba/items/$itemId`} params={{itemId: targetItemId}}>
                                     <div className="flex flex-col justify-center">
                                         <div className={`flex justify-center items-center w-12 h-12`} style={{border: `1px solid ${itemBgStyles[targetItem.color]}`}}>
-                                            <img src={targetItem.icon} alt={targetItem.name} className="w-10 h-10 object-cover"/>
+                                            <img src={targetItem.icon} alt={getItemName(targetItemId)} className="w-10 h-10 object-cover"/>
                                         </div>
                                         <div className="flex justify-center items-center gap-1">
                                             <img src={'/moba/items/gold-small.webp'} alt="gold" className="w-3 h-3 object-cover"/>
@@ -113,7 +111,7 @@ function ItemCard({ item }: ItemPreviewProps) {
                                 <Link to={`/moba/items/$itemId`} params={{itemId: recipeItemId}}>
                                     <div className="flex flex-col justify-center">
                                         <div className={`flex justify-center items-center w-12 h-12`} style={{border: `1px solid ${itemBgStyles[recipeItem.color]}`}}>
-                                            <img src={recipeItem.icon} alt={recipeItem.name} className="w-10 h-10 object-cover"/>
+                                            <img src={recipeItem.icon} alt={getItemName(recipeItemId)} className="w-10 h-10 object-cover"/>
                                         </div>
                                         <div className="flex justify-center items-center gap-1">
                                             <img src={'/moba/items/gold-small.webp'} alt="gold" className="w-3 h-3 object-cover"/>

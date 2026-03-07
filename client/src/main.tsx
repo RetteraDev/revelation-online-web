@@ -10,6 +10,9 @@ import { routeTree } from './routeTree.gen'
 import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
 
+// Import internationalization
+import './i18n/config';
+
 // Create a new router instance
 
 const TanStackQueryProviderContext = TanStackQueryProvider.getContext()

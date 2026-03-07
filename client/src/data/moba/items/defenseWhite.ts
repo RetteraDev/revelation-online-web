@@ -3,8 +3,7 @@ import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItem
 export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
     {
         key: MobaItemId.BLOODSOUL,
-        name: 'Bloodsoul',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Кровавый кристалл.png',
 
@@ -22,8 +21,7 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.LINEN_CLOTH,
-        name: 'Linen Cloth',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Полотняный доспех.png',
 
@@ -41,8 +39,7 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.FAIRYTALE_HAT,
-        name: 'Fairytale Hat',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Сказочный капюшон.png',
 
@@ -60,10 +57,9 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.EXCELSIOR,
-        name: 'Excelsior',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.WHITE,
-        icon: '/moba/items/Сказочный капюшон.png',
+        icon: '/moba/items/Аметистовая слеза.png',
 
         stats: [
             {
@@ -79,8 +75,7 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.ROUGH_CAP,
-        name: 'Rough Cap',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Хатимаки-оберег.png',
 
@@ -103,8 +98,7 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.FLAMES_HEART,
-        name: 'Flame’s Heart',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Шалость Марисы.png',
 
@@ -133,8 +127,7 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.DREAMLIKE_SHAWL,
-        name: 'Dreamlike Shawl',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Колдовское кружево.png',
 
@@ -162,8 +155,7 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.STEELBACK_SHIELD,
-        name: 'Steelback Shield',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Мрачная преграда.png',
 
@@ -196,8 +188,7 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.GLORIOUS_ARMOR,
-        name: 'Glorious Armor',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Костяной доспех.png',
 

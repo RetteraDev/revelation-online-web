@@ -3,8 +3,7 @@ import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItem
 export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
     {
         key: MobaItemId.VANGUARD_PAVISE,
-        name: 'Vanguard Pavise',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Щит полководца.png',
 
@@ -40,8 +39,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.GOD_OF_WAR,
-        name: 'God of War',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Терновый доспех.png',
 
@@ -77,8 +75,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.FIREWALKERS_GLOVES,
-        name: 'Firewalker’s Gloves',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Перчатки инквизитора.png',
 
@@ -114,8 +111,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.ELEMENTAL_SHADE,
-        name: 'Elemental Shade',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Эмблема гладиатора.png',
 
@@ -156,8 +152,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.OPEN_WORLD,
-        name: 'Open World',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Жилет пироманта.png',
 
@@ -192,8 +187,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.DRAGOON,
-        name: 'Dragoon',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Объятье Акари.png',
 
@@ -229,8 +223,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.SPIRITED_FIGHTER_BUlWARK,
-        name: 'Spirited Fighter Bulwark',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Эгида Атума.png',
 
@@ -265,8 +258,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.CLOUD_SMOKE,
-        name: 'Cloud Smoke',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Камзол иллюзиониста.png',
 
@@ -305,8 +297,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.RAIMENT_OF_DARKNESS,
-        name: 'Rainment of Darkness',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Одеяние тьмы.png',
 
@@ -341,8 +332,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.COLD_HEART,
-        name: 'Cold Heart',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Небула.png',
 
@@ -383,8 +373,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.LINGERING_SONG_SHIRT,
-        name: 'Lingering Song Shirt',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Одеяние бессмертного.png',
 
@@ -419,8 +408,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.CRIMSON_ARMOR,
-        name: 'Crimson Armor',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Самурайский доспех.png',
 
@@ -455,8 +443,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.REFINED_SLEEVES,
-        name: 'Refined Sleeves',
-        category: MobaItemCategory.DEFENCE,
+        category: MobaItemCategory.DEFENSE,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Рукавицы имперского стража.png',
 

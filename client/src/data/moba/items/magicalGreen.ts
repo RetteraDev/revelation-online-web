@@ -3,7 +3,6 @@ import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItem
 export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     {
         key: MobaItemId.FLAMING_LEGION,
-        name: 'Flaming Legion',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Пламенеющий оберег.png',
@@ -44,7 +43,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.CORE_OF_RUIN,
-        name: 'Core of Ruin',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Укрощенное пламя.png',
@@ -84,7 +82,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.SPELL_PHYLACTERY,
-        name: 'Spell Phylactery',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Ловец маны.png',
@@ -131,7 +128,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.THOUSAND_MORPH_STAFF,
-        name: 'Thousand Morph Staff',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Жезл провидца.png',
@@ -167,7 +163,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.MERRYMAKER_RING,
-        name: 'Merrymaker Ring',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Перстень могущества.png',
@@ -199,7 +194,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.MANA_CLAW,
-        name: 'Mana Claw',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Счастливая драконья лапка.png',
@@ -235,7 +229,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.BUTTERFLY_CANE,
-        name: 'Butterfly Cane',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Трость Вуми-Луми.png',
@@ -271,7 +264,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.MASK_OF_SILVER_AND_SHADOW,
-        name: 'Mask of Silver and Shadow',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Двуликая маска.png',
@@ -317,7 +309,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.CONCH_STAFF,
-        name: 'Conch Staff',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Проклятая фалмарийская флейта.png',
@@ -367,7 +358,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.NIMBUS_CODEX,
-        name: 'Nimbus Codex',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Облачный атлас.png',
@@ -408,7 +398,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.DEMONHUNTER_SCROLL,
-        name: 'Demonhunter Scroll',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Рецепт бессмертия.png',
@@ -439,7 +428,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.QAMARIS_CRESCENT,
-        name: 'Qamrai’s Crescent',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Лунный серп.png',
@@ -475,7 +463,6 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.TREATISE_ON_POTENTIAL,
-        name: 'Treatise on Potential',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Вампирикон.png',

@@ -9,22 +9,22 @@ export enum MobaItemStatType {
 }
 
 export enum MobaItemEffectName {
-    AttackSpeed = 'Boost Normal Attack Speed',
-    CritRate = 'Crit Rate',
-    LifeSteal = 'Normal Attack Siphon',
-    PhysicalDamage = 'Physical Damage',
-    MaxHealth = 'Maximum HP',
-    MovementSpeed = 'Movement Speed',
-    CooldownReduction = 'Cooldown Reduction',
-    PhysicalPierce = 'Physical Pierce',
-    MaxMana = 'Maximum Mana',
-    MagicalDamage = 'Magical Damage',
-    MagicalPierce = 'Magical Pierce',
-    HealthRecovery = 'Health Recovery',
-    ManaRecovery = 'Mana Recovery',
-    PhysicalArmor = 'Physical Armor',
-    MagicalArmor = 'Magical Armor',
-    PunishmentRate = 'Punishment Rate',
+    AttackSpeed = 'attack-speed',
+    CritRate = 'crit-rate',
+    LifeSteal = 'life-steal',
+    PhysicalDamage = 'physical-damage',
+    MaxHealth = 'max-hp',
+    MovementSpeed = 'movement-speed',
+    CooldownReduction = 'cooldown-reduction',
+    PhysicalPierce = 'physical-pierce',
+    MaxMana = 'max-mana',
+    MagicalDamage = 'magical-damage',
+    MagicalPierce = 'magical-pierce',
+    HealthRecovery = 'health-recovery',
+    ManaRecovery = 'mana-recovery',
+    PhysicalArmor = 'physical-armor',
+    MagicalArmor = 'magical-armor',
+    PunishmentRate = 'punishment-rate',
 }
 
 export interface MobaItemStat {
@@ -45,11 +45,11 @@ export enum MobaItemColor {
 }
 
 export enum MobaItemCategory {
-    PHYSICAL_WEAPONS = 'Physical',
-    MAGICAL_WEAPONS = 'Magical',
-    DEFENCE = 'Defence',
-    OTHER = 'Other',
-    EXCLUSIVE = 'Exclusive',
+    PHYSICAL_WEAPONS = 'physical',
+    MAGICAL_WEAPONS = 'magical',
+    DEFENSE = 'defense',
+    OTHER = 'other',
+    EXCLUSIVE = 'exclusive',
 }
 
 export enum MobaItemId {
@@ -71,7 +71,7 @@ export enum MobaItemId {
     FROST_PIKE = 'frost-pike',
     SKYFEATHER = 'skyfeather',
     SEVEN_STAR_SWORD = 'seven-star-sword',
-    DUAL_BLOODLUST_BLADES = 'dual-bloodlust_blades',
+    DUAL_BLOODLUST_BLADES = 'dual-bloodlust-blades',
     WOLFBANE_TWIN_BLADES = 'wolfbane-twin-blades',
     TEN_STEPS_ONE_KILL = 'ten-steps-one-kill',
     DRAGONS_ROAR = 'dragons-roar',
@@ -109,18 +109,18 @@ export enum MobaItemId {
     QAMARIS_CRESCENT = 'quamaris-crescent',
     TREATISE_ON_POTENTIAL = 'treatise-on-potential',
 
-    // Defence white
+    // Defense white
     BLOODSOUL = 'bloodsoul',
     LINEN_CLOTH = 'linen-cloth',
     FAIRYTALE_HAT = 'fairytale-hat',
     EXCELSIOR = 'excelsior',
     ROUGH_CAP = 'rough-cap',
     FLAMES_HEART = 'flames-heart',
-    DREAMLIKE_SHAWL = 'dreamlike-shadow',
+    DREAMLIKE_SHAWL = 'dreamlike-shawl',
     STEELBACK_SHIELD = 'steelback-shield',
     GLORIOUS_ARMOR = 'glorious-armor',
 
-    // Defence green
+    // Defense green
     VANGUARD_PAVISE = 'vanguard-pavise',
     GOD_OF_WAR = 'god-of-war',
     FIREWALKERS_GLOVES = 'firewalkers-gloves',
@@ -165,7 +165,6 @@ export enum MobaItemId {
 
 export interface MobaItem {
     key: MobaItemId,
-    name: string,
     category: MobaItemCategory,
     color: MobaItemColor,
     icon: string,
