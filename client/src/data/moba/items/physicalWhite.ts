@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
 
 export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     {
@@ -8,11 +8,10 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Ржавый меч.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 20
             }
         ],
@@ -28,11 +27,10 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Ножики для разделки крабов.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.AttackSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             }
         ],
@@ -48,11 +46,10 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Перчатки палача.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CritRate,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 8
             }
         ],
@@ -68,11 +65,10 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Ритуальная коса.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.LifeSteal,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 8
             }
         ],
@@ -88,11 +84,10 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Хрупкое острие.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 45
             }
         ],
@@ -108,11 +103,10 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Перчатки с бубенцами.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CritRate,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 15
             }
         ],
@@ -128,11 +122,10 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Меч Хранителя.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 80
             }
         ],
@@ -152,21 +145,22 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Фальшион Третьей династии.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 40
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Coldness: Normal attacks reduce target\'s movement speed by 20% for four seconds.',
             },
         ],
@@ -187,23 +181,20 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Золотые рыбки.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CritRate,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MovementSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 5
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.AttackSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 15
             },
         ],
@@ -224,23 +215,20 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Самый Большой Меч.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 45
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalPierce,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 60
             },
         ],
@@ -261,15 +249,17 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Скорострельный мушкетон.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.AttackSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 25
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Pursuit Strike: Increases Normal Attack\'s Physical Damage by 30'
             },
         ],

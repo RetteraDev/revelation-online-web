@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
 
 export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     {
@@ -8,25 +8,26 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Пламенеющий оберег.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 160
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.ManaRecovery,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 3
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Mana Recovery: Mana Recovery +30',
             },
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Mana Shield: When HP falls below 50%, being attacked will provide a shield that absorbs 1,500 (+50% Magic Bonus) damage for eight seconds. The effect has a 90-seconds cooldown',
             },
         ],
@@ -48,25 +49,26 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Укрощенное пламя.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 240
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MovementSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 5
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Serious Injury: Hitting an with this skill inflicts Serious Injury, which reduces their healing by 50%',
             },
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Weak Heal: Hitting a target with a normal attack triggers a Weak Heal effect that reduces healing by 50%',
             },
         ],
@@ -87,33 +89,32 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Ловец маны.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 140
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 140
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.ManaRecovery,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 4
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 20
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Mana Recovery: Mana Recovery +30',
             },
         ],
@@ -135,21 +136,22 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Жезл провидца.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 500
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 180
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Ignore: Magic Defense Break Rate +45%',
             },
         ],
@@ -170,15 +172,17 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Перстень могущества.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 240
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Destruction: Magic Damage Insensifier +35%',
             },
         ],
@@ -200,21 +204,22 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Счастливая драконья лапка.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 240
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MovementSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 7
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Shockwave: When skill hits the target, deals Magic Damage equal to 50 (+50% magic bonus). Cooldown if four seconds',
             },
         ],
@@ -235,21 +240,22 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Трость Вуми-Луми.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 1050
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 150
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Coldness: When skill hits an enemy target, its Attack Speed is reduced by 30% and its Movement Speed is reduced by 30% for two seconds',
             },
         ],
@@ -270,33 +276,32 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Двуликая маска.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 500
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 140
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 5
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalPierce,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 75
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Pain: Damage skills now deal bonus Magic Damage equal to 6% of current HP. Cooldown is three seconds',
             },
         ],
@@ -317,37 +322,36 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Проклятая фалмарийская флейта.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 120
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MovementSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 8
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Bloodthirst: Leech +5% Stacks with Magic Skill Leech',
             },
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Magic Damage equal to 30% Physical Damage (+65% Magic Bonus). The effect has a two-second cooldown',
             },
         ],
@@ -368,27 +372,27 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Облачный атлас.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 800
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 600
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 160
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Mana Recovery: Mana Recovery +30',
             },
         ],
@@ -409,15 +413,17 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Рецепт бессмертия.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 400
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Mark: Increases HP by 1400',
             },
         ],
@@ -438,21 +444,22 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Лунный серп.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 160
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.ActiveUnique,
+                type: MobaItemSoleType.Active,
                 name: '[A] Star Aegis: Become unable to move or use skills, but hain immunity to all attack damage or debuffs for three seconds. Cannot be dispelled',
             },
         ],
@@ -473,21 +480,22 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Вампирикон.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 180
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.ActiveUnique,
+                type: MobaItemSoleType.Active,
                 name: '[A] Bloodlust: Magic Skill Leech +15%',
             },
         ],

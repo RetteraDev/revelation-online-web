@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
 
 export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
     {
@@ -8,11 +8,10 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Кровавый кристалл.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             },
         ],
@@ -28,11 +27,10 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Полотняный доспех.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 90
             },
         ],
@@ -48,11 +46,10 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Сказочный капюшон.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 90
             },
         ],
@@ -68,11 +65,10 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Сказочный капюшон.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.HealthRecovery,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 6
             },
         ],
@@ -88,11 +84,10 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Хатимаки-оберег.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 1000
             },
         ],
@@ -113,15 +108,17 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Шалость Марисы.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 700
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Sunscorch: Deals 150 magic damage every two seconds to enemies nearby',
             },
         ],
@@ -141,17 +138,15 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Колдовское кружево.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 700
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 120
             },
         ],
@@ -172,23 +167,20 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Мрачная преграда.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 400
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 110
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
         ],
@@ -209,15 +201,17 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Костяной доспех.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 210
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P]: Torpidity: When attacked, all nearby enemies lose 30% Attack Speed for four seconds',
             },
         ],

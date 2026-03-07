@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
 
 export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     {
@@ -8,21 +8,22 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Страж глубин.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 60
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 5
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.ActiveUnique,
+                type: MobaItemSoleType.Active,
                 name: '[A] Adrenaline Peak: Reduce HP to 1 and gain immunity to all damage and control debuffs. This cannot be dispelled, and it lasts two seconds'
             },
         ],
@@ -43,21 +44,22 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Снежинка.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 500
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 60
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Coldness: Normal attack reduces target`s Attack Speed by 30% and Movement Speed by 30% for two seconds'
             },
         ],
@@ -78,21 +80,22 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Лук Крылатых.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 80
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Sunder: Physical Defense Break Rate +45%'
             },
         ],
@@ -113,25 +116,26 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Чешуйчатый клеймор.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 100
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.LifeSteal,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Serious Injury: Hitting an with this skill inflicts Serious Injury, which reduces their healing by 50%'
             },
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Weak Heal: Hitting a target with a normal attack triggers a Weak Heal effect that reduces healing by 50%'
             },
         ],
@@ -152,27 +156,27 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Клинки алой мести.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 60
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.AttackSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 30
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.LifeSteal,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Vanquish: Normal attack deals bonus physical damage equal to 6% of the target`s current HP'
             },
         ],
@@ -194,17 +198,15 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Кровь и Слава.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 100
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.LifeSteal,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 25
             },
         ],
@@ -225,21 +227,22 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Лунные блики.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CritRate,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 20
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 100
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Damage Overflow: Increases Crit Damage by 50%'
             },
         ],
@@ -261,37 +264,36 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Тромблоны драконьего крика.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 400
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 400
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CritRate,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 20
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 60
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Physical Damage equal to 100% Physical Bonus. The effect has a two-second cooldown'
             },
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Coldness: Normal attacks reduce target`s movement speed by 20% for four seconds.'
             },
         ],
@@ -313,27 +315,27 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Поглощающие свет клинки.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CritRate,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 20
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MovementSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 5
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.AttackSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 40
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Berserker: After a critical hit, Attack Speed is increased by 50% for five seconds'
             },
         ],
@@ -355,29 +357,25 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Генератор страха.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 500
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 85
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 15
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalPierce,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 170
             },
         ],
@@ -398,15 +396,17 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Месть росомахи.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 200
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Ravenous Wolf: When HP falls below 30%, you deal 20% more damage'
             },
         ],
@@ -427,25 +427,26 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Пульсар.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CritRate,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 20
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.AttackSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 40
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.ActiveUnique,
+                type: MobaItemSoleType.Active,
                 name: '[A] Punification: Dispel control debuffs from oneself and gain two seconds of Mercurial and 50% Damage Reduction'
             },
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Pursuit strike: Increases Normal Attack`s Physical Damage by 60'
             },
         ],
@@ -467,27 +468,27 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Легкие фалмарийские ножи.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CritRate,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 20
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MovementSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 8
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.AttackSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 30
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Residual Shock: Normal attack has a 30% chance to trigger Residual Shock, dealing 100 magic to the target'
             },
         ],

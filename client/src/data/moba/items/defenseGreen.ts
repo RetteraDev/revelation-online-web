@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
 
 export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
     {
@@ -8,21 +8,22 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Щит полководца.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 500
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MovementSpeed,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 5
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P]: Legion: Increases Physical Damage by 60 and Magic Damage by 120 for teammates in a wide area',
             },
         ],
@@ -44,21 +45,22 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Терновый доспех.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 420
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 80
             },
+        ],
+
+        soles: [            
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P]: Thorns: Reflects 10% of incoming Physical Damage back at enemy',
             },
         ],
@@ -80,21 +82,22 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Перчатки инквизитора.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 1000
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 20
             },
+        ],
+        
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P]: Bloody Fury: When HP falls below 40%, you get Blood Fury upon taking damage. Your Attack attribute is increased by 60 and you get a shield that can absorb a large amount of damage for eight seconds. Cooldown: 90 seconds',
             },
         ],
@@ -116,27 +119,27 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Эмблема гладиатора.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 400
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 400
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 100
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P]: Bloodlust: Nearby allies gain 10% more damage output and 30% movement speed for four seconds. Cooldown: 60 seconds',
             },
         ],
@@ -158,23 +161,24 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Жилет пироманта.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 1200
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 240
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P]: Sunscorch: Deals 280 magic damage every two seconds to enemies nearby',
-            },
+            }
         ],
 
         recipe: [
@@ -193,21 +197,22 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Объятье Акари.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 2000
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.HealthRecovery,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 20
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Recovery: Heals 3% of maximum HP per second when not in combat',
             },
         ],
@@ -229,21 +234,22 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Эгида Атума.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 1200
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 270
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Torpidity: When attacked, nearby enemies lose 30% Attack Speed and 15% Movement Speed for four seconds',
             },
         ],
@@ -264,29 +270,25 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Камзол иллюзиониста.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 1100
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 180
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.HealthRecovery,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 9
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
         ],
@@ -308,21 +310,22 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Одеяние тьмы.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 1000
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 360
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Counter-chomp: Reflects 10% of incoming Magic Damage at the enemy',
             },
         ],
@@ -343,30 +346,31 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Небула.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 500
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 360
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 20
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Ice Heart: If you suffer a single blow dealing more than 8% HP in damage, It triggers Coldheart Shock, which deals 60-200 magic damage to nearby foes and reduces their Attack Speed and Movement Speed by 30% for four seconds. Cooldown: Two seconds',
             },
         ],
+
 
         recipe: [
             MobaItemId.STEELBACK_SHIELD,
@@ -384,21 +388,22 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Одеяние бессмертного.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 140
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 140
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Resurrection: One second after dying, you revive with 30% HP. Cooldown: 180 seconds',
             },
         ],
@@ -419,21 +424,22 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Самурайский доспех.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 1000
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 60
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Rampage: Every time tou take damage, you get one stack of a buff that increases your Movement Speed by 2% and your Damage Intensifier by 2%. Stacks up to five times. Lasts eight seconds. Has an interval 1.5-second cooldown',
             },
         ],
@@ -454,33 +460,32 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Рукавицы имперского стража.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 800
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 500
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 200
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Winter`s Chill: After using the skill, the next normal attack within five seconds deals 170-400 bonus Physical Damage and reduces Movement Speed by 30% for three seconds. Cooldown is three seconds',
             },
         ],

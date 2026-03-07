@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemEffectColor, MobaItemEffectName, MobaItemEffectType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
 
 export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     {
@@ -8,11 +8,10 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Тайны чародея.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 40
             }
         ],
@@ -28,11 +27,10 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Ледяной нексус.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             }
         ],
@@ -48,11 +46,10 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Фалмарийский амулет.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.ManaRecovery,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 2
             }
         ],
@@ -68,17 +65,15 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Кодекс из Сноу-Шу.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 20
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 8
             },
         ],
@@ -94,11 +89,10 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Ключ Куроми.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 80
             },
         ],
@@ -114,11 +108,10 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Посох феи.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 120
             },
         ],
@@ -138,17 +131,15 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Шепчущий фолиант.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 75
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 10
             },
         ],
@@ -169,21 +160,22 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Меч Снежной королевы.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Power Strike: After using the skill, the next normal attack within five seconds deald additional Magic Damage equal to 50% Physical Damage (+30% Magic Bonus). This effect has a two-second cooldown',
             },
         ],
@@ -204,27 +196,27 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Тотем Коко.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 70
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalPierce,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 75
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Shatter Armor: Magic Pierce +75',
             },
         ],
@@ -245,17 +237,15 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Призрачный кристалл.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxHealth,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MaxMana,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 300
             },
         ],
@@ -276,33 +266,32 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         color: MobaItemColor.WHITE,
         icon: '/moba/items/Реликварий теней.png',
 
-        effects: [
+        stats: [
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 100
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.MagicalDamage,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 40
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.ManaRecovery,
-                type: MobaItemEffectType.Flat,
+                type: MobaItemStatType.Flat,
                 value: 2
             },
             {
-                color: MobaItemEffectColor.Usual,
                 name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemEffectType.Percent,
+                type: MobaItemStatType.Percent,
                 value: 5
             },
+        ],
+
+        soles: [
             {
-                color: MobaItemEffectColor.PassiveUnique,
+                type: MobaItemSoleType.Passive,
                 name: '[P] Mana Recovery: Mana Recovery +30',
             },
         ],

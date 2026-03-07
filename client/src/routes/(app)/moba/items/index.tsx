@@ -3,14 +3,14 @@ import { CardsList } from '@/components/common/cards/CardsList';
 import { createFileRoute } from '@tanstack/react-router'
 import { ITEM_GROUPS } from '@/data/moba/items/all';
 import { useState } from 'react';
-import { ItemCard } from '@/components/moba/items/ItemCard';
+import { ItemListItem } from '@/components/moba/items/ItemListItem';
 import type { MobaItem, MobaItemCategory } from '@/data/moba/items/values';
 
-export const Route = createFileRoute('/(app)/moba/items')({
+export const Route = createFileRoute('/(app)/moba/items/')({
   component: RouteComponent,
   loader: () => {
     return {
-      crumb: 'Предметы',
+      crumb: 'Все предметы',
     };
   },
 })
@@ -38,7 +38,7 @@ function RouteComponent() {
             <h3>{category}</h3>
             <CardsList>
               {items.map((item) => (
-                <ItemCard key={item.key} item={item} />
+                <ItemListItem key={item.key} item={item} />
               ))}
             </CardsList>
           </div>

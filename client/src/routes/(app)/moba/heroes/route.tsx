@@ -1,6 +1,6 @@
 import { CardsList } from '@/components/common/cards/CardsList';
 import { CardsSearch } from '@/components/common/cards/CardsSearch';
-import { HeroCard } from '@/components/moba/heroes/HeroCard';
+import { HeroListItem } from '@/components/moba/heroes/HeroListItem';
 import { HEROES } from '@/data/moba/heroes';
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react';
@@ -9,7 +9,7 @@ export const Route = createFileRoute('/(app)/moba/heroes')({
   component: RouteComponent,
   loader: () => {
     return {
-      crumb: 'Герои',
+      crumb: 'Все герои',
     };
   },
 })
@@ -29,7 +29,7 @@ function RouteComponent() {
         <div className='pt-6'>
           <CardsList>
             {filteredHeroes.map(hero => (
-              <HeroCard key={hero.key} hero={hero}></HeroCard>
+              <HeroListItem key={hero.key} hero={hero}></HeroListItem>
             ))}
           </CardsList>
         </div>

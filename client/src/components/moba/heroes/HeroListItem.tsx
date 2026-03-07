@@ -6,12 +6,12 @@ export interface Hero {
   image?: string
 }
 
-interface HeroCardProps {
+interface HeroListItemProps {
   hero: Hero
   onClick?: (hero: Hero) => void
 }
 
-function HeroCard({ hero, onClick }: HeroCardProps) {
+function HeroListItem({ hero, onClick }: HeroListItemProps) {
   return (
     <Card
       className="overflow-hidden transition hover:scale-105 hover:cursor-pointer p-0"
@@ -40,4 +40,4 @@ function HeroCard({ hero, onClick }: HeroCardProps) {
   )
 }
 
-export { HeroCard }
+export { HeroListItem }

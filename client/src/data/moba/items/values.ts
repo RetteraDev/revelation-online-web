@@ -1,10 +1,9 @@
-export enum MobaItemEffectColor {
-    Usual = 'usual',
-    ActiveUnique = 'active-sole',
-    PassiveUnique = 'passive-sole',
+export enum MobaItemSoleType {
+    Active = 'active-sole',
+    Passive = 'passive-sole',
 }
 
-export enum MobaItemEffectType {
+export enum MobaItemStatType {
     Flat = 'flat',
     Percent = 'percent',
 }
@@ -27,11 +26,15 @@ export enum MobaItemEffectName {
     MagicalArmor = 'Magical Armor',
 }
 
-export interface MobaItemEffect {
-    color: MobaItemEffectColor,
-    name: string
-    type?: MobaItemEffectType,
-    value?: number
+export interface MobaItemStat {
+    name: string,
+    type: MobaItemStatType,
+    value: number,
+}
+
+export interface MobaItemSole {
+    name: string,
+    type: MobaItemSoleType,
 }
 
 export enum MobaItemColor {
@@ -162,7 +165,8 @@ export interface MobaItem {
     color: MobaItemColor,
     icon?: string,
 
-    effects: MobaItemEffect[]
+    stats: MobaItemStat[]
+    soles?: MobaItemSole[]
     recipe?: MobaItemId[]
 
     buyPrice: number,
