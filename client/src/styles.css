@@ -137,3 +137,7 @@ h3 {
 h4 {
   @apply scroll-m-20 text-xl font-semibold tracking-tight;
 }
+
+html {
+  scrollbar-gutter: stable;
+}
