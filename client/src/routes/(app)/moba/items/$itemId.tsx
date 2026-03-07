@@ -1,6 +1,7 @@
 import { ItemCard } from '@/components/moba/items/ItemCard';
 import { getItem } from '@/data/moba/items/all';
 import type { MobaItemId } from '@/data/moba/items/values';
+import { useItemTranslation } from '@/hooks/i18n/useItemTranslation';
 import { createFileRoute, Link, redirect } from '@tanstack/react-router'
 import { LucideChevronLeft } from 'lucide-react';
 
@@ -15,7 +16,7 @@ export const Route = createFileRoute('/(app)/moba/items/$itemId')({
     }
 
     return {
-      crumb: `${item.name}`,
+      crumb: `moba.items.name.${params.itemId}`,
     };
   },
 })
@@ -23,6 +24,7 @@ export const Route = createFileRoute('/(app)/moba/items/$itemId')({
 function RouteComponent() {
   const { itemId } = Route.useParams()
   const item = getItem.get(itemId as MobaItemId)!
+  const { getItemName } = useItemTranslation()
 
   return (
     <div className="flex flex-col">
@@ -30,7 +32,7 @@ function RouteComponent() {
         <Link to='/moba/items'>
           <LucideChevronLeft/>
         </Link>
-        <h2>{item.name}</h2>
+        <h2>{getItemName(item.key)}</h2>
       </div>
 
       <ItemCard item={item}/>

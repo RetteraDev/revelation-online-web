@@ -5,8 +5,11 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import { isMatch, Link, useMatches } from '@tanstack/react-router';
+import { useTranslation } from 'react-i18next';
 
 export const BreadcrumbNav = () => {
+  const { t } = useTranslation()
+
   const matches = useMatches();
   const matchesWithCrumbs = matches.filter((match) =>
     isMatch(match, 'loaderData.crumb'),
@@ -15,7 +18,7 @@ export const BreadcrumbNav = () => {
   const items = matchesWithCrumbs.map(({ pathname, loaderData }) => {
     return {
       href: pathname,
-      label: loaderData?.crumb,
+      label: t(loaderData?.crumb || ''),
     };
   });
 
