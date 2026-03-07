@@ -439,7 +439,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.QAMARIS_CRESCENT,
-        name: 'Qamrai’s Cresent',
+        name: 'Qamrai’s Crescent',
         category: MobaItemCategory.MAGICAL_WEAPONS,
         color: MobaItemColor.GREEN,
         icon: '/moba/items/Лунный серп.png',
@@ -495,8 +495,8 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                type: MobaItemSoleType.Active,
-                name: '[A] Bloodlust: Magic Skill Leech +15%',
+                type: MobaItemSoleType.Passive,
+                name: '[P] Bloodlust: Magic Skill Leech +15%',
             },
         ],
         

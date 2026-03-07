@@ -139,8 +139,8 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                type: MobaItemSoleType.Passive,
-                name: '[P]: Bloodlust: Nearby allies gain 10% more damage output and 30% movement speed for four seconds. Cooldown: 60 seconds',
+                type: MobaItemSoleType.Active,
+                name: '[A]: Bloodlust: Nearby allies gain 10% more damage output and 30% movement speed for four seconds. Cooldown: 60 seconds',
             },
         ],
 

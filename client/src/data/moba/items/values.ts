@@ -157,6 +157,10 @@ export enum MobaItemId {
     RECOVERY_POTION = 'recovery-potion',
     BERSERKERS_CONCOCTION = 'berserkers-concoction',
     ARCANE_CONCOCTION = 'arcane-concoction',
+
+    // Exclusive
+    TWIN_BLADES = 'twin-blades',
+    BUTTERFLY_WINGS = 'butterfly-wings',
 }
 
 export interface MobaItem {
