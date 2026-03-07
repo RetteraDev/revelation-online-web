@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as AdminRouteRouteImport } from './routes/admin/route'
 import { Route as appRouteRouteImport } from './routes/(app)/route'
 import { Route as appIndexRouteImport } from './routes/(app)/index'
+import { Route as app404RouteImport } from './routes/(app)/404'
 import { Route as appMobaRouteRouteImport } from './routes/(app)/moba/route'
 import { Route as appMobaHeroesRouteRouteImport } from './routes/(app)/moba/heroes/route'
 import { Route as appMobaGuidesRouteRouteImport } from './routes/(app)/moba/guides/route'
@@ -31,6 +32,11 @@ const appRouteRoute = appRouteRouteImport.update({
 const appIndexRoute = appIndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => appRouteRoute,
+} as any)
+const app404Route = app404RouteImport.update({
+  id: '/404',
+  path: '/404',
   getParentRoute: () => appRouteRoute,
 } as any)
 const appMobaRouteRoute = appMobaRouteRouteImport.update({
@@ -67,6 +73,7 @@ const appMobaItemsItemIdRoute = appMobaItemsItemIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/admin': typeof AdminRouteRoute
   '/moba': typeof appMobaRouteRouteWithChildren
+  '/404': typeof app404Route
   '/': typeof appIndexRoute
   '/moba/builds': typeof appMobaBuildsRouteRoute
   '/moba/guides': typeof appMobaGuidesRouteRoute
@@ -77,6 +84,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/admin': typeof AdminRouteRoute
   '/moba': typeof appMobaRouteRouteWithChildren
+  '/404': typeof app404Route
   '/': typeof appIndexRoute
   '/moba/builds': typeof appMobaBuildsRouteRoute
   '/moba/guides': typeof appMobaGuidesRouteRoute
@@ -89,6 +97,7 @@ export interface FileRoutesById {
   '/(app)': typeof appRouteRouteWithChildren
   '/admin': typeof AdminRouteRoute
   '/(app)/moba': typeof appMobaRouteRouteWithChildren
+  '/(app)/404': typeof app404Route
   '/(app)/': typeof appIndexRoute
   '/(app)/moba/builds': typeof appMobaBuildsRouteRoute
   '/(app)/moba/guides': typeof appMobaGuidesRouteRoute
@@ -101,6 +110,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/admin'
     | '/moba'
+    | '/404'
     | '/'
     | '/moba/builds'
     | '/moba/guides'
@@ -111,6 +121,7 @@ export interface FileRouteTypes {
   to:
     | '/admin'
     | '/moba'
+    | '/404'
     | '/'
     | '/moba/builds'
     | '/moba/guides'
@@ -122,6 +133,7 @@ export interface FileRouteTypes {
     | '/(app)'
     | '/admin'
     | '/(app)/moba'
+    | '/(app)/404'
     | '/(app)/'
     | '/(app)/moba/builds'
     | '/(app)/moba/guides'
@@ -156,6 +168,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof appIndexRouteImport
+      parentRoute: typeof appRouteRoute
+    }
+    '/(app)/404': {
+      id: '/(app)/404'
+      path: '/404'
+      fullPath: '/404'
+      preLoaderRoute: typeof app404RouteImport
       parentRoute: typeof appRouteRoute
     }
     '/(app)/moba': {
@@ -225,11 +244,13 @@ const appMobaRouteRouteWithChildren = appMobaRouteRoute._addFileChildren(
 
 interface appRouteRouteChildren {
   appMobaRouteRoute: typeof appMobaRouteRouteWithChildren
+  app404Route: typeof app404Route
   appIndexRoute: typeof appIndexRoute
 }
 
 const appRouteRouteChildren: appRouteRouteChildren = {
   appMobaRouteRoute: appMobaRouteRouteWithChildren,
+  app404Route: app404Route,
   appIndexRoute: appIndexRoute,
 }
 

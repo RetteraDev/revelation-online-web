@@ -5,7 +5,7 @@ import { MAGICAL_GREEN_ITEMS } from "@/data/moba/items/magicalGreen"
 import { DEFENSE_WHITE_ITEMS } from "@/data/moba/items/defenseWhite"
 import { DEFENSE_GREEN_ITEMS } from "@/data/moba/items/defenseGreen"
 
-import { MobaItemCategory, type MobaItem } from "@/data/moba/items/values"
+import { MobaItemCategory, MobaItemId, type MobaItem } from "@/data/moba/items/values"
 
 
 const ITEM_GROUPS: {[key in MobaItemCategory]: MobaItem[]} = {
@@ -16,7 +16,13 @@ const ITEM_GROUPS: {[key in MobaItemCategory]: MobaItem[]} = {
     [MobaItemCategory.EXCLUSIVE]: [],
 }
 
+const ALL_MOBA_ITEMS: MobaItem[] = Object.values(ITEM_GROUPS).flat()
+
+const getItem = new Map<MobaItemId, MobaItem>(
+  ALL_MOBA_ITEMS.map((item) => [item.key, item]),
+)
 
 export {
-    ITEM_GROUPS
+    ITEM_GROUPS,
+    getItem
 }

@@ -7,17 +7,17 @@ import {
 import { isMatch, Link, useMatches } from '@tanstack/react-router';
 
 export const BreadcrumbNav = () => {
-const matches = useMatches();
-const matchesWithCrumbs = matches.filter((match) =>
-  isMatch(match, 'loaderData.crumb'),
-);
+  const matches = useMatches();
+  const matchesWithCrumbs = matches.filter((match) =>
+    isMatch(match, 'loaderData.crumb'),
+  );
 
-const items = matchesWithCrumbs.map(({ pathname, loaderData }) => {
-  return {
-    href: pathname,
-    label: loaderData?.crumb,
-  };
-});
+  const items = matchesWithCrumbs.map(({ pathname, loaderData }) => {
+    return {
+      href: pathname,
+      label: loaderData?.crumb,
+    };
+  });
 
   return (
     <Breadcrumb>
@@ -29,7 +29,7 @@ const items = matchesWithCrumbs.map(({ pathname, loaderData }) => {
                 className={index < items.length - 1 ? "hidden md:block" : ""}
             >
                 <Link to={item.href} className="breadcrumb-link">
-                {item.label}
+                  {item.label}
                 </Link>
             </BreadcrumbItem>
             

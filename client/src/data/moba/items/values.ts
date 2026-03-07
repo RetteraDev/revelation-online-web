@@ -163,11 +163,12 @@ export interface MobaItem {
     name: string,
     category: MobaItemCategory,
     color: MobaItemColor,
-    icon?: string,
+    icon: string,
 
-    stats: MobaItemStat[]
-    soles?: MobaItemSole[]
-    recipe?: MobaItemId[]
+    stats: MobaItemStat[]  // Белые характеристики 
+    soles?: MobaItemSole[]  // Активные / пассивные уникальные умения
+    recipe?: MobaItemId[]  // Из чего создаётся
+    buildsInto?: MobaItemId[]  // Во что превращается
 
     buyPrice: number,
     sellPrice: number,
