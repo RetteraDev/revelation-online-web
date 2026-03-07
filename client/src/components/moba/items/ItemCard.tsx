@@ -21,18 +21,8 @@ function ItemCard({ item }: MobaItemCardProps) {
         backgroundBlendMode: 'overlay',
       }}
     >
-      <div className="w-12 h-12 rounded-lg">
-        {item.icon ? (
-          <img
-            src={item.icon}
-            alt={item.name}
-            className="h-full w-full object-cover"
-          />
-        ) : (
-          <div className="h-full w-full flex items-center justify-center">
-            <span className="text-xl">?</span>
-          </div>
-        )}
+      <div className="w-12 h-12 flex justify-center items-center">
+        <img src={item.icon} alt={item.name} className="w-10 h-10 object-cover"/>
       </div>
 
       <span className={`grow text-gray-100 text-shadow-lg font-medium`} style={{ WebkitTextStroke: '0.3px #000000' }}>{item.name}</span>

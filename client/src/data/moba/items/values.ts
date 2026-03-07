@@ -21,7 +21,9 @@ export enum MobaItemEffectName {
     MaxMana = 'Maximum Mana',
     MagicalDamage = 'Magical Damage',
     MagicalPierce = 'Magical Pierce',
+    HealthRecovery = 'Health Recovery',
     ManaRecovery = 'Mana Recovery',
+    PhysicalArmor = 'Physical Armor',
     MagicalArmor = 'Magical Armor',
 }
 

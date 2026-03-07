@@ -6,6 +6,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Rusted Sword',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Ржавый меч.png',
 
         effects: [
             {
@@ -25,6 +26,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Daggers',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Ножики для разделки крабов.png',
 
         effects: [
             {
@@ -44,6 +46,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Gloves',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Перчатки палача.png',
 
         effects: [
             {
@@ -63,6 +66,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Sickle',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Ритуальная коса.png',
 
         effects: [
             {
@@ -82,6 +86,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Iron Halberd',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Хрупкое острие.png',
 
         effects: [
             {
@@ -101,6 +106,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Crit Gauntlets',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Перчатки с бубенцами.png',
 
         effects: [
             {
@@ -120,6 +126,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Skyraiser Broadsword',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Меч Хранителя.png',
 
         effects: [
             {
@@ -143,6 +150,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Cleaver',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Фальшион Третьей династии.png',
 
         effects: [
             {
@@ -177,6 +185,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Daggers of Frenzy',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Золотые рыбки.png',
 
         effects: [
             {
@@ -213,6 +222,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Sword of Justice',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Самый Большой Меч.png',
 
         effects: [
             {
@@ -249,6 +259,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         name: 'Quick Shooter',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.WHITE,
+        icon: '/moba/items/Скорострельный мушкетон.png',
 
         effects: [
             {

@@ -6,6 +6,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Glowing Sea God’s Sigh',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Страж глубин.png',
 
         effects: [
             {
@@ -40,6 +41,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Frost Pike',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Снежинка.png',
 
         effects: [
             {
@@ -74,6 +76,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Skyfeather',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Лук Крылатых.png',
 
         effects: [
             {
@@ -108,6 +111,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Seven-Star Sword',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Чешуйчатый клеймор.png',
 
         effects: [
             {
@@ -146,6 +150,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Dual Bloodlust Blades',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Клинки алой мести.png',
 
         effects: [
             {
@@ -187,6 +192,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Wolfbane Twin Blades',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Кровь и Слава.png',
 
         effects: [
             {
@@ -217,6 +223,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Ten steps. One kill',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Лунные блики.png',
 
         effects: [
             {
@@ -252,6 +259,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Dragon’s Roar',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Тромблоны драконьего крика.png',
 
         effects: [
             {
@@ -303,6 +311,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Spectral Gear: Aurora',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Поглощающие свет клинки.png',
 
         effects: [
             {
@@ -344,6 +353,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Green Titan Axe',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Генератор страха.png',
 
         effects: [
             {
@@ -386,6 +396,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Ravenous Wolf',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Месть росомахи.png',
 
         effects: [
             {
@@ -414,6 +425,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Spectral Gear: Star Stream',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Пульсар.png',
 
         effects: [
             {
@@ -453,6 +465,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         name: 'Tungsten Chelae',
         category: MobaItemCategory.PHYSICAL_WEAPONS,
         color: MobaItemColor.GREEN,
+        icon: '/moba/items/Легкие фалмарийские ножи.png',
 
         effects: [
             {
