@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemStatType } from "@/data/moba/items/values";
+import { MobaItemCategory, MobaItemId, MobaItemStatType } from "@/data/moba/items/values";
 import { useTranslation } from "react-i18next";
 
 export const useItemTranslation = () => {
@@ -6,6 +6,10 @@ export const useItemTranslation = () => {
   
   const getItemName = (itemId: MobaItemId): string => {
     return t(`moba.items.name.${itemId}`);
+  };
+
+  const getCategoryName = (categoryId: MobaItemCategory): string => {
+    return t(`moba.items.category.${categoryId}`);
   };
   
   const getStatName = (statName: string): string => {
@@ -17,5 +21,5 @@ export const useItemTranslation = () => {
     return value > 0 ? `+${formattedValue}` : formattedValue;
   };
   
-  return { getItemName, getStatName, formatStatValue };
+  return { getItemName, getCategoryName, getStatName, formatStatValue };
 };

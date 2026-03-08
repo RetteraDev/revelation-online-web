@@ -4,7 +4,7 @@ export const Route = createFileRoute('/(app)/moba')({
   component: RouteComponent,
   loader: () => {
     return {
-      crumb: 'Битва бессмертных',
+      crumb: 'page.name.moba.name',
     };
   },
 })

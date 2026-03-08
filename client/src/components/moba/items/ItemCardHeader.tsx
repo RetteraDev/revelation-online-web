@@ -20,7 +20,7 @@ export function ItemCardHeader({ item } : ItemCardHeaderProps) {
         <div 
             className="flex flex-row items-center gap-3 px-3 relative"
             style={{ 
-                backgroundImage: `linear-gradient(0.25turn, ${itemBgStyles[item.color]}, rgb(68, 66, 66)), url('/moba/items/item-bg.jpeg')`,
+                backgroundImage: `linear-gradient(0.25turn, ${itemBgStyles[item.color]}, rgb(66, 66, 66)), url('/moba/items/item-bg.png')`,
                 backgroundSize: 'cover',
                 backgroundBlendMode: 'overlay',
             }}

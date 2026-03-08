@@ -11,13 +11,13 @@ export const Route = createFileRoute('/(app)/moba/items/')({
   component: RouteComponent,
   loader: () => {
     return {
-      crumb: 'Все предметы',
+      crumb: 'page.name.moba.items',
     };
   },
 })
 
 function RouteComponent() {
-  const { getItemName } = useItemTranslation()
+  const { getItemName, getCategoryName } = useItemTranslation()
   
   const [searchString, setSearchString] = useState('')
   const filteredGroups = Object.entries(ITEM_GROUPS)
@@ -38,7 +38,7 @@ function RouteComponent() {
         <CardsSearch searchString={searchString} setSearchString={setSearchString} />
         {filteredGroups.map(([category, items]) => (
           <div key={category} className="flex flex-col gap-2 pt-6">
-            <h3>{ category }</h3>
+            <h3>{ getCategoryName(category) }</h3>
             <CardsList>
               {items.map((item) => (
                 <ItemListItem key={item.key} item={item} />

@@ -9,7 +9,7 @@ export const Route = createFileRoute('/(app)/moba/heroes')({
   component: RouteComponent,
   loader: () => {
     return {
-      crumb: 'Все герои',
+      crumb: 'page.name.moba.heroes',
     };
   },
 })
