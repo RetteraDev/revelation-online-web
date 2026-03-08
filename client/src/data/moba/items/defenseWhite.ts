@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
 
 export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
     {
@@ -113,7 +113,7 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Sunscorch: Deals 150 magic damage every two seconds to enemies nearby',
+                name: MobaItemSoleName.SunscorchV1,
             },
         ],
 
@@ -203,7 +203,7 @@ export const DEFENSE_WHITE_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P]: Torpidity: When attacked, all nearby enemies lose 30% Attack Speed for four seconds',
+                name: MobaItemSoleName.TorpidityV1,
             },
         ],
 

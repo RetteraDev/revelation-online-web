@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
 
 export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
     {
@@ -23,7 +23,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P]: Legion: Increases Physical Damage by 60 and Magic Damage by 120 for teammates in a wide area',
+                name: MobaItemSoleName.Legion,
             },
         ],
 
@@ -59,7 +59,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [            
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P]: Thorns: Reflects 10% of incoming Physical Damage back at enemy',
+                name: MobaItemSoleName.Thorns,
             },
         ],
 
@@ -95,7 +95,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P]: Bloody Fury: When HP falls below 40%, you get Blood Fury upon taking damage. Your Attack attribute is increased by 60 and you get a shield that can absorb a large amount of damage for eight seconds. Cooldown: 90 seconds',
+                name: MobaItemSoleName.BloodyFury,
             },
         ],
 
@@ -136,7 +136,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Active,
-                name: '[A]: Bloodlust: Nearby allies gain 10% more damage output and 30% movement speed for four seconds. Cooldown: 60 seconds',
+                name: MobaItemSoleName.BloodlustV1,
             },
         ],
 
@@ -172,7 +172,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P]: Sunscorch: Deals 280 magic damage every two seconds to enemies nearby',
+                name: MobaItemSoleName.SunscorchV2,
             }
         ],
 
@@ -207,7 +207,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Recovery: Heals 3% of maximum HP per second when not in combat',
+                name: MobaItemSoleName.Recovery,
             },
         ],
 
@@ -243,7 +243,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Torpidity: When attacked, nearby enemies lose 30% Attack Speed and 15% Movement Speed for four seconds',
+                name: MobaItemSoleName.TorpidityV2,
             },
         ],
 
@@ -317,7 +317,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Counter-chomp: Reflects 10% of incoming Magic Damage at the enemy',
+                name: MobaItemSoleName.CounterChomp,
             },
         ],
 
@@ -357,7 +357,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Ice Heart: If you suffer a single blow dealing more than 8% HP in damage, It triggers Coldheart Shock, which deals 60-200 magic damage to nearby foes and reduces their Attack Speed and Movement Speed by 30% for four seconds. Cooldown: Two seconds',
+                name: MobaItemSoleName.IceHeart,
             },
         ],
 
@@ -393,7 +393,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Resurrection: One second after dying, you revive with 30% HP. Cooldown: 180 seconds',
+                name: MobaItemSoleName.Resurrection,
             },
         ],
 
@@ -428,7 +428,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Rampage: Every time tou take damage, you get one stack of a buff that increases your Movement Speed by 2% and your Damage Intensifier by 2%. Stacks up to five times. Lasts eight seconds. Has an interval 1.5-second cooldown',
+                name: MobaItemSoleName.Rampage,
             },
         ],
 
@@ -473,7 +473,7 @@ export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Winter`s Chill: After using the skill, the next normal attack within five seconds deals 170-400 bonus Physical Damage and reduces Movement Speed by 30% for three seconds. Cooldown is three seconds',
+                name: MobaItemSoleName.WintersChill,
             },
         ],
 

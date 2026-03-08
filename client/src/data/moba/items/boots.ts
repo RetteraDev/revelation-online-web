@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
 
 export const BOOTS_ITEMS: MobaItem[] = [
     {
@@ -9,7 +9,7 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Divine Way: Movement Speed +57',
+                name: MobaItemSoleName.DivineWayV1,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -34,7 +34,7 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Divine Way: Movement Speed +114',
+                name: MobaItemSoleName.DivineWayV2,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -63,7 +63,7 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Divine Way: Movement Speed +114',
+                name: MobaItemSoleName.DivineWayV2,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -92,7 +92,7 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Divine Way: Movement Speed +114',
+                name: MobaItemSoleName.DivineWayV2,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -121,7 +121,7 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Divine Way: Movement Speed +114',
+                name: MobaItemSoleName.DivineWayV2,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -150,7 +150,7 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Divine Way: Movement Speed +114',
+                name: MobaItemSoleName.DivineWayV2,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -171,7 +171,7 @@ export const BOOTS_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Divine Way: Movement Speed +171',
+                name: MobaItemSoleName.DivineWayV3,
                 type: MobaItemSoleType.Passive,
             }
         ],

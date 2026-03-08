@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
 
 export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
     {
@@ -23,11 +23,11 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Mana Recovery: Mana Recovery +30',
+                name: MobaItemSoleName.ManaRecovery,
             },
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Mana Shield: When HP falls below 50%, being attacked will provide a shield that absorbs 1,500 (+50% Magic Bonus) damage for eight seconds. The effect has a 90-seconds cooldown',
+                name: MobaItemSoleName.ManaShield,
             },
         ],
         
@@ -63,11 +63,11 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Serious Injury: Hitting an with this skill inflicts Serious Injury, which reduces their healing by 50%',
+                name: MobaItemSoleName.SeriousInjury,
             },
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Weak Heal: Hitting a target with a normal attack triggers a Weak Heal effect that reduces healing by 50%',
+                name: MobaItemSoleName.WeakHeal,
             },
         ],
         
@@ -112,7 +112,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Mana Recovery: Mana Recovery +30',
+                name: MobaItemSoleName.ManaRecovery,
             },
         ],
         
@@ -148,7 +148,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Ignore: Magic Defense Break Rate +45%',
+                name: MobaItemSoleName.Ignore,
             },
         ],
         
@@ -178,7 +178,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Destruction: Magic Damage Insensifier +35%',
+                name: MobaItemSoleName.Destruction,
             },
         ],
         
@@ -214,7 +214,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Shockwave: When skill hits the target, deals Magic Damage equal to 50 (+50% magic bonus). Cooldown if four seconds',
+                name: MobaItemSoleName.Shockwave,
             },
         ],
         
@@ -249,7 +249,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Coldness: When skill hits an enemy target, its Attack Speed is reduced by 30% and its Movement Speed is reduced by 30% for two seconds',
+                name: MobaItemSoleName.ColdnessV3,
             },
         ],
         
@@ -294,7 +294,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Pain: Damage skills now deal bonus Magic Damage equal to 6% of current HP. Cooldown is three seconds',
+                name: MobaItemSoleName.Pain,
             },
         ],
         
@@ -339,11 +339,11 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Bloodthirst: Leech +5% Stacks with Magic Skill Leech',
+                name: MobaItemSoleName.BloodthirstV1,
             },
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Magic Damage equal to 30% Physical Damage (+65% Magic Bonus). The effect has a two-second cooldown',
+                name: MobaItemSoleName.PowerStrikeV3,
             },
         ],
         
@@ -383,7 +383,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Mana Recovery: Mana Recovery +30',
+                name: MobaItemSoleName.ManaRecovery,
             },
         ],
         
@@ -413,7 +413,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Mark: Increases HP by 1400',
+                name: MobaItemSoleName.Mark,
             },
         ],
         
@@ -448,7 +448,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Active,
-                name: '[A] Star Aegis: Become unable to move or use skills, but hain immunity to all attack damage or debuffs for three seconds. Cannot be dispelled',
+                name: MobaItemSoleName.StarAegis,
             },
         ],
         
@@ -483,7 +483,7 @@ export const MAGICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Bloodlust: Magic Skill Leech +15%',
+                name: MobaItemSoleName.BloodthirstV2,
             },
         ],
         

@@ -14,25 +14,25 @@ import { NavSidebarContent, type NavSidebarContentItems } from "@/components/ove
 
 const items: NavSidebarContentItems[] = [
   {
-    title: "Битва бессмертных",
+    title: "page.name.moba.main",
     url: "/moba",
     isActive: true,
     icon: Swords,
     items: [
       {
-        title: "Герои",
+        title: "page.name.moba.heroes",
         url: "/moba/heroes",
       }, 
       {
-        title: "Предметы",
+        title: "page.name.moba.items",
         url: "/moba/items",
       },
       {
-        title: "Гайды",
+        title: "page.name.moba.guides",
         url: "/moba/guides",
       },
       {
-        title: "Билды",
+        title: "page.name.moba.builds",
         url: "/moba/builds",
       },
     ]

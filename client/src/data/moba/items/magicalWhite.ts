@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
 
 export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
     {
@@ -168,10 +168,10 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Power Strike: After using the skill, the next normal attack within five seconds deald additional Magic Damage equal to 50% Physical Damage (+30% Magic Bonus). This effect has a two-second cooldown',
+                name: MobaItemSoleName.PowerStrikeV2,
             },
         ],
-        
+
         recipe: [
             MobaItemId.CHAOS_ICE,
             MobaItemId.BLOODSOUL,
@@ -208,7 +208,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Shatter Armor: Magic Pierce +75',
+                name: MobaItemSoleName.ShatterArmor,
             },
         ],
         
@@ -281,7 +281,7 @@ export const MAGICAL_WHITE_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Mana Recovery: Mana Recovery +30',
+                name: MobaItemSoleName.ManaRecovery,
             },
         ],
         

@@ -17,7 +17,7 @@ const itemBgStyles = {
 }
 
 function ItemCard({ item }: ItemPreviewProps) {
-    const { getItemName, getStatName, formatStatValue } = useItemTranslation();
+    const { getItemName, getStatName, getSoleName, formatStatValue } = useItemTranslation();
 
     return (
         <div className='flex flex-col w-full max-w-sm bg-[rgb(32,30,28)]'>
@@ -47,7 +47,7 @@ function ItemCard({ item }: ItemPreviewProps) {
                             <div className="flex flex-col gap-1">
                                 {item.soles.map((sole, index) => (
                                     <div className={`flex flex-col text-yellow-600 text-sm`} key={index}>
-                                        <span className="font-bold">{sole.name}</span>
+                                        <span className="font-bold">{getSoleName(sole.name)}</span>
                                     </div>
                                 ))}
                             </div>

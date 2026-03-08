@@ -1,4 +1,16 @@
 {
+  "page": {
+    "name": {
+      "main": "Main",
+      "moba": {
+        "main": "Legengs of Nuanor",
+        "heroes": "Heroes",
+        "builds": "Builds",
+        "guides": "Guides",
+        "items": "Items"
+      }
+    }
+  },
   "moba": {
     "items": {
       "category": {
@@ -113,6 +125,59 @@
         "mana-recovery": "Mana Recovery",
         "health-recovery": "Health Recovery",
         "punishment-rate": "Punishment Rate"
+      },
+      "sole": {
+        "adrenaline-peak": "[A] Adrenaline Peak: Reduce HP to 1 and gain immunity to all damage and control debuffs. This cannot be dispelled, and it lasts two seconds",
+        "bloodlust-1": "[A]: Bloodlust: Nearby allies gain 10% more damage output and 30% movement speed for four seconds. Cooldown: 60 seconds",
+        "punification": "[A] Punification: Dispel control debuffs from oneself and gain two seconds of Mercurial and 50% Damage Reduction",
+        "star-aegis": "[A] Star Aegis: Become unable to move or use skills, but gain immunity to all attack damage or debuffs for three seconds. Cannot be dispelled",
+        "berserker": "[P] Berserker: After a critical hit, Attack Speed is increased by 50% for five seconds",
+        "bloodthirst": "[P] Bloodthirst: Leech +5% Stacks with Magic Skill Leech",
+        "bloodthirst-2": "[P] Bloodthirst: Magic Skill Leech +15%",
+        "bloody-fury": "[P]: Bloody Fury: When HP falls below 40%, you get Blood Fury upon taking damage. Your Attack attribute is increased by 60 and you get a shield that can absorb a large amount of damage for eight seconds. Cooldown: 90 seconds",
+        "butterfly-wings": "[P] Butterfly Wings: The damage of the Deadly Stroke skill increases. While using the skill, you get the \"Invulnerability\" effect",
+        "coldness-1": "[P] Coldness: Normal attacks reduce target`s movement speed by 20% for four seconds.",
+        "coldness-2": "[P] Coldness: Normal attack reduces target`s Attack Speed by 30% and Movement Speed by 30% for two seconds",
+        "coldness-3": "[P] Coldness: When skill hits an enemy target, its Attack Speed is reduced by 30% and its Movement Speed is reduced by 30% for two seconds",
+        "counter-chomp": "[P] Counter-chomp: Reflects 10% of incoming Magic Damage at the enemy",
+        "damage-overflow": "[P] Damage Overflow: Increases Crit Damage by 50%",
+        "destruction": "[P] Destruction: Magic Damage Insensifier +35%",
+        "divine-way-1": "[P] Divine Way: Movement Speed +57",
+        "divine-way-2": "[P] Divine Way: Movement Speed +114",
+        "divine-way-3": "[P] Divine Way: Movement Speed +171",
+        "explorer-1": "[P] Explorer: Critter XP +20%",
+        "explorer-2": "[P] Explorer: Critter XP +30%",
+        "ice-heart": "[P] Ice Heart: If you suffer a single blow dealing more than 8% HP in damage, It triggers Coldheart Shock, which deals 60-200 magic damage to nearby foes and reduces their Attack Speed and Movement Speed by 30% for four seconds. Cooldown: Two seconds",
+        "ignore": "[P] Ignore: Magic Defense Break Rate +45%",
+        "legion": "[P] Legion: Increases Physical Damage by 60 and Magic Damage by 120 for teammates in a wide area",
+        "mana-recovery": "[P] Mana Recovery: Mana Recovery +30",
+        "mana-shield": "[P] Mana Shield: When HP falls below 50%, being attacked will provide a shield that absorbs 1,500 (+50% Magic Bonus) damage for eight seconds. The effect has a 90-seconds cooldown",
+        "mark": "[P] Mark: Increases HP by 1400",
+        "pain": "[P] Pain: Damage skills now deal bonus Magic Damage equal to 6% of current HP. Cooldown is three seconds",
+        "power-strike-1": "[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Physical Damage equal to 100% Physical Bonus. The effect has a two-second cooldown",
+        "power-strike-2": "[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Magic Damage equal to 50% Physical Damage (+30% Magic Bonus). This effect has a two-second cooldown",
+        "power-strike-3": "[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Magic Damage equal to 30% Physical Damage (+65% Magic Bonus). The effect has a two-second cooldown",
+        "pursuit-strike-1": "[P] Pursuit Strike: Increases Normal Attack`s Physical Damage by 30",
+        "pursuit-strike-2": "[P] Pursuit Strike: Increases Normal Attack`s Physical Damage by 60",
+        "rampage": "[P] Rampage: Every time you take damage, you get one stack of a buff that increases your Movement Speed by 2% and your Damage Intensifier by 2%. Stacks up to five times. Lasts eight seconds. Has an interval 1.5-second cooldown",
+        "ravenous-wolf": "[P] Ravenous Wolf: When HP falls below 30%, you deal 20% more damage",
+        "recovery": "[P] Recovery: Heals 3% of maximum HP per second when not in combat",
+        "residual-shock": "[P] Residual Shock: Normal attack has a 30% chance to trigger Residual Shock, dealing 100 magic to the target",
+        "resurrection": "[P] Resurrection: One second after dying, you revive with 30% HP. Cooldown: 180 seconds",
+        "serious-injury": "[P] Serious Injury: Hitting an enemy with this skill inflicts Serious Injury, which reduces their healing by 50%",
+        "shatter-armor": "[P] Magic Pierce +75",
+        "shockwave": "[P] Shockwave: When skill hits the target, deals Magic Damage equal to 50 (+50% magic bonus). Cooldown is four seconds",
+        "sunder": "[P] Sunder: Physical Defense Break Rate +45%",
+        "sunscorch-1": "[P] Sunscorch: Deals 150 magic damage every two seconds to enemies nearby",
+        "sunscorch-2": "[P]: Sunscorch: Deals 280 magic damage every two seconds to enemies nearby",
+        "sword-storm": "[P] Blade Dance: Sword Storm`s base damage has been increased to 80%, and a vortex also appears when spinning.",
+        "thorns": "[P] Thorns: Reflects 10% of incoming Physical Damage back at enemy",
+        "torpidity-1": "[P] Torpidity: When attacked, all nearby enemies lose 30% Attack Speed for four seconds",
+        "torpidity-2": "[P] Torpidity: When attacked, nearby enemies lose 30% Attack Speed and 15% Movement Speed for four seconds",
+        "yin-yang": "[P] Yin-Yang: While using the Cocoon skill, you can move around.",
+        "vanquish": "[P] Vanquish: Normal attack deals bonus physical damage equal to 6% of the target`s current HP",
+        "weak-heal": "[P] Weak Heal: Hitting a target with a normal attack triggers a Weak Heal effect that reduces healing by 50%",
+        "winters-chill": "[P] Winter`s Chill: After using the skill, the next normal attack within five seconds deals 170-400 bonus Physical Damage and reduces Movement Speed by 30% for three seconds. Cooldown is three seconds"
       }
     }
   }

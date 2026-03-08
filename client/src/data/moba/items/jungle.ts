@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
 
 export const JUNGLE_ITEMS: MobaItem[] = [
     {
@@ -17,7 +17,7 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Explorer: Critter XP +20%',
+                name: MobaItemSoleName.ExplorerV1,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -42,7 +42,7 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Explorer: Critter XP +30%',
+                name: MobaItemSoleName.ExplorerV2,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -71,7 +71,7 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Explorer: Critter XP +30%',
+                name: MobaItemSoleName.ExplorerV2,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -100,7 +100,7 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Explorer: Critter XP +30%',
+                name: MobaItemSoleName.ExplorerV2,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -139,15 +139,15 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Explorer: Critter XP +30%',
+                name: MobaItemSoleName.ExplorerV2,
                 type: MobaItemSoleType.Passive,
             },
             {
-                name: '[P] Bloodthirst: Magic Leech +5%. Stacks with Magic Skill Leech',
+                name: MobaItemSoleName.BloodthirstV1,
                 type: MobaItemSoleType.Passive,
             },
             {
-                name: '[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Magic Damage equal to 50% Physical Damage (+30% Magic Bonus). The effect has a two-second cooldown',
+                name: MobaItemSoleName.PowerStrikeV2,
                 type: MobaItemSoleType.Passive,
             },
         ],
@@ -183,11 +183,11 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Explorer: Critter XP +30%',
+                name: MobaItemSoleName.ExplorerV2,
                 type: MobaItemSoleType.Passive,
             },
             {
-                name: '[P] Sunscorch: Deals 280 magic damage every two seconds to enemies nearby',
+                name: MobaItemSoleName.SunscorchV2,
                 type: MobaItemSoleType.Passive,
             },
         ],
@@ -228,7 +228,7 @@ export const JUNGLE_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Explorer: Critter XP +30%',
+                name: MobaItemSoleName.ExplorerV2,
                 type: MobaItemSoleType.Passive,
             },
         ],

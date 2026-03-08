@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
 
 export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
     {
@@ -23,7 +23,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Active,
-                name: '[A] Adrenaline Peak: Reduce HP to 1 and gain immunity to all damage and control debuffs. This cannot be dispelled, and it lasts two seconds'
+                name: MobaItemSoleName.AdrenalinePeak
             },
         ],
         
@@ -58,7 +58,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Coldness: Normal attack reduces target`s Attack Speed by 30% and Movement Speed by 30% for two seconds'
+                name: MobaItemSoleName.ColdnessV2
             },
         ],
         
@@ -93,7 +93,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Sunder: Physical Defense Break Rate +45%'
+                name: MobaItemSoleName.Sunder,
             },
         ],
         
@@ -128,11 +128,11 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Serious Injury: Hitting an with this skill inflicts Serious Injury, which reduces their healing by 50%'
+                name: MobaItemSoleName.SeriousInjury,
             },
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Weak Heal: Hitting a target with a normal attack triggers a Weak Heal effect that reduces healing by 50%'
+                name: MobaItemSoleName.WeakHeal
             },
         ],
         
@@ -172,7 +172,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Vanquish: Normal attack deals bonus physical damage equal to 6% of the target`s current HP'
+                name: MobaItemSoleName.Vanquish,
             },
         ],
         
@@ -236,7 +236,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Damage Overflow: Increases Crit Damage by 50%'
+                name: MobaItemSoleName.DamageOverflow,
             },
         ],
         
@@ -282,11 +282,11 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Physical Damage equal to 100% Physical Bonus. The effect has a two-second cooldown'
+                name: MobaItemSoleName.PowerStrikeV1,
             },
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Coldness: Normal attacks reduce target`s movement speed by 20% for four seconds.'
+                name: MobaItemSoleName.ColdnessV1,
             },
         ],
         
@@ -327,7 +327,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Berserker: After a critical hit, Attack Speed is increased by 50% for five seconds'
+                name: MobaItemSoleName.Berserker,
             },
         ],
         
@@ -396,7 +396,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Ravenous Wolf: When HP falls below 30%, you deal 20% more damage'
+                name: MobaItemSoleName.RavenousWolf,
             },
         ],
         
@@ -431,11 +431,11 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Active,
-                name: '[A] Punification: Dispel control debuffs from oneself and gain two seconds of Mercurial and 50% Damage Reduction'
+                name: MobaItemSoleName.Punification,
             },
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Pursuit strike: Increases Normal Attack`s Physical Damage by 60'
+                name: MobaItemSoleName.PursuitStrikeV2
             },
         ],
         
@@ -476,7 +476,7 @@ export const PHYSICAL_GREEN_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Residual Shock: Normal attack has a 30% chance to trigger Residual Shock, dealing 100 magic to the target'
+                name: MobaItemSoleName.ResidualShock,
             },
         ],
         

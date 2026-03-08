@@ -1,9 +1,8 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
 
 export const EXCLUSIVE_ITEMS: MobaItem[] = [
     {
         key: MobaItemId.TWIN_BLADES,
-        name: 'Twin Blades',
         category: MobaItemCategory.EXCLUSIVE,
         color: MobaItemColor.EXCLUSIVE,
         icon: '/moba/items/Клинки-близнецы.png',
@@ -48,7 +47,7 @@ export const EXCLUSIVE_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Танец клинков: Базовый урон Sword Storm увеличен до 80%, а при вращении также возникает вихрь',
+                name: MobaItemSoleName.SwordStorm,
                 type: MobaItemSoleType.Passive,
             }
         ],
@@ -59,7 +58,6 @@ export const EXCLUSIVE_ITEMS: MobaItem[] = [
 
     {
         key: MobaItemId.BUTTERFLY_WINGS,
-        name: 'Butterfly Wings',
         category: MobaItemCategory.EXCLUSIVE,
         color: MobaItemColor.EXCLUSIVE,
         icon: '/moba/items/Крылья бабочки Инь-Ян.png',
@@ -104,11 +102,11 @@ export const EXCLUSIVE_ITEMS: MobaItem[] = [
 
         soles: [
             {
-                name: '[P] Инь-Ян: Во время использования умения "Кокон" вы можете передвигаться',
+                name: MobaItemSoleName.YinYang,
                 type: MobaItemSoleType.Passive,
             },
             {
-                name: '[P] Крылья бабочки: Урон умения "Смертоносный росчерк" увеличивается. Во время использования умения вы получаете эффект "Неуязвимость"',
+                name: MobaItemSoleName.ButterflyWings,
                 type: MobaItemSoleType.Passive,
             },
         ],

@@ -16,6 +16,7 @@ import {
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar"
 import { Link } from "@tanstack/react-router"
+import { useTranslation } from "react-i18next"
 
 
 interface NavSidebarContentItems {
@@ -33,6 +34,8 @@ interface NavSidebarContentProps {
 
 
 function NavSidebarContent({items}: NavSidebarContentProps) {
+  const { t } = useTranslation()
+
   return (
     <SidebarGroup>
       <SidebarMenu>
@@ -42,7 +45,7 @@ function NavSidebarContent({items}: NavSidebarContentProps) {
               <SidebarMenuButton asChild tooltip={item.title}>
                 <Link to={item.url}>
                   {item.icon && <item.icon />}
-                  <span>{item.title}</span>
+                  <span>{t(item.title)}</span>
                 </Link>
               </SidebarMenuButton>
               {item.items?.length ? (
@@ -59,7 +62,7 @@ function NavSidebarContent({items}: NavSidebarContentProps) {
                         <SidebarMenuSubItem key={subItem.title}>
                           <SidebarMenuSubButton asChild>
                             <Link to={subItem.url}>
-                              <span>{subItem.title}</span>
+                              <span>{t(subItem.title)}</span>
                             </Link>
                           </SidebarMenuSubButton>
                         </SidebarMenuSubItem>

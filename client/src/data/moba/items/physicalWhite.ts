@@ -1,4 +1,4 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem } from "@/data/moba/items/values";
+import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
 
 export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
     {
@@ -159,7 +159,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Coldness: Normal attacks reduce target\'s movement speed by 20% for four seconds.',
+                name: MobaItemSoleName.ColdnessV1,
             },
         ],
         
@@ -255,7 +255,7 @@ export const PHYSICAL_WHITE_ITEMS: MobaItem[] = [
         soles: [
             {
                 type: MobaItemSoleType.Passive,
-                name: '[P] Pursuit Strike: Increases Normal Attack\'s Physical Damage by 30'
+                name: MobaItemSoleName.PursuitStrikeV1
             },
         ],
         
