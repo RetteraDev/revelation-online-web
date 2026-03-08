@@ -25,8 +25,6 @@ const getItem = new Map<MobaItemId, MobaItem>(
   ALL_MOBA_ITEMS.map((item) => [item.key, item]),
 )
 
-console.log(Object.values(ITEM_GROUPS).flat())
-
 export {
     ITEM_GROUPS,
     getItem

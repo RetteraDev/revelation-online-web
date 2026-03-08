@@ -72,7 +72,6 @@ function ItemCard({ item }: ItemPreviewProps) {
                     <div className='flex flex-row flex-wrap gap-3'>
                         {item.buildsInto.map((targetItemId) => {
                             const targetItem = getItem.get(targetItemId)!
-                            console.log(targetItemId, targetItem)
                             return (
                                 <Link to={`/moba/items/$itemId`} params={{itemId: targetItemId}}>
                                     <div className="flex flex-col justify-center">
