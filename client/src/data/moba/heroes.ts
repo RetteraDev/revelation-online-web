@@ -1,7 +1,7 @@
 export interface MobaSkill {
-    key: string
-    type: string
-    button: string
+    key: MobaSkillId
+    type: MobaSkillType
+    button: MobaSkillButton
     image?: string
 }
 

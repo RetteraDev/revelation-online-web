@@ -1,4 +1,5 @@
 import { getHero, type MobaHeroId } from '@/data/moba/heroes';
+import { useSkillTranslation } from '@/hooks/i18n/useSkillTranslation';
 import { createFileRoute, Link, redirect } from '@tanstack/react-router'
 import { LucideChevronLeft } from 'lucide-react';
 
@@ -22,6 +23,8 @@ function RouteComponent() {
   const { heroId } = Route.useParams()
   const hero = getHero.get(heroId as MobaHeroId)!
 
+  const { getSkillName } = useSkillTranslation()
+
   return (
     <div className="flex flex-col">
       <div className='flex flex-row items-baseline gap-3'>
@@ -30,7 +33,6 @@ function RouteComponent() {
         </Link>
         <h2>{hero.name}</h2>
       </div>
-
       <>
         <div
             className="text-gray-100 px-3 py-1"
@@ -46,14 +48,13 @@ function RouteComponent() {
                 {hero.skills.map((skill) => {
                     return (
                         <div className={`flex justify-center items-center w-12 h-12`} style={{border: `1px solid black`}}>
-                          <img src={skill.image} alt={skill.name} className="w-10 h-10 object-cover"/>
+                          <img src={skill.image} alt={getSkillName(skill.key)} className="w-10 h-10 object-cover"/>
                         </div>
                     )
                 })}
             </div>
         </div>
       </>
-
     </div>
   )
 }
