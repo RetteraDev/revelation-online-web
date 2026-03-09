@@ -30,6 +30,30 @@ function RouteComponent() {
         </Link>
         <h2>{hero.name}</h2>
       </div>
+
+      <>
+        <div
+            className="text-gray-100 px-3 py-1"
+            style={{ 
+                backgroundImage: `linear-gradient(rgb(82,76,63), rgb(57,52,49))`,
+            }}
+        >
+            <span>Умения</span>
+        </div>
+            
+        <div className="flex flex-col p-3">
+            <div className='flex flex-row gap-3'>
+                {hero.skills.map((skill) => {
+                    return (
+                        <div className={`flex justify-center items-center w-12 h-12`} style={{border: `1px solid black`}}>
+                          <img src={skill.image} alt={skill.name} className="w-10 h-10 object-cover"/>
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
+      </>
+
     </div>
   )
 }
