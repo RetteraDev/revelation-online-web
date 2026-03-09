@@ -14,11 +14,12 @@ import { Route as appRouteRouteImport } from './routes/(app)/route'
 import { Route as appIndexRouteImport } from './routes/(app)/index'
 import { Route as app404RouteImport } from './routes/(app)/404'
 import { Route as appMobaRouteRouteImport } from './routes/(app)/moba/route'
-import { Route as appMobaHeroesRouteRouteImport } from './routes/(app)/moba/heroes/route'
 import { Route as appMobaGuidesRouteRouteImport } from './routes/(app)/moba/guides/route'
 import { Route as appMobaBuildsRouteRouteImport } from './routes/(app)/moba/builds/route'
 import { Route as appMobaItemsIndexRouteImport } from './routes/(app)/moba/items/index'
+import { Route as appMobaHeroesIndexRouteImport } from './routes/(app)/moba/heroes/index'
 import { Route as appMobaItemsItemIdRouteImport } from './routes/(app)/moba/items/$itemId'
+import { Route as appMobaHeroesHeroIdRouteImport } from './routes/(app)/moba/heroes/$heroId'
 
 const AdminRouteRoute = AdminRouteRouteImport.update({
   id: '/admin',
@@ -44,11 +45,6 @@ const appMobaRouteRoute = appMobaRouteRouteImport.update({
   path: '/moba',
   getParentRoute: () => appRouteRoute,
 } as any)
-const appMobaHeroesRouteRoute = appMobaHeroesRouteRouteImport.update({
-  id: '/heroes',
-  path: '/heroes',
-  getParentRoute: () => appMobaRouteRoute,
-} as any)
 const appMobaGuidesRouteRoute = appMobaGuidesRouteRouteImport.update({
   id: '/guides',
   path: '/guides',
@@ -64,9 +60,19 @@ const appMobaItemsIndexRoute = appMobaItemsIndexRouteImport.update({
   path: '/items/',
   getParentRoute: () => appMobaRouteRoute,
 } as any)
+const appMobaHeroesIndexRoute = appMobaHeroesIndexRouteImport.update({
+  id: '/heroes/',
+  path: '/heroes/',
+  getParentRoute: () => appMobaRouteRoute,
+} as any)
 const appMobaItemsItemIdRoute = appMobaItemsItemIdRouteImport.update({
   id: '/items/$itemId',
   path: '/items/$itemId',
+  getParentRoute: () => appMobaRouteRoute,
+} as any)
+const appMobaHeroesHeroIdRoute = appMobaHeroesHeroIdRouteImport.update({
+  id: '/heroes/$heroId',
+  path: '/heroes/$heroId',
   getParentRoute: () => appMobaRouteRoute,
 } as any)
 
@@ -77,8 +83,9 @@ export interface FileRoutesByFullPath {
   '/': typeof appIndexRoute
   '/moba/builds': typeof appMobaBuildsRouteRoute
   '/moba/guides': typeof appMobaGuidesRouteRoute
-  '/moba/heroes': typeof appMobaHeroesRouteRoute
+  '/moba/heroes/$heroId': typeof appMobaHeroesHeroIdRoute
   '/moba/items/$itemId': typeof appMobaItemsItemIdRoute
+  '/moba/heroes': typeof appMobaHeroesIndexRoute
   '/moba/items': typeof appMobaItemsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -88,8 +95,9 @@ export interface FileRoutesByTo {
   '/': typeof appIndexRoute
   '/moba/builds': typeof appMobaBuildsRouteRoute
   '/moba/guides': typeof appMobaGuidesRouteRoute
-  '/moba/heroes': typeof appMobaHeroesRouteRoute
+  '/moba/heroes/$heroId': typeof appMobaHeroesHeroIdRoute
   '/moba/items/$itemId': typeof appMobaItemsItemIdRoute
+  '/moba/heroes': typeof appMobaHeroesIndexRoute
   '/moba/items': typeof appMobaItemsIndexRoute
 }
 export interface FileRoutesById {
@@ -101,8 +109,9 @@ export interface FileRoutesById {
   '/(app)/': typeof appIndexRoute
   '/(app)/moba/builds': typeof appMobaBuildsRouteRoute
   '/(app)/moba/guides': typeof appMobaGuidesRouteRoute
-  '/(app)/moba/heroes': typeof appMobaHeroesRouteRoute
+  '/(app)/moba/heroes/$heroId': typeof appMobaHeroesHeroIdRoute
   '/(app)/moba/items/$itemId': typeof appMobaItemsItemIdRoute
+  '/(app)/moba/heroes/': typeof appMobaHeroesIndexRoute
   '/(app)/moba/items/': typeof appMobaItemsIndexRoute
 }
 export interface FileRouteTypes {
@@ -114,8 +123,9 @@ export interface FileRouteTypes {
     | '/'
     | '/moba/builds'
     | '/moba/guides'
-    | '/moba/heroes'
+    | '/moba/heroes/$heroId'
     | '/moba/items/$itemId'
+    | '/moba/heroes'
     | '/moba/items'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -125,8 +135,9 @@ export interface FileRouteTypes {
     | '/'
     | '/moba/builds'
     | '/moba/guides'
-    | '/moba/heroes'
+    | '/moba/heroes/$heroId'
     | '/moba/items/$itemId'
+    | '/moba/heroes'
     | '/moba/items'
   id:
     | '__root__'
@@ -137,8 +148,9 @@ export interface FileRouteTypes {
     | '/(app)/'
     | '/(app)/moba/builds'
     | '/(app)/moba/guides'
-    | '/(app)/moba/heroes'
+    | '/(app)/moba/heroes/$heroId'
     | '/(app)/moba/items/$itemId'
+    | '/(app)/moba/heroes/'
     | '/(app)/moba/items/'
   fileRoutesById: FileRoutesById
 }
@@ -184,13 +196,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof appMobaRouteRouteImport
       parentRoute: typeof appRouteRoute
     }
-    '/(app)/moba/heroes': {
-      id: '/(app)/moba/heroes'
-      path: '/heroes'
-      fullPath: '/moba/heroes'
-      preLoaderRoute: typeof appMobaHeroesRouteRouteImport
-      parentRoute: typeof appMobaRouteRoute
-    }
     '/(app)/moba/guides': {
       id: '/(app)/moba/guides'
       path: '/guides'
@@ -212,11 +217,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof appMobaItemsIndexRouteImport
       parentRoute: typeof appMobaRouteRoute
     }
+    '/(app)/moba/heroes/': {
+      id: '/(app)/moba/heroes/'
+      path: '/heroes'
+      fullPath: '/moba/heroes'
+      preLoaderRoute: typeof appMobaHeroesIndexRouteImport
+      parentRoute: typeof appMobaRouteRoute
+    }
     '/(app)/moba/items/$itemId': {
       id: '/(app)/moba/items/$itemId'
       path: '/items/$itemId'
       fullPath: '/moba/items/$itemId'
       preLoaderRoute: typeof appMobaItemsItemIdRouteImport
+      parentRoute: typeof appMobaRouteRoute
+    }
+    '/(app)/moba/heroes/$heroId': {
+      id: '/(app)/moba/heroes/$heroId'
+      path: '/heroes/$heroId'
+      fullPath: '/moba/heroes/$heroId'
+      preLoaderRoute: typeof appMobaHeroesHeroIdRouteImport
       parentRoute: typeof appMobaRouteRoute
     }
   }
@@ -225,16 +244,18 @@ declare module '@tanstack/react-router' {
 interface appMobaRouteRouteChildren {
   appMobaBuildsRouteRoute: typeof appMobaBuildsRouteRoute
   appMobaGuidesRouteRoute: typeof appMobaGuidesRouteRoute
-  appMobaHeroesRouteRoute: typeof appMobaHeroesRouteRoute
+  appMobaHeroesHeroIdRoute: typeof appMobaHeroesHeroIdRoute
   appMobaItemsItemIdRoute: typeof appMobaItemsItemIdRoute
+  appMobaHeroesIndexRoute: typeof appMobaHeroesIndexRoute
   appMobaItemsIndexRoute: typeof appMobaItemsIndexRoute
 }
 
 const appMobaRouteRouteChildren: appMobaRouteRouteChildren = {
   appMobaBuildsRouteRoute: appMobaBuildsRouteRoute,
   appMobaGuidesRouteRoute: appMobaGuidesRouteRoute,
-  appMobaHeroesRouteRoute: appMobaHeroesRouteRoute,
+  appMobaHeroesHeroIdRoute: appMobaHeroesHeroIdRoute,
   appMobaItemsItemIdRoute: appMobaItemsItemIdRoute,
+  appMobaHeroesIndexRoute: appMobaHeroesIndexRoute,
   appMobaItemsIndexRoute: appMobaItemsIndexRoute,
 }
 

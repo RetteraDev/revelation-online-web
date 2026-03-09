@@ -1,7 +1,6 @@
 import { type MobaItem } from "@/data/moba/items/values"
 import { Link } from "@tanstack/react-router"
 import { ItemCardHeader } from "./ItemCardHeader"
-import { ItemCard } from "./ItemCard"
 
 interface ItemListItemProps {
   item: MobaItem

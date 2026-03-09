@@ -5,7 +5,7 @@ import { HEROES } from '@/data/moba/heroes';
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react';
 
-export const Route = createFileRoute('/(app)/moba/heroes')({
+export const Route = createFileRoute('/(app)/moba/heroes/')({
   component: RouteComponent,
   loader: () => {
     return {
