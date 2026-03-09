@@ -5,6 +5,7 @@ import { ChevronLeft } from 'lucide-react'
 import { useState } from 'react'
 
 import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 export const Route = createFileRoute('/(app)/moba/heroes/$heroId')({
   component: RouteComponent,
@@ -34,7 +35,8 @@ function RouteComponent() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center gap-3">
+      {/* Заголовок */}
+      <div className="flex items-center gap-3 px-4 md:px-6">
         <Button asChild variant="ghost" size="icon">
           <Link to="/moba/heroes">
             <ChevronLeft className="h-5 w-5" />
@@ -46,17 +48,47 @@ function RouteComponent() {
         </h2>
       </div>
 
+      {/* Баннер героя */}
+      <section className="relative overflow-hidden rounded-2xl bg-black text-white">
+        <div
+          className="absolute inset-0 bg-no-repeat"
+          style={{
+            backgroundImage: `url(${hero.image})`,
+            backgroundPosition: '85% center',
+            backgroundSize: 'contain',
+          }}
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+        <div className="relative flex min-h-[400px] flex-col justify-between p-6 md:p-10 lg:p-12">
+          <div className="max-w-2xl">
+            <p className="text-xs uppercase tracking-[0.3em] text-white/60">
+              Герой
+            </p>
+
+            <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
+              {getHeroName(hero.key)}
+            </h1>
+
+            <p className="mt-6 max-w-lg text-sm leading-6 text-white/70 md:text-base">
+              #TODO: Описание персонажей
+            </p>
+          </div>
+        </div>
+      </section>
+      
       { /* Умения */ }
       <div className='flex flex-col gap-3 py-3'>
 
         { /* Шапка */ }
         <div
-          className='w-full text-gray-100 py-3'
-          style={{ 
-              backgroundImage: `linear-gradient(rgb(82,76,63), rgb(57,52,49))`,
-          }}
+          className='w-full py-3'
         >
-          <p className='text-center'>Способности</p>
+          <h1 className="text-center text-4xl font-bold md:text-5xl lg:text-6xl">
+            Способности
+          </h1>
         </div>
         
         { /* Основной контент */ }
