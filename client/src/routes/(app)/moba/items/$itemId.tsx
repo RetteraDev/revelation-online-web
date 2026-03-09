@@ -1,9 +1,10 @@
 import { ItemCard } from '@/components/moba/items/ItemCard';
+import { Button } from '@/components/ui/button';
 import { getItem } from '@/data/moba/items/all';
 import type { MobaItemId } from '@/data/moba/items/values';
-import { useItemTranslation } from '@/hooks/i18n/useItemTranslation';
+import { useMobaItemTranslation } from '@/hooks/i18n/useMobaItemTranslation';
 import { createFileRoute, Link, redirect } from '@tanstack/react-router'
-import { LucideChevronLeft } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 
 export const Route = createFileRoute('/(app)/moba/items/$itemId')({
   component: RouteComponent,
@@ -24,15 +25,20 @@ export const Route = createFileRoute('/(app)/moba/items/$itemId')({
 function RouteComponent() {
   const { itemId } = Route.useParams()
   const item = getItem.get(itemId as MobaItemId)!
-  const { getItemName } = useItemTranslation()
+  const { getItemName } = useMobaItemTranslation()
 
   return (
-    <div className="flex flex-col">
-      <div className='flex flex-row items-baseline gap-3'>
-        <Link to='/moba/items'>
-          <LucideChevronLeft/>
-        </Link>
-        <h2>{getItemName(item.key)}</h2>
+    <div className="flex flex-col gap-4">
+      <div className="flex items-center gap-3">
+        <Button asChild variant="ghost" size="icon">
+          <Link to="/moba/heroes">
+            <ChevronLeft className="h-5 w-5" />
+          </Link>
+        </Button>
+
+        <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+          {getItemName(item.key)}
+        </h2>
       </div>
 
       <ItemCard item={item}/>

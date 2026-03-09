@@ -5,7 +5,7 @@ import { ITEM_GROUPS } from '@/data/moba/items/all';
 import { useState } from 'react';
 import { ItemListItem } from '@/components/moba/items/ItemListItem';
 import type { MobaItem, MobaItemCategory } from '@/data/moba/items/values';
-import { useItemTranslation } from '@/hooks/i18n/useItemTranslation';
+import { useMobaItemTranslation } from '@/hooks/i18n/useMobaItemTranslation';
 
 export const Route = createFileRoute('/(app)/moba/items/')({
   component: RouteComponent,
@@ -17,7 +17,7 @@ export const Route = createFileRoute('/(app)/moba/items/')({
 })
 
 function RouteComponent() {
-  const { getItemName, getCategoryName } = useItemTranslation()
+  const { getItemName, getCategoryName } = useMobaItemTranslation()
   
   const [searchString, setSearchString] = useState('')
   const filteredGroups = Object.entries(ITEM_GROUPS)
@@ -39,7 +39,7 @@ function RouteComponent() {
         {filteredGroups.map(([category, items]) => (
           <div key={category} className="flex flex-col gap-2 pt-6">
             <h3>{ getCategoryName(category) }</h3>
-            <CardsList>
+            <CardsList columns={4}>
               {items.map((item) => (
                 <ItemListItem key={item.key} item={item} />
               ))}

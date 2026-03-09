@@ -436,6 +436,10 @@
           "name": "Bare Heart",
           "description": "Reduces Jet's health to 1. At the same time, grants immunity to damage and allows him to restore health by attacking enemies. Grants Jet immunity to damage for X sec. Restores the caster's health equal to X of the damage dealt. Restores 50 rage."
         }
+      },
+      "skill-type": {
+        "active": "Active",
+        "passive": "Passive"
       }
     },
     "items": {

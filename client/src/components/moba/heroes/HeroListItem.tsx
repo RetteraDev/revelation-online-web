@@ -1,4 +1,5 @@
 import type { MobaHero } from "@/data/moba/heroes"
+import { useMobaHeroTranslation } from "@/hooks/i18n/useMobaHeroTranslation"
 
 import { Link } from "@tanstack/react-router"
 
@@ -8,6 +9,8 @@ interface HeroListItemProps {
 }
 
 function HeroListItem({ hero }: HeroListItemProps) {
+  const { getHeroName } = useMobaHeroTranslation()
+
   return (
     <Link
       to="/moba/heroes/$heroId"
@@ -30,14 +33,14 @@ function HeroListItem({ hero }: HeroListItemProps) {
               <div className="w-full h-full rounded-full border-2">
                   <img 
                       src={ hero.image }
-                      alt={ hero.name } 
+                      alt={ getHeroName(hero.key) } 
                       className="hero-image w-full h-full object-cover"
                       loading="lazy"
                   />
               </div>
           </div>
         </div>
-        <p>{ hero.name }</p>
+        <p>{ getHeroName(hero.key) }</p>
       </div>
       
     </Link>

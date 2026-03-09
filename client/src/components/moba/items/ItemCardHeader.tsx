@@ -1,5 +1,5 @@
 import { MobaItemColor, type MobaItem } from "@/data/moba/items/values";
-import { useItemTranslation } from "@/hooks/i18n/useItemTranslation";
+import { useMobaItemTranslation } from "@/hooks/i18n/useMobaItemTranslation";
 
 
 const itemBgStyles = {
@@ -14,7 +14,7 @@ interface ItemCardHeaderProps {
 
 
 export function ItemCardHeader({ item } : ItemCardHeaderProps) {
-    const { getItemName } = useItemTranslation();
+    const { getItemName } = useMobaItemTranslation();
 
     return (
         <div 

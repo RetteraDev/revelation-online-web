@@ -4,7 +4,7 @@ import { getItem } from "@/data/moba/items/all";
 import { MobaItemColor, type MobaItem } from "@/data/moba/items/values"
 import { Link } from "@tanstack/react-router";
 import { ItemCardHeader } from "./ItemCardHeader";
-import { useItemTranslation } from "@/hooks/i18n/useItemTranslation";
+import { useMobaItemTranslation } from "@/hooks/i18n/useMobaItemTranslation";
 
 interface ItemPreviewProps {
   item: MobaItem;
@@ -17,7 +17,7 @@ const itemBgStyles = {
 }
 
 function ItemCard({ item }: ItemPreviewProps) {
-    const { getItemName, getStatName, getSoleName, formatStatValue } = useItemTranslation();
+    const { getItemName, getStatName, getSoleName, formatStatValue } = useMobaItemTranslation();
 
     return (
         <div className='flex flex-col w-full max-w-sm bg-[rgb(32,30,28)]'>

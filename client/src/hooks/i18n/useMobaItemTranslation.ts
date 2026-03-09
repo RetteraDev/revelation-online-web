@@ -1,7 +1,7 @@
 import { MobaItemCategory, MobaItemId, MobaItemStatType } from "@/data/moba/items/values"
 import { useTranslation } from "react-i18next"
 
-export const useItemTranslation = () => {
+export const useMobaItemTranslation = () => {
   const { t } = useTranslation()
   
   const getItemName = (itemId: MobaItemId): string => {
