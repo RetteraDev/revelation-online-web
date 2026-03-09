@@ -1,14 +1,9 @@
 import { Card } from "@/components/ui/card"
-
-export interface Hero {
-  key: string
-  name: string
-  image?: string
-}
+import type { HeroItem } from "@/data/moba/heroes"
 
 interface HeroListItemProps {
-  hero: Hero
-  onClick?: (hero: Hero) => void
+  hero: HeroItem
+  onClick?: (hero: HeroItem) => void
 }
 
 function HeroListItem({ hero, onClick }: HeroListItemProps) {
@@ -18,17 +13,11 @@ function HeroListItem({ hero, onClick }: HeroListItemProps) {
       onClick={() => onClick?.(hero)}
     >
       <div className="relative aspect-[3/4]">
-        {hero.image ? (
-          <img
+        <img
             src={hero.image}
             alt={hero.name}
             className="h-full w-full object-cover"
           />
-        ) : (
-          <div className="flex h-full items-center justify-center">
-            <span className="text-gray-400">Нет фото</span>
-          </div>
-        )}
         
         <div className="absolute h-full w-full bottom-0 bg-gradient-to-t from-black/50 to-transparent">
           <p className="absolute bottom-2 left-2 text-white">

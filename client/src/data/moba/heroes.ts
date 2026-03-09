@@ -1,115 +1,158 @@
-interface CardItem {
+export interface SkillItem {
     key: string
     name: string
     image?: string
 }
 
-const HERO_KEYS = {
-    INTU: 'intu',
-    MARA: 'mara',
-    SEIGE: 'seije',
-    PAUK: 'koroleva-paukov',
-    MADU: 'madu',
-    AZAGKHAL: 'azgakhal',
-    LUNA: 'lunnitsa',
-    MEHATRONE: 'mehatrone',
-    NESS: 'ness',
-    BLACK_MORHIDA: 'black-morhphida',
-    WHITE_MORHIDA: 'white-morhphida',
-    PERFECT_MORHIDA: 'perfect-morhphida',
-    LUCY: 'lucy',
-    MERIT: 'merit',
-    DJINREN: 'djinren',
-    YASMINA: 'yasmina',
-    ALBIOKA: 'albioka',
-    COMODO_JET: 'comodo-jet',
-    KAIBULI: 'kaibuli',
-    ROAN: 'roan'
+export interface HeroItem {
+    key: string
+    name: string
+    image?: string
+    skills: Array<SkillItem>
 }
 
-const HEROES: Array<CardItem> = [
+export const HERO_KEYS = {
+    SPIDER_QUEEN: 'spider-queen',
+    INTU: 'intu',
+    MADU: 'madu',
+    BLACK_MORPHIDA: 'black-morphida',
+    WHITE_MORPHIDA: 'white-morphida',
+    PERFECT_MORPHIDA: 'perfect-morphida',
+    AZAGHAL: 'azaghal',
+    LUNNITSA: 'lunnitsa',
+    DOCTOR_MECHATRON: 'doctor-mechatron',
+    LUCY: 'lucy',
+    KAIBULI: 'kaibuli',
+    NESS: 'ness',
+    MARA: 'mara',
+    ROAN: 'roan',
+    MERIT: 'merit',
+    JINREN: 'jinren',
+    GENERAL_SAGE: 'general-sage',
+    YASMINA: 'yasmina',
+    ALBIOKA: 'albioka',
+    COMMANDER_JET: 'commander-jet',
+}
+
+export const HEROES: Array<HeroItem> = [
+    {
+        key: HERO_KEYS.SPIDER_QUEEN,
+        name: 'Королева пауков',
+        image: '/moba/heroes/spider-queen/photo.png',
+        skills: [],
+    },
     {
         key: HERO_KEYS.INTU,
         name: 'Инту',
-    },
-    {
-        key: HERO_KEYS.MARA,
-        name: 'Мара'
-    },
-    {
-        key: HERO_KEYS.SEIGE,
-        name: 'Генерал Сейдж'
-    },
-    {
-        key: HERO_KEYS.PAUK,
-        name: 'Королева пауков'
+        image: '/moba/heroes/intu/photo.png',
+        skills: [],
     },
     {
         key: HERO_KEYS.MADU,
-        name: 'Маду'
+        name: 'Маду',
+        image: '/moba/heroes/madu/photo.png',
+        skills: [],
     },
     {
-        key: HERO_KEYS.AZAGKHAL,
-        name: 'Азагхал'
+        key: HERO_KEYS.BLACK_MORPHIDA,
+        name: 'Чёрная морфида',
+        image: '/moba/heroes/black-morphida/photo.png',
+        skills: [],
     },
     {
-        key: HERO_KEYS.LUNA,
-        name: 'Лунница'
+        key: HERO_KEYS.WHITE_MORPHIDA,
+        name: 'Белая морфида',
+        image: '/moba/heroes/white-morphida/photo.png',
+        skills: [],
     },
     {
-        key: HERO_KEYS.MEHATRONE,
-        name: 'Мехатрон'
+        key: HERO_KEYS.PERFECT_MORPHIDA,
+        name: 'Совершенная морфида',
+        image: '/moba/heroes/perfect-morphida/photo.png',
+        skills: [],
     },
     {
-        key: HERO_KEYS.NESS,
-        name: 'Несс'
+        key: HERO_KEYS.AZAGHAL,
+        name: 'Азагхал',
+        image: '/moba/heroes/azaghal/photo.png',
+        skills: [],
     },
     {
-        key: HERO_KEYS.BLACK_MORHIDA,
-        name: 'Чёрная морфида'
+        key: HERO_KEYS.LUNNITSA,
+        name: 'Лунница',
+        image: '/moba/heroes/lunnitsa/photo.png',
+        skills: [],
     },
     {
-        key: HERO_KEYS.WHITE_MORHIDA,
-        name: 'Белая морфида'
-    },
-    {
-        key: HERO_KEYS.PERFECT_MORHIDA,
-        name: 'Совершенная морфида'
+        key: HERO_KEYS.DOCTOR_MECHATRON,
+        name: 'Доктор мехатрон',
+        image: '/moba/heroes/doctor-mechatron/photo.png',
+        skills: [],
     },
     {
         key: HERO_KEYS.LUCY,
-        name: 'Люси'
-    },
-    {
-        key: HERO_KEYS.MERIT,
-        name: 'Мэрит'
-    },
-    {
-        key: HERO_KEYS.DJINREN,
-        name: 'Джинрен'
-    },
-    {
-        key: HERO_KEYS.YASMINA,
-        name: 'Ясмина'
-    },
-    {
-        key: HERO_KEYS.ALBIOKA,
-        name: 'Альбиока'
-    },
-    {
-        key: HERO_KEYS.COMODO_JET,
-        name: 'Командор Джет'
+        name: 'Люси',
+        image: '/moba/heroes/lucy/photo.png',
+        skills: [],
     },
     {
         key: HERO_KEYS.KAIBULI,
-        name: 'Каибули'
+        name: 'Каибули',
+        image: '/moba/heroes/kaibuli/photo.png',
+        skills: [],
+    },
+    {
+        key: HERO_KEYS.NESS,
+        name: 'Несс',
+        image: '/moba/heroes/ness/photo.png',
+        skills: [],
+    },
+    {
+        key: HERO_KEYS.MARA,
+        name: 'Мара',
+        image: '/moba/heroes/mara/photo.png',
+        skills: [],
     },
     {
         key: HERO_KEYS.ROAN,
-        name: 'Роан'
-    }
+        name: 'Роан',
+        image: '/moba/heroes/roan/photo.png',
+        skills: [],
+    },
+    {
+        key: HERO_KEYS.MERIT,
+        name: 'Мэрит',
+        image: '/moba/heroes/merit/photo.png',
+        skills: [],
+    },
+    {
+        key: HERO_KEYS.JINREN,
+        name: 'Джинрен',
+        image: '/moba/heroes/jinren/photo.png',
+        skills: [],
+    },
+    {
+        key: HERO_KEYS.GENERAL_SAGE,
+        name: 'Генерал Сейдж',
+        image: '/moba/heroes/general-sage/photo.png',
+        skills: [],
+    },
+    {
+        key: HERO_KEYS.YASMINA,
+        name: 'Ясмина',
+        image: '/moba/heroes/yasmina/photo.png',
+        skills: [],
+    },
+    {
+        key: HERO_KEYS.ALBIOKA,
+        name: 'Альбиока',
+        image: '/moba/heroes/albioka/photo.png',
+        skills: [],
+    },
+    {
+        key: HERO_KEYS.COMMANDER_JET,
+        name: 'Командор Джет',
+        image: '/moba/heroes/commander-jet/photo.png',
+        skills: [],
+    },
 ]
-
-export {
-    HEROES
-}

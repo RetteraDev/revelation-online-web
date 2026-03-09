@@ -27,7 +27,7 @@ function RouteComponent() {
       <div className="pt-6">
         <CardsSearch searchString={searchString} setSearchString={setSearchString}/>
         <div className='pt-6'>
-          <CardsList>
+          <CardsList columns={5}>
             {filteredHeroes.map(hero => (
               <HeroListItem key={hero.key} hero={hero}></HeroListItem>
             ))}
