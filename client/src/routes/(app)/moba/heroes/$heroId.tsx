@@ -110,11 +110,17 @@ function RouteComponent() {
                       className={`flex justify-center items-center ${isSelected ? 'w-12 h-12' : 'w-10 h-10'}`}
                       onClick={() => {setSelectedSkillIndex(index)}}
                     >
-                      <img
-                        src={skill.image}
-                        alt={getSkillName(skill.key)}
-                        className={`object-cover ${isSelected ? '' : 'opacity-70 grayscale'}`}
-                      />
+                      <div className='relative'>
+                        <img
+                          src={skill.image}
+                          alt={getSkillName(skill.key)}
+                          className={`object-cover ${isSelected ? '' : 'opacity-70 grayscale'}`}
+                        />
+                      
+                        <span className="absolute -bottom-2 -right-2 bg-black px-2 text-xs font-bold text-white border border-white shadow-lg">
+                          {skill.button}
+                        </span>
+                      </div>
                     </div>
                   )
               })}

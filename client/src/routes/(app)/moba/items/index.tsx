@@ -1,11 +1,10 @@
-import { CardsSearch } from '@/components/common/cards/CardsSearch';
-import { CardsList } from '@/components/common/cards/CardsList';
+import { CardsSearch } from '@/components/common/cards/CardsSearch'
 import { createFileRoute } from '@tanstack/react-router'
-import { ITEM_GROUPS } from '@/data/moba/items/all';
+import { ITEM_GROUPS } from '@/data/moba/items/all'
 import { useState } from 'react';
-import { ItemListItem } from '@/components/moba/items/ItemListItem';
-import type { MobaItem, MobaItemCategory } from '@/data/moba/items/values';
-import { useMobaItemTranslation } from '@/hooks/i18n/useMobaItemTranslation';
+import { ItemListItem } from '@/components/moba/items/ItemListItem'
+import type { MobaItem, MobaItemCategory } from '@/data/moba/items/values'
+import { useMobaItemTranslation } from '@/hooks/i18n/useMobaItemTranslation'
 
 export const Route = createFileRoute('/(app)/moba/items/')({
   component: RouteComponent,
@@ -39,11 +38,11 @@ function RouteComponent() {
         {filteredGroups.map(([category, items]) => (
           <div key={category} className="flex flex-col gap-2 pt-6">
             <h3>{ getCategoryName(category) }</h3>
-            <CardsList columns={4}>
+            <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4`}>
               {items.map((item) => (
                 <ItemListItem key={item.key} item={item} />
               ))}
-            </CardsList>
+            </div>
           </div>
         ))}
       </div>
