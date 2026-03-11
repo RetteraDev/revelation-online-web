@@ -97,7 +97,9 @@ function RouteComponent() {
       
             {/* Превью способности */}
             <div className='w-full aspect-[16/9]'>
-              <img src={''} className='w-full aspect-[16/9]'/>
+              <video key={selectedSkill.preview} className='w-full h-full' autoPlay loop muted>
+                <source src={selectedSkill.preview} type="video/mp4"/>
+              </video>
             </div>
 
             {/* Способности */}

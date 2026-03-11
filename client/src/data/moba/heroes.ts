@@ -3,6 +3,7 @@ export interface MobaSkill {
     type: MobaSkillType
     button: MobaSkillButton
     image?: string
+    preview? : string
 }
 
 export enum MobaSkillId {
@@ -207,24 +208,28 @@ export const HEROES: Array<MobaHero> = [
                 button: MobaSkillButton.Q,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/spider-queen/skill-q.png',
+                preview: '/moba/heroes/spider-queen/skill-q.mp4',
             },
             {
                 key: MobaSkillId.SPIDER_QUEEN_SPIDER_LEAP,
                 button: MobaSkillButton.E,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/spider-queen/skill-e.png',
+                preview: '/moba/heroes/spider-queen/skill-e.mp4',
             },
             {
                 key: MobaSkillId.SPIDER_QUEEN_ROYAL_WEB,
                 button: MobaSkillButton.R,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/spider-queen/skill-r.png',
+                preview: '/moba/heroes/spider-queen/skill-r.mp4',
             },
             {
                 key: MobaSkillId.SPIDER_QUEEN_PHANTOM_SPIDERS,
                 button: MobaSkillButton.T,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/spider-queen/skill-t.png',
+                preview: '/moba/heroes/spider-queen/skill-t.mp4',
             },
         ],
     },
@@ -725,24 +730,28 @@ export const HEROES: Array<MobaHero> = [
                 button: MobaSkillButton.Q,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/merit/skill-q.png',
+                preview: '/moba/heroes/merit/skill-q.mp4',
             },
             {
                 key: MobaSkillId.MERIT_ICE_BLOCK,
                 button: MobaSkillButton.E,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/merit/skill-e.png',
+                preview: '/moba/heroes/merit/skill-e.mp4',
             },
             {
                 key: MobaSkillId.MERIT_GODDESS_GIFT,
                 button: MobaSkillButton.R,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/merit/skill-r.png',
+                preview: '/moba/heroes/merit/skill-r.mp4',
             },
             {
                 key: MobaSkillId.MERIT_ICE_RAIN,
                 button: MobaSkillButton.T,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/merit/skill-t.png',
+                preview: '/moba/heroes/merit/skill-t.mp4',
             },
         ],
     },
@@ -873,24 +882,28 @@ export const HEROES: Array<MobaHero> = [
                 button: MobaSkillButton.Q,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/albioka/skill-q.png',
+                preview: '/moba/heroes/albioka/skill-q.mp4',
             },
             {
                 key: MobaSkillId.ALBIOKA_WREN_SHIELD,
                 button: MobaSkillButton.E,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/albioka/skill-e.png',
+                preview: '/moba/heroes/albioka/skill-e.mp4',
             },
             {
                 key: MobaSkillId.ALBIOKA_EAGLE_SPIRIT,
                 button: MobaSkillButton.R,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/albioka/skill-r.png',
+                preview: '/moba/heroes/albioka/skill-r.mp4',
             },
             {
                 key: MobaSkillId.ALBIOKA_SPRING_SHOWER,
                 button: MobaSkillButton.T,
                 type: MobaSkillType.ACTIVE,
                 image: '/moba/heroes/albioka/skill-t.png',
+                preview: '/moba/heroes/albioka/skill-t.mp4',
             },
         ],
     },
