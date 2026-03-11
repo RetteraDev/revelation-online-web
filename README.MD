@@ -4,3 +4,9 @@ Before commit
 pip install pre-commit
 pre-commit install
 ```
+
+# Running
+Hot Reload is also worked
+```bash
+docker-compose -f .\docker-compose.dev.yaml up --build
+```
