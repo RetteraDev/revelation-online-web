@@ -1,37 +1,32 @@
 import { Separator } from "@radix-ui/react-separator";
-import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import type { ReactNode } from "react";
 import { BreadcrumbNav } from "@/components/overlay/BreadcrumbNav";
+import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import LanguageChanger from "../common/buttons/LanguageChanger";
 
 interface AppSidebarInsetProps {
-    children: ReactNode
+	children: ReactNode;
 }
 
-
-function AppSidebarInset({children}: AppSidebarInsetProps) {
-    return (
-        <SidebarInset>
-            <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
-                <SidebarTrigger className="-ml-1" />
-                <Separator
-                    orientation="vertical"
-                    className="mr-2 data-[orientation=vertical]:h-4"
-                />
-                <div className="grow">
-                    <BreadcrumbNav/>
-                </div>
-                <LanguageChanger/>
-            </header>
-            <main className="flex-1 flex-col p-4 md:p-6 lg:p-8">
-                <div className="mx-auto max-w-6xl">
-                    {children}
-                </div>
-            </main>
-        </SidebarInset>
-    )
+function AppSidebarInset({ children }: AppSidebarInsetProps) {
+	return (
+		<SidebarInset>
+			<header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
+				<SidebarTrigger className="-ml-1" />
+				<Separator
+					orientation="vertical"
+					className="mr-2 data-[orientation=vertical]:h-4"
+				/>
+				<div className="grow">
+					<BreadcrumbNav />
+				</div>
+				<LanguageChanger />
+			</header>
+			<main className="flex-1 flex-col p-4 md:p-6 lg:p-8">
+				<div className="mx-auto max-w-6xl">{children}</div>
+			</main>
+		</SidebarInset>
+	);
 }
 
-export {
-    AppSidebarInset
-}
+export { AppSidebarInset };

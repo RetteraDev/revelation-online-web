@@ -1,16 +1,14 @@
-import { createFileRoute, Outlet } from '@tanstack/react-router'
+import { createFileRoute, Outlet } from "@tanstack/react-router";
 
-export const Route = createFileRoute('/(app)/moba')({
-  component: RouteComponent,
-  loader: () => {
-    return {
-      crumb: 'page.name.moba.main',
-    };
-  },
-})
+export const Route = createFileRoute("/(app)/moba")({
+	component: RouteComponent,
+	loader: () => {
+		return {
+			crumb: "page.name.moba.main",
+		};
+	},
+});
 
 function RouteComponent() {
-  return (
-    <Outlet/>
-  )
+	return <Outlet />;
 }

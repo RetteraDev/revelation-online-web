@@ -1,22 +1,21 @@
-import { type MobaItem } from "@/data/moba/items/values"
-import { Link } from "@tanstack/react-router"
-import { ItemCardHeader } from "./ItemCardHeader"
+import { Link } from "@tanstack/react-router";
+import type { MobaItem } from "@/data/moba/items/values";
+import { ItemCardHeader } from "./ItemCardHeader";
 
 interface ItemListItemProps {
-  item: MobaItem
+	item: MobaItem;
 }
 
 function ItemListItem({ item }: ItemListItemProps) {
-
-  return (
-      <Link
-        to="/moba/items/$itemId"
-        params={{ itemId: item.key }}
-        className="block"
-      >
-        <ItemCardHeader item={item}/>
-      </Link>
-  )
+	return (
+		<Link
+			to="/moba/items/$itemId"
+			params={{ itemId: item.key }}
+			className="block"
+		>
+			<ItemCardHeader item={item} />
+		</Link>
+	);
 }
 
-export { ItemListItem }
+export { ItemListItem };

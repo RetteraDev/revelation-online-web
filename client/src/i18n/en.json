@@ -1,614 +1,614 @@
 {
-  "page": {
-    "name": {
-      "main": "Main",
-      "moba": {
-        "main": "Legengs of Nuanor",
-        "heroes": "Heroes",
-        "builds": "Builds",
-        "guides": "Guides",
-        "items": "Items"
-      }
-    }
-  },
-  "moba": {
-    "heroes": {
-      "name": {
-        "spider-queen": "Spider Queen",
-        "intu": "Intu",
-        "madu": "Madu",
-        "black-morphida": "Black Morphida",
-        "white-morphida": "White Morphida",
-        "perfect-morphida": "Perfect Morphida",
-        "azaghal": "Azaghal",
-        "lunnitsa": "Lunnitsa",
-        "doctor-mechatron": "Doctor Mechatron",
-        "lucy": "Lucy",
-        "kaibuli": "Kaibuli",
-        "ness": "Ness",
-        "mara": "Mara",
-        "roan": "Roan",
-        "merit": "Merit",
-        "jinren": "Jinren",
-        "general-sage": "General Sage",
-        "yasmina": "Yasmina",
-        "albioka": "Albioka",
-        "commander-jet": "Commander Jet"
-      },
-      "skill": {
-        "spider-queen-spider-poison": {
-          "name": "Spider Poison",
-          "description": "Any attack by the Spider Queen applies the \"Spider Poison\" effect to the enemy. The enemy takes magic damage equal to 10% of Spell Power plus 10 additional damage, and their movement speed is reduced by 10%. This effect can stack up to 5 times."
-        },
-        "spider-queen-living-projectile": {
-          "name": "Living Projectile",
-          "description": "Explodes on hitting an enemy or at the end of its path, dealing damage and releasing a small spider that attacks enemies. Deals magic damage equal to X of Spell Power plus X additional damage. Defenders and monsters take X extra damage."
-        },
-        "spider-queen-spider-leap": {
-          "name": "Spider Leap",
-          "description": "Allows her to leap and deal damage to all enemies in the landing area. Deals magic damage equal to X of Spell Power plus X additional damage. Defenders and monsters take X extra damage."
-        },
-        "spider-queen-royal-web": {
-          "name": "Royal Web",
-          "description": "The first cast lets the Spider Queen shoot a web and climb onto it. While on the web, the queen is invulnerable. The second cast lets the Spider Queen jump down onto enemies and deal magic damage equal to X of Spell Power plus X additional damage. The Queen can remain on the web for up to 4 sec."
-        },
-        "spider-queen-phantom-spiders": {
-          "name": "Phantom Spiders",
-          "description": "Summons a swarm of phantom spiders. When disappearing, the phantoms deal area damage. Each phantom deals magic damage equal to X of Spell Power plus X additional damage."
-        },
-        "intu-priests-curse": {
-          "name": "Priest's Curse",
-          "description": "Restores the caster's health equal to 10% of the magic damage dealt."
-        },
-        "intu-dark-vortex": {
-          "name": "Dark Vortex",
-          "description": "Creates a vortex that damages enemies within the skill area. For X sec., enemies inside the area take damage every second equal to X of Spell Power plus X magic damage. Enemies with less than 30% health additionally take X magic damage per second."
-        },
-        "intu-icy-palm": {
-          "name": "Icy Palm",
-          "description": "Immobilizes the first enemy in its path and deals damage to them. Immobilizes the enemy for X sec. Deals magic damage equal to X of Spell Power plus X additional damage."
-        },
-        "intu-energy-shield": {
-          "name": "Energy Shield",
-          "description": "Creates an energy shield around the caster. The shield lasts X sec. and absorbs X magic damage. The skill only affects heroes. The effect applies to all allies within a 30 m radius."
-        },
-        "intu-seal-of-depths": {
-          "name": "Seal of Depths",
-          "description": "Creates a magic seal that damages enemies within the skill radius and immobilizes them. Immobilizes enemies for X sec. Deals magic damage equal to X of Spell Power plus X additional damage."
-        },
-        "madu-element-of-surprise": {
-          "name": "Element of Surprise",
-          "description": "Basic attacks apply the \"Dizziness\" effect to the target. Triggers no more than once every 8 seconds."
-        },
-        "madu-strong-alcohol": {
-          "name": "Strong Alcohol",
-          "description": "Throws an exploding wine barrel at enemies. Deals damage to all enemies in the impact area equal to X of Spell Power plus X additional damage. Reduces enemies' movement speed by X. Defenders and monsters take X extra damage."
-        },
-        "madu-philosophical-musings": {
-          "name": "Philosophical Musings",
-          "description": "While pondering the fate of the world, Madu takes less damage and restores health. During the skill, Madu takes X less damage. Restores X health and X of Spell Power, as well as 1% of maximum health."
-        },
-        "madu-drunken-master": {
-          "name": "Drunken Master",
-          "description": "The first cast makes Madu dash to the target. The second cast deals magic damage equal to X of Spell Power plus X additional damage and applies the \"Dizziness\" effect to the enemy for X sec. Defenders and monsters take X extra damage."
-        },
-        "madu-explosive-cocktail": {
-          "name": "Explosive Cocktail",
-          "description": "Throws an exploding barrel that damages enemies and knocks them back. Deals magic damage equal to X of Spell Power plus X additional damage."
-        },
-        "black-morphida-power-flow": {
-          "name": "Power Flow",
-          "description": "Using skills applies the \"Power Flow\" effect. Each stack of this effect increases basic attack damage by 10%. The effect can stack up to three times. Each basic attack consumes 1 stack."
-        },
-        "black-morphida-decisive-measures": {
-          "name": "Decisive Measures",
-          "description": "A series of spectral strikes deals damage to the target and applies the \"Dizziness\" effect. Deals magic damage equal to X of Spell Power plus X additional damage. The \"Dizziness\" effect lasts X sec."
-        },
-        "black-morphida-dark-wings": {
-          "name": "Dark Wings",
-          "description": "Allows Morphida to leap to the selected point and deal area damage. The closer the enemy is to the landing point, the higher the damage. Deals X physical damage. Defenders and monsters take X extra damage. Additionally deals X physical damage if Morphida lands 4-5 m from the enemy, and another X physical damage if the landing point is closer than 3 m."
-        },
-        "black-morphida-butterfly-wings": {
-          "name": "Butterfly Wings",
-          "description": "Temporarily increases attack speed. Attack speed is increased by X for X sec."
-        },
-        "black-morphida-blade-dance": {
-          "name": "Blade Dance",
-          "description": "A deadly blade dance deals heavy damage to all enemies in the skill area. For 5.5 sec., every 0.5 sec., deals physical damage equal to X of Attack Power plus X additional damage. For all hits except the first, critical damage is reduced by 50%. During the skill, Morphida gains \"Unstoppability\"."
-        },
-        "white-morphida-cocoon": {
-          "name": "Cocoon",
-          "description": "When Morphida takes damage, she gains the \"Cocoon\" effect for 3 sec., absorbing damage equal to 5% of maximum health. Triggers no more than once every 8 seconds."
-        },
-        "white-morphida-stars-from-eyes": {
-          "name": "Stars from Eyes",
-          "description": "Allows Morphida to damage and slow enemies, while also restoring health. Deals magic damage equal to X of Spell Power plus X additional damage. Slows all enemies in the skill area by X. If Morphida deals damage to an enemy, she gains the \"Revitalization\" effect for X sec. Every X sec., X HP is restored."
-        },
-        "white-morphida-silence-is-golden": {
-          "name": "Silence Is Golden",
-          "description": "A golden seal appears beneath the target, dealing damage to all enemies in the skill area and applying negative effects to them. Deals magic damage equal to X of Spell Power plus X additional damage. Periodically applies the \"Silence\" effect to enemies for 1.5 sec. When the effect ends, it deals X magic damage to enemies and immobilizes them for 1 sec."
-        },
-        "white-morphida-power-of-tree": {
-          "name": "Power of the Tree",
-          "description": "Restores an ally's health at the cost of the caster's health. Restores the target's health by X and additionally by X of Spell Power. If no target is selected, the skill restores health to a random allied hero within range. The caster loses 5% of maximum health. If the caster has the \"Revitalization\" effect, the target also receives this effect."
-        },
-        "white-morphida-healing": {
-          "name": "Healing",
-          "description": "Restores health to all allied heroes within the skill radius. Restores X health and X of Spell Power. If an ally's health is below 40%, the skill additionally restores health equal to X of Spell Power."
-        },
-        "perfect-morphida-weak-link": {
-          "name": "Weak Link",
-          "description": "Each basic attack reduces the target's defense by 3% for 5 sec. The effect stacks up to 5 times."
-        },
-        "perfect-morphida-crushing-dash": {
-          "name": "Crushing Dash",
-          "description": "Allows a swift dash that damages all enemies in the path. Deals damage equal to X of Attack Power plus X additional damage. If the skill deals damage to at least one enemy, it can be cast again immediately, but no more than 2 times in a row. Defenders and monsters take X extra damage."
-        },
-        "perfect-morphida-cocoon": {
-          "name": "Cocoon",
-          "description": "Reflects part of the damage received back to the attacker and grants immunity to physical damage. The effect lasts 1.2 sec."
-        },
-        "perfect-morphida-butterfly-lightness": {
-          "name": "Butterfly Lightness",
-          "description": "Increases movement speed and attack speed. Increases movement speed by X for X sec. Increases attack speed by X for 2 sec."
-        },
-        "perfect-morphida-deadly-flourish": {
-          "name": "Deadly Flourish",
-          "description": "Allows her to strike enemies with six swift attacks. Each hit deals X physical damage and additionally deals damage equal to X of Attack Power to two enemies at once. Each target is chosen randomly. If there is a hero within range, they will be chosen as the first target. If any of these strikes deals a killing blow to an enemy hero, \"Deadly Flourish\" is refreshed instantly."
-        },
-        "azaghal-second-wind": {
-          "name": "Second Wind",
-          "description": "When health falls below 50%, defense and resistance increase by 100."
-        },
-        "azaghal-crushing-blow": {
-          "name": "Crushing Blow",
-          "description": "Azaghal's furious strike deals damage to all enemies within the skill radius and applies the \"Dizziness\" effect. Deals magic damage to all enemies in the skill area equal to X of Spell Power plus X additional damage. Applies the \"Dizziness\" effect to all enemies in range for X sec. Defenders and monsters take X extra damage."
-        },
-        "azaghal-head-on": {
-          "name": "Head-On",
-          "description": "Allows a swift dash that damages all enemies in the way. Azaghal dashes 25 m. Deals magic damage equal to X of Spell Power plus X additional damage."
-        },
-        "azaghal-triumphant-roar": {
-          "name": "Triumphant Roar",
-          "description": "Azaghal's roar restores health to all heroes within range. Restores X health to all allied heroes in the skill area. Restores X more health for each allied hero in the skill area."
-        },
-        "azaghal-barricade": {
-          "name": "Barricade",
-          "description": "Creates an impassable barricade. Enemies standing nearby take damage when it is created. The barricade lasts 8 sec. When the barricade is created, nearby enemies take magic damage equal to X of Spell Power plus X additional damage."
-        },
-        "lunnitsa-lunar-ripple": {
-          "name": "Lunar Ripple",
-          "description": "Each time a skill is used, movement speed increases by 10% for 1 sec."
-        },
-        "lunnitsa-spring-blossom": {
-          "name": "Spring Blossom",
-          "description": "Restores health to Lunnitsa and nearby allies, and also reduces damage taken. Reduces damage taken by X. Restores X health and additionally X of Spell Power for each allied hero within range."
-        },
-        "lunnitsa-lunar-sickle": {
-          "name": "Lunar Sickle",
-          "description": "Deals damage to two targets within range. Heroes are prioritized. Deals magic damage equal to X of Spell Power plus X additional damage."
-        },
-        "lunnitsa-tides": {
-          "name": "Tides",
-          "description": "Increases the movement speed of allies in the skill area and decreases that of enemies. Increases allies' movement speed by X. Reduces enemies' movement speed by X. The effect lasts 2 sec."
-        },
-        "lunnitsa-dark-side-of-moon": {
-          "name": "Dark Side of the Moon",
-          "description": "Deals damage to all enemies in the skill area and applies the \"Dizziness\" effect. Deals magic damage equal to X of Spell Power plus X additional damage. The \"Dizziness\" effect lasts X sec."
-        },
-        "doctor-mechatron-accumulator": {
-          "name": "Accumulator",
-          "description": "Each basic attack reduces the cooldown of standard skills by 0.5 sec."
-        },
-        "doctor-mechatron-pulse-sword": {
-          "name": "Pulse Sword",
-          "description": "A pulse sword strike deals area damage and allows a mechanical trap to be placed on the field. Deals physical damage equal to X of Attack Power plus X additional damage. The first enemy hit takes additional damage equal to X of Attack Power plus X damage. Places a mechanical trap that deals X physical damage to the enemy caught in it."
-        },
-        "doctor-mechatron-recoil-shot": {
-          "name": "Recoil Shot",
-          "description": "Allows him to jump backward and fire, dealing damage to the target and slowing them. Deals magic damage equal to X of Spell Power plus X additional damage. Reduces the target's movement speed by X."
-        },
-        "doctor-mechatron-mechanical-trap": {
-          "name": "Mechanical Trap",
-          "description": "Places a trap on the battlefield that deals damage and immobilizes enemies. Deals X physical damage. Immobilizes the enemy for X sec. No more than 3 traps can be placed at the same time."
-        },
-        "doctor-mechatron-ballistic-missiles": {
-          "name": "Ballistic Missiles",
-          "description": "Launches three missiles one after another, dealing heavy damage to enemy heroes. Each missile deals damage equal to X of Attack Power plus X additional damage."
-        },
-        "lucy-perpetual-engine": {
-          "name": "Perpetual Engine",
-          "description": "Applies the \"Unstoppability\" effect to Lucy for 1 sec. each time she uses a skill, but no more than once every 5 sec."
-        },
-        "lucy-crystal-lattice": {
-          "name": "Crystal Lattice",
-          "description": "Creates an energy field around the target that deals damage. Deals magic damage equal to X of Spell Power plus X additional damage."
-        },
-        "lucy-laser-beam": {
-          "name": "Laser Beam",
-          "description": "Creates a deadly beam that damages all enemies in the skill area. Deals damage to enemies equal to X of Spell Power plus X additional damage up to 6 times in a row."
-        },
-        "lucy-matrix": {
-          "name": "Matrix",
-          "description": "Creates an energy cube on the battlefield inside which time slows down. Every 0.5 sec., applies an effect to enemies in the skill area that slows them by X. Applies the \"Dizziness\" effect to enemies in the skill area for X sec."
-        },
-        "lucy-magnetic-storm": {
-          "name": "Magnetic Storm",
-          "description": "Creates a magnetic field around the target for 7 sec., dealing damage every second to all enemies in the area. If the target dies, the field does not disappear. Each strike deals magic damage equal to X of Spell Power plus X additional damage. The first strike additionally deals magic damage equal to X of Spell Power plus X additional damage. All enemies in the skill area are affected by \"Silence\"."
-        },
-        "kaibuli-acid": {
-          "name": "Acid",
-          "description": "Each time Kaibuli uses a skill, he splashes acid that damages both him and his opponent, but no more than once every 3 seconds."
-        },
-        "kaibuli-sweeping-strike": {
-          "name": "Sweeping Strike",
-          "description": "Deals damage in front of him and restores health. Deals damage in front of him and restores health equal to 30% of the damage dealt. Deals physical damage equal to X of Attack Power plus X additional damage."
-        },
-        "kaibuli-jagged-hook": {
-          "name": "Jagged Hook",
-          "description": "Kaibuli pulls in the first enemy hit and deals damage to them. Deals physical damage equal to X of Attack Power plus X additional damage. Applies the \"Dizziness\" effect for 2 seconds."
-        },
-        "kaibuli-toss-up": {
-          "name": "Toss Up",
-          "description": "Allows him to deal damage to enemies and stun them. Deals physical damage equal to X of Attack Power plus X additional damage. Applies the \"Dizziness\" effect for X sec."
-        },
-        "kaibuli-circular-strike": {
-          "name": "Circular Strike",
-          "description": "Allows him to deal significant damage to enemies. Deals physical damage equal to X of Attack Power plus X additional damage."
-        },
-        "ness-keen-eye": {
-          "name": "Keen Eye",
-          "description": "Enemies attacked by Ness cannot hide in bushes."
-        },
-        "ness-aimed-shot": {
-          "name": "Aimed Shot",
-          "description": "The longer Ness aims, the more damage the shot deals. If Ness fires during the first aiming stage, the target takes physical damage equal to X of Attack Power plus X additional damage. If Ness fires during the second aiming stage, the target takes physical damage equal to X of Attack Power plus X additional damage. If Ness fires during the third aiming stage, the target takes physical damage equal to X of Attack Power plus X additional damage."
-        },
-        "ness-liberation": {
-          "name": "Liberation",
-          "description": "Removes control effects and increases movement speed for a while. Movement speed is increased by X. The effect lasts X sec."
-        },
-        "ness-phantom-arrows": {
-          "name": "Phantom Arrows",
-          "description": "Basic attacks deal damage to three targets at once for a period of time. Heroes are prioritized. Each arrow deals physical damage equal to X of Attack Power. The effect lasts X sec."
-        },
-        "ness-wild-gallop": {
-          "name": "Wild Gallop",
-          "description": "Allows Ness to increase her own movement speed and also boosts the movement speed of all allied heroes within range. The effect gradually weakens. During the first stage, movement speed is increased by X for X sec. During the second stage, movement speed is increased by X for X sec. During the third stage, movement speed is increased by X for X sec."
-        },
-        "mara-swiftness": {
-          "name": "Swiftness",
-          "description": "Using a basic attack increases attack speed. The effect stacks up to five times."
-        },
-        "mara-ice-arrow": {
-          "name": "Ice Arrow",
-          "description": "Allows her to replace a basic attack with an ice arrow that deals extra damage and slows the target. Reduces the target's movement speed by X for X sec. The effect stacks up to 2 times. Each basic attack deals X more physical damage. Each attack consumes 10 mana. At maximum skill level, no mana is consumed."
-        },
-        "mara-ice-fan": {
-          "name": "Ice Fan",
-          "description": "Fires several arrows at once, dealing damage and slowing the target. Each arrow deals physical damage equal to X of Attack Power plus X additional damage. The first arrow that hits the target deals additional physical damage equal to X of Attack Power plus X damage. Reduces the target's movement speed by X for X sec."
-        },
-        "mara-icy-shackles": {
-          "name": "Icy Shackles",
-          "description": "Fires a fan of three arrows that deal damage and immobilize enemies. Each arrow deals magic damage equal to X of Spell Power plus X additional damage. On hit, immobilizes the target for X sec."
-        },
-        "mara-hail-of-arrows": {
-          "name": "Hail of Arrows",
-          "description": "Fires nine volleys of arrows in succession. Each volley deals physical damage equal to X of Attack Power plus X additional damage to all enemies in the skill area. Reduces the target's movement speed by X for X sec."
-        },
-        "roan-hunt": {
-          "name": "Hunt",
-          "description": "Each basic attack temporarily increases movement speed."
-        },
-        "roan-archers-fury": {
-          "name": "Archer's Fury",
-          "description": "Roan gains the \"Archer's Fury\" effect. Each basic attack against a hero, defender, or monster deals increased damage and reduces the cooldown of \"Combat Readiness\" by 0.5 sec. Basic attacks against heroes, defenders, and monsters deal additional damage equal to X of the target's maximum health."
-        },
-        "roan-combat-readiness": {
-          "name": "Combat Readiness",
-          "description": "Allows Roan to roll forward and gains an effect that increases the damage of the next basic attack. The damage of the next basic attack is increased by X of Attack Power."
-        },
-        "roan-retribution": {
-          "name": "Retribution",
-          "description": "Knocks the target back and deals significant damage. Deals magic damage equal to X of Spell Power plus X additional damage. Knocks the target back 20 m and applies the \"Dizziness\" effect for 1 sec."
-        },
-        "roan-rapid-fire": {
-          "name": "Rapid Fire",
-          "description": "Allows up to 9 shots to be fired at targets within range. Each shot deals physical damage equal to X of Attack Power plus X additional damage."
-        },
-        "merit-kuromi-shield": {
-          "name": "Kuromi Shield",
-          "description": "Using any skill applies the \"Kuromi Shield\" effect to Merit. The effect triggers no more than once every 8 seconds."
-        },
-        "merit-freezing": {
-          "name": "Freezing",
-          "description": "Allows her to slow enemies in the skill area and deal damage to them. Deals magic damage equal to X of Spell Power plus X additional damage. Reduces movement speed by X for X sec. Applies the \"Ice Mark\" effect."
-        },
-        "merit-ice-block": {
-          "name": "Ice Block",
-          "description": "Allows her to freeze enemies in the skill area and deal damage to them. Deals magic damage equal to X of Spell Power plus X additional damage. Applies the \"Freeze\" effect for X sec. Enemies marked with Ice Mark take additional magic damage equal to X of Spell Power + X."
-        },
-        "merit-goddess-gift": {
-          "name": "Goddess's Gift",
-          "description": "Restores mana to Merit and nearby allies. Every 2 sec., restores X mana to allies in the area. The effect triggers 5 times."
-        },
-        "merit-ice-rain": {
-          "name": "Ice Rain",
-          "description": "Merit deals damage around herself and slows enemies. While using the skill, she gains the \"Unstoppability\" effect, increased defense, and a refreshed shield. Deals magic damage equal to X of Spell Power plus X additional damage. Reduces enemy movement speed by 30% for X sec. During the effect, grants X defense and immunity to control effects."
-        },
-        "jinren-fire-spirit": {
-          "name": "Fire Spirit",
-          "description": "Using any skill grants Jinren one spark. After collecting 4 sparks, Jinren gains the \"Flame\" effect, empowering his skills."
-        },
-        "jinren-fireball": {
-          "name": "Fireball",
-          "description": "Allows him to deal significant damage to the target. Deals magic damage equal to X of Spell Power plus X additional damage. If Jinren has the \"Flame\" effect, the skill can be used again immediately. On the repeated cast, \"Fireball\" deals magic damage equal to X of Spell Power plus X additional damage."
-        },
-        "jinren-flame-onslaught": {
-          "name": "Flame Onslaught",
-          "description": "Deals damage to all enemies in the skill area. Deals magic damage equal to X of Spell Power plus X additional damage. If Jinren has the \"Flame\" effect, the skill applies the \"Dizziness\" effect to the enemy."
-        },
-        "jinren-enlightenment": {
-          "name": "Enlightenment",
-          "description": "Reduces damage taken. Reduces damage taken by X. The effect lasts X sec."
-        },
-        "jinren-fan-of-blades": {
-          "name": "Fan of Blades",
-          "description": "Deals significant damage to the target and nearby enemies. Deals magic damage to the target and all enemies within 15 m of the target equal to X of Spell Power plus X additional damage. Applies the \"Metabolism Slowdown\" effect to all enemies in the area, reducing healing received by 50%. If Jinren has the \"Flame\" effect, the skill applies the \"Dizziness\" effect to enemies."
-        },
-        "general-sage-feat": {
-          "name": "Feat",
-          "description": "Restores 0.2% of maximum health per second. Upon death, Sage restores part of the health of all allies within a 20 m radius. Using skills consumes Sage's health. Standard skills consume 3% health, while the special skill consumes 20%."
-        },
-        "general-sage-circular-strike": {
-          "name": "Circular Strike",
-          "description": "Deals significant damage to all enemies within the skill radius. Deals physical damage equal to X of Attack Power plus X additional damage."
-        },
-        "general-sage-thunder-peal": {
-          "name": "Thunder Peal",
-          "description": "Increases attack power. Attack power is increased by X for X sec."
-        },
-        "general-sage-heroic-leap": {
-          "name": "Heroic Leap",
-          "description": "Allows instant movement to the target, dealing damage to all enemies within the skill radius and slowing them. Deals physical damage equal to X of Attack Power plus X additional damage. Each time Sage deals damage, this skill's cooldown is reduced by 1 sec. This effect triggers no more than once per second. Applies the \"Slow\" effect to all enemies within the skill area, reducing their movement speed by X for X sec."
-        },
-        "general-sage-inspiring-shout": {
-          "name": "Inspiring Shout",
-          "description": "Increases movement speed and restores health. Movement speed is increased by X. Every 0.5 sec., 4% of total health is restored. The effect lasts 6 sec. Each use reduces health by 20%."
-        },
-        "yasmina-backstab": {
-          "name": "Backstab",
-          "description": "Basic attacks from behind deal additional damage."
-        },
-        "yasmina-piercing-wound": {
-          "name": "Piercing Wound",
-          "description": "Allows her to deal significant damage to the target. Deals physical damage equal to X of Attack Power plus X additional damage. A backstab deals additional damage equal to X of Attack Power + X."
-        },
-        "yasmina-phantom-step": {
-          "name": "Phantom Step",
-          "description": "Allows a swift dash that damages all enemies in the path. Deals physical damage equal to X of Attack Power plus X additional damage. A backstab deals additional damage equal to X of Attack Power + X."
-        },
-        "yasmina-shadow-mark": {
-          "name": "Shadow Mark",
-          "description": "Allows her to deal damage to the target and apply Shadow Mark. Deals physical damage equal to X of Attack Power plus X additional damage. A basic attack against a target marked with Shadow Mark deals additional damage equal to X of Attack Power + X and applies the \"Dizziness\" effect. The mark is removed after the attack ends."
-        },
-        "yasmina-invisibility": {
-          "name": "Invisibility",
-          "description": "The first cast lets Yasmina enter invisibility for 15 sec. The second cast lets her move behind the target, deal damage, and slow them. It also grants Yasmina the \"Assassin's Fury\" effect, increasing Attack Power by X. While invisible, she restores 300 health every 2 sec. Movement speed is increased while invisible."
-        },
-        "albioka-dragonfly": {
-          "name": "Dragonfly",
-          "description": "Movement speed is increased by 30, plus 2 more for each character level."
-        },
-        "albioka-jay-spirit": {
-          "name": "Jay Spirit",
-          "description": "Deals damage to the target and slows them. Deals magic damage equal to X of Spell Power plus X additional magic damage. Reduces the target's movement speed by X for X sec."
-        },
-        "albioka-wren-shield": {
-          "name": "Wren Shield",
-          "description": "Allows her to surround herself and allied heroes in the skill area with a shield. For X sec., the shield absorbs X magic damage."
-        },
-        "albioka-eagle-spirit": {
-          "name": "Eagle Spirit",
-          "description": "Deals damage to enemies in its path. Deals magic damage equal to X of Spell Power plus X additional damage. Knocks targets into the air."
-        },
-        "albioka-spring-shower": {
-          "name": "Spring Shower",
-          "description": "Surrounds herself and nearby allies with a protective sphere that absorbs part of the damage, removes negative effects, restores health, and applies the \"Unstoppability\" effect. Absorbs X damage and applies \"Unstoppability\" for X sec. Restores X health, plus additional health equal to X of Spell Power for each ally in the skill area."
-        },
-        "commander-jet-order-fury": {
-          "name": "Order's Fury",
-          "description": "Basic attacks and skill usage allow Jet to build up rage."
-        },
-        "commander-jet-light-blade": {
-          "name": "Blade of Light",
-          "description": "Allows him to damage all enemies in the skill area and slow them. Deals physical damage equal to X of Attack Power plus X additional damage. Reduces enemies' movement speed by X for X sec. Cost: 10 rage. Restores 15 rage on the first hit against an enemy."
-        },
-        "commander-jet-signature-strike": {
-          "name": "Signature Strike",
-          "description": "Allows him to perform a sweeping strike that damages all enemies within range. Press the Space key while using the skill to make Jet briefly hover in the air. Deals physical damage equal to X of Attack Power plus X additional damage. Restores 10 rage for each enemy hit."
-        },
-        "commander-jet-battle-cry": {
-          "name": "Battle Cry",
-          "description": "Restores health and applies a buff to Jet that increases critical hit chance and Attack Power. Restores X health and additionally X of Spell Power. Applies an effect that increases Attack Power by X and critical hit chance by X. The effect lasts X sec. and stacks up to 3 times. Cost: 20 rage."
-        },
-        "commander-jet-bare-heart": {
-          "name": "Bare Heart",
-          "description": "Reduces Jet's health to 1. At the same time, grants immunity to damage and allows him to restore health by attacking enemies. Grants Jet immunity to damage for X sec. Restores the caster's health equal to X of the damage dealt. Restores 50 rage."
-        }
-      },
-      "skill-type": {
-        "active": "Active",
-        "passive": "Passive"
-      }
-    },
-    "items": {
-      "category": {
-        "physical": "Physical",
-        "magical": "Magical",
-        "defense": "Defense",
-        "other": "Other",
-        "exclusive": "Exclusive"
-      },
-      "name": {
-        "rusted-sword": "Rusted Sword",
-        "daggers": "Daggers",
-        "gloves": "Gloves",
-        "sickle": "Sickle",
-        "iron-halberd": "Iron Halberd",
-        "crit-gauntlets": "Crit Gauntlets",
-        "skyrazer-broadsword": "Skyrazer Broadsword",
-        "cleaver": "Cleaver",
-        "daggers-of-frenzy": "Daggers of Frenzy",
-        "sword-of-justice": "Sword of Justice",
-        "quick-shooter": "Quick Shooter",
-        "glowing-sea-gods-sigh": "Glowing Sea God's Sigh",
-        "frost-pike": "Frost Pike",
-        "skyfeather": "Skyfeather",
-        "seven-star-sword": "Seven-Star Sword",
-        "dual-bloodlust-blades": "Dual Bloodlust Blades",
-        "wolfbane-twin-blades": "Wolfbane Twin Blades",
-        "ten-steps-one-kill": "Ten Steps, One Kill",
-        "dragons-roar": "Dragon's Roar",
-        "spectral-gear-aurora": "Spectral Gear: Aurora",
-        "green-titan-axe": "Green Titan Axe",
-        "ravenous-wolf": "Ravenous Wolf",
-        "spectral-gear-star-stream": "Spectral Gear: Star Stream",
-        "tungsten-chelae": "Tungsten Chelae",
-        "texts": "Texts",
-        "chaos-ice": "Chaos Ice",
-        "jade-pendant": "Jade Pendant",
-        "lambent-codex": "Lambent Codex",
-        "dawns-spirit": "Dawn's Spirit",
-        "thousand-morphs": "Thousand Morphs",
-        "book-of-times": "Book of Times",
-        "nether-spellblade": "Nether Spellblade",
-        "sage-mask": "Sage Mask",
-        "enmity-crystal": "Enmity Crystal",
-        "imps-bolus": "Imp's Bolus",
-        "flaming-legion": "Flaming Legion",
-        "core-of-ruin": "Core of Ruin",
-        "spell-phylactery": "Spell Phylactery",
-        "thousand-morph-staff": "Thousand Morph Staff",
-        "merrymaker-ring": "Merrymaker Ring",
-        "mana-claw": "Mana Claw",
-        "butterfly-cane": "Butterfly Cane",
-        "mask-of-silver-and-shadow": "Mask of Silver and Shadow",
-        "conch-staff": "Conch Staff",
-        "nimbus-codex": "Nimbus Codex",
-        "demonhunter-scroll": "Demonhunter Scroll",
-        "quamaris-crescent": "Qamari's Crescent",
-        "treatise-on-potential": "Treatise on Potential",
-        "bloodsoul": "Bloodsoul",
-        "linen-cloth": "Linen Cloth",
-        "fairytale-hat": "Fairytale Hat",
-        "excelsior": "Excelsior",
-        "rough-cap": "Rough Cap",
-        "flames-heart": "Flame's Heart",
-        "dreamlike-shawl": "Dreamlike Shawl",
-        "steelback-shield": "Steelback Shield",
-        "glorious-armor": "Glorious Armor",
-        "vanguard-pavise": "Vanguard Pavise",
-        "god-of-war": "God of War",
-        "firewalkers-gloves": "Firewalker's Gloves",
-        "elemental-shade": "Elemental Shade",
-        "open-world": "Open World",
-        "dragoon": "Dragoon",
-        "spirited-fighter-bulwark": "Spirited Fighter Bulwark",
-        "cloud-smoke": "Cloud Smoke",
-        "raiment-of-darkness": "Raiment of Darkness",
-        "cold-heart": "Cold Heart",
-        "lingering-song-shirt": "Lingering Song Shirt",
-        "crimson-armor": "Crimson Armor",
-        "refined-sleeves": "Refined Sleeves",
-        "novitiates-shoes": "Novitiate's Shoes",
-        "glorious-war-boots": "Glorious War Boots",
-        "true-voyagers-shoes": "True Voyager's Shoes",
-        "lethal-grasp-waders": "Lethal Grasp Waders",
-        "celestial-patience-waders": "Celestial Patience Waders",
-        "adventurers-war-boots": "Adventurer's War Boots",
-        "breeze-sandals": "Breeze Sandals",
-        "novitiates-halberd": "Novitiate's Halberd",
-        "merciless-broadsword": "Merciless Broadsword",
-        "raging-ape-battleaxe": "Raging Ape Battleaxe",
-        "proudlight-axe": "Proudlight Axe",
-        "broadsword-of-chrysos": "Broadsword of Chrysos",
-        "axe-of-the-headless-warrior": "Axe of the Headless Warrior",
-        "world-breaker": "World Breaker",
-        "twin-blades": "Twin Blades",
-        "butterfly-wings": "Butterfly Wings"
-      },
-      "stat": {
-        "physical-damage": "Physical Damage",
-        "magical-damage": "Magical Damage",
-        "attack-speed": "Attack Speed",
-        "crit-rate": "Crit Rate",
-        "life-steal": "Life Steal",
-        "max-hp": "Max HP",
-        "max-mana": "Max Mana",
-        "movement-speed": "Movement Speed",
-        "cooldown-reduction": "Cooldown Reduction",
-        "physical-pierce": "Physical Pierce",
-        "magical-pierce": "Magical Pierce",
-        "physical-armor": "Physical Armor",
-        "magical-armor": "Magical Armor",
-        "mana-recovery": "Mana Recovery",
-        "health-recovery": "Health Recovery",
-        "punishment-rate": "Punishment Rate"
-      },
-      "sole": {
-        "adrenaline-peak": "[A] Adrenaline Peak: Reduce HP to 1 and gain immunity to all damage and control debuffs. This cannot be dispelled, and it lasts two seconds",
-        "bloodlust-1": "[A]: Bloodlust: Nearby allies gain 10% more damage output and 30% movement speed for four seconds. Cooldown: 60 seconds",
-        "punification": "[A] Punification: Dispel control debuffs from oneself and gain two seconds of Mercurial and 50% Damage Reduction",
-        "star-aegis": "[A] Star Aegis: Become unable to move or use skills, but gain immunity to all attack damage or debuffs for three seconds. Cannot be dispelled",
-        "berserker": "[P] Berserker: After a critical hit, Attack Speed is increased by 50% for five seconds",
-        "bloodthirst": "[P] Bloodthirst: Leech +5% Stacks with Magic Skill Leech",
-        "bloodthirst-2": "[P] Bloodthirst: Magic Skill Leech +15%",
-        "bloody-fury": "[P]: Bloody Fury: When HP falls below 40%, you get Blood Fury upon taking damage. Your Attack attribute is increased by 60 and you get a shield that can absorb a large amount of damage for eight seconds. Cooldown: 90 seconds",
-        "butterfly-wings": "[P] Butterfly Wings: The damage of the Deadly Stroke skill increases. While using the skill, you get the \"Invulnerability\" effect",
-        "coldness-1": "[P] Coldness: Normal attacks reduce target`s movement speed by 20% for four seconds.",
-        "coldness-2": "[P] Coldness: Normal attack reduces target`s Attack Speed by 30% and Movement Speed by 30% for two seconds",
-        "coldness-3": "[P] Coldness: When skill hits an enemy target, its Attack Speed is reduced by 30% and its Movement Speed is reduced by 30% for two seconds",
-        "counter-chomp": "[P] Counter-chomp: Reflects 10% of incoming Magic Damage at the enemy",
-        "damage-overflow": "[P] Damage Overflow: Increases Crit Damage by 50%",
-        "destruction": "[P] Destruction: Magic Damage Insensifier +35%",
-        "divine-way-1": "[P] Divine Way: Movement Speed +57",
-        "divine-way-2": "[P] Divine Way: Movement Speed +114",
-        "divine-way-3": "[P] Divine Way: Movement Speed +171",
-        "explorer-1": "[P] Explorer: Critter XP +20%",
-        "explorer-2": "[P] Explorer: Critter XP +30%",
-        "ice-heart": "[P] Ice Heart: If you suffer a single blow dealing more than 8% HP in damage, It triggers Coldheart Shock, which deals 60-200 magic damage to nearby foes and reduces their Attack Speed and Movement Speed by 30% for four seconds. Cooldown: Two seconds",
-        "ignore": "[P] Ignore: Magic Defense Break Rate +45%",
-        "legion": "[P] Legion: Increases Physical Damage by 60 and Magic Damage by 120 for teammates in a wide area",
-        "mana-recovery": "[P] Mana Recovery: Mana Recovery +30",
-        "mana-shield": "[P] Mana Shield: When HP falls below 50%, being attacked will provide a shield that absorbs 1,500 (+50% Magic Bonus) damage for eight seconds. The effect has a 90-seconds cooldown",
-        "mark": "[P] Mark: Increases HP by 1400",
-        "pain": "[P] Pain: Damage skills now deal bonus Magic Damage equal to 6% of current HP. Cooldown is three seconds",
-        "power-strike-1": "[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Physical Damage equal to 100% Physical Bonus. The effect has a two-second cooldown",
-        "power-strike-2": "[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Magic Damage equal to 50% Physical Damage (+30% Magic Bonus). This effect has a two-second cooldown",
-        "power-strike-3": "[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Magic Damage equal to 30% Physical Damage (+65% Magic Bonus). The effect has a two-second cooldown",
-        "pursuit-strike-1": "[P] Pursuit Strike: Increases Normal Attack`s Physical Damage by 30",
-        "pursuit-strike-2": "[P] Pursuit Strike: Increases Normal Attack`s Physical Damage by 60",
-        "rampage": "[P] Rampage: Every time you take damage, you get one stack of a buff that increases your Movement Speed by 2% and your Damage Intensifier by 2%. Stacks up to five times. Lasts eight seconds. Has an interval 1.5-second cooldown",
-        "ravenous-wolf": "[P] Ravenous Wolf: When HP falls below 30%, you deal 20% more damage",
-        "recovery": "[P] Recovery: Heals 3% of maximum HP per second when not in combat",
-        "residual-shock": "[P] Residual Shock: Normal attack has a 30% chance to trigger Residual Shock, dealing 100 magic to the target",
-        "resurrection": "[P] Resurrection: One second after dying, you revive with 30% HP. Cooldown: 180 seconds",
-        "serious-injury": "[P] Serious Injury: Hitting an enemy with this skill inflicts Serious Injury, which reduces their healing by 50%",
-        "shatter-armor": "[P] Magic Pierce +75",
-        "shockwave": "[P] Shockwave: When skill hits the target, deals Magic Damage equal to 50 (+50% magic bonus). Cooldown is four seconds",
-        "sunder": "[P] Sunder: Physical Defense Break Rate +45%",
-        "sunscorch-1": "[P] Sunscorch: Deals 150 magic damage every two seconds to enemies nearby",
-        "sunscorch-2": "[P]: Sunscorch: Deals 280 magic damage every two seconds to enemies nearby",
-        "sword-storm": "[P] Blade Dance: Sword Storm`s base damage has been increased to 80%, and a vortex also appears when spinning.",
-        "thorns": "[P] Thorns: Reflects 10% of incoming Physical Damage back at enemy",
-        "torpidity-1": "[P] Torpidity: When attacked, all nearby enemies lose 30% Attack Speed for four seconds",
-        "torpidity-2": "[P] Torpidity: When attacked, nearby enemies lose 30% Attack Speed and 15% Movement Speed for four seconds",
-        "yin-yang": "[P] Yin-Yang: While using the Cocoon skill, you can move around.",
-        "vanquish": "[P] Vanquish: Normal attack deals bonus physical damage equal to 6% of the target`s current HP",
-        "weak-heal": "[P] Weak Heal: Hitting a target with a normal attack triggers a Weak Heal effect that reduces healing by 50%",
-        "winters-chill": "[P] Winter`s Chill: After using the skill, the next normal attack within five seconds deals 170-400 bonus Physical Damage and reduces Movement Speed by 30% for three seconds. Cooldown is three seconds"
-      }
-    }
-  }
+	"page": {
+		"name": {
+			"main": "Main",
+			"moba": {
+				"main": "Legengs of Nuanor",
+				"heroes": "Heroes",
+				"builds": "Builds",
+				"guides": "Guides",
+				"items": "Items"
+			}
+		}
+	},
+	"moba": {
+		"heroes": {
+			"name": {
+				"spider-queen": "Spider Queen",
+				"intu": "Intu",
+				"madu": "Madu",
+				"black-morphida": "Black Morphida",
+				"white-morphida": "White Morphida",
+				"perfect-morphida": "Perfect Morphida",
+				"azaghal": "Azaghal",
+				"lunnitsa": "Lunnitsa",
+				"doctor-mechatron": "Doctor Mechatron",
+				"lucy": "Lucy",
+				"kaibuli": "Kaibuli",
+				"ness": "Ness",
+				"mara": "Mara",
+				"roan": "Roan",
+				"merit": "Merit",
+				"jinren": "Jinren",
+				"general-sage": "General Sage",
+				"yasmina": "Yasmina",
+				"albioka": "Albioka",
+				"commander-jet": "Commander Jet"
+			},
+			"skill": {
+				"spider-queen-spider-poison": {
+					"name": "Spider Poison",
+					"description": "Any attack by the Spider Queen applies the \"Spider Poison\" effect to the enemy. The enemy takes magic damage equal to 10% of Spell Power plus 10 additional damage, and their movement speed is reduced by 10%. This effect can stack up to 5 times."
+				},
+				"spider-queen-living-projectile": {
+					"name": "Living Projectile",
+					"description": "Explodes on hitting an enemy or at the end of its path, dealing damage and releasing a small spider that attacks enemies. Deals magic damage equal to X of Spell Power plus X additional damage. Defenders and monsters take X extra damage."
+				},
+				"spider-queen-spider-leap": {
+					"name": "Spider Leap",
+					"description": "Allows her to leap and deal damage to all enemies in the landing area. Deals magic damage equal to X of Spell Power plus X additional damage. Defenders and monsters take X extra damage."
+				},
+				"spider-queen-royal-web": {
+					"name": "Royal Web",
+					"description": "The first cast lets the Spider Queen shoot a web and climb onto it. While on the web, the queen is invulnerable. The second cast lets the Spider Queen jump down onto enemies and deal magic damage equal to X of Spell Power plus X additional damage. The Queen can remain on the web for up to 4 sec."
+				},
+				"spider-queen-phantom-spiders": {
+					"name": "Phantom Spiders",
+					"description": "Summons a swarm of phantom spiders. When disappearing, the phantoms deal area damage. Each phantom deals magic damage equal to X of Spell Power plus X additional damage."
+				},
+				"intu-priests-curse": {
+					"name": "Priest's Curse",
+					"description": "Restores the caster's health equal to 10% of the magic damage dealt."
+				},
+				"intu-dark-vortex": {
+					"name": "Dark Vortex",
+					"description": "Creates a vortex that damages enemies within the skill area. For X sec., enemies inside the area take damage every second equal to X of Spell Power plus X magic damage. Enemies with less than 30% health additionally take X magic damage per second."
+				},
+				"intu-icy-palm": {
+					"name": "Icy Palm",
+					"description": "Immobilizes the first enemy in its path and deals damage to them. Immobilizes the enemy for X sec. Deals magic damage equal to X of Spell Power plus X additional damage."
+				},
+				"intu-energy-shield": {
+					"name": "Energy Shield",
+					"description": "Creates an energy shield around the caster. The shield lasts X sec. and absorbs X magic damage. The skill only affects heroes. The effect applies to all allies within a 30 m radius."
+				},
+				"intu-seal-of-depths": {
+					"name": "Seal of Depths",
+					"description": "Creates a magic seal that damages enemies within the skill radius and immobilizes them. Immobilizes enemies for X sec. Deals magic damage equal to X of Spell Power plus X additional damage."
+				},
+				"madu-element-of-surprise": {
+					"name": "Element of Surprise",
+					"description": "Basic attacks apply the \"Dizziness\" effect to the target. Triggers no more than once every 8 seconds."
+				},
+				"madu-strong-alcohol": {
+					"name": "Strong Alcohol",
+					"description": "Throws an exploding wine barrel at enemies. Deals damage to all enemies in the impact area equal to X of Spell Power plus X additional damage. Reduces enemies' movement speed by X. Defenders and monsters take X extra damage."
+				},
+				"madu-philosophical-musings": {
+					"name": "Philosophical Musings",
+					"description": "While pondering the fate of the world, Madu takes less damage and restores health. During the skill, Madu takes X less damage. Restores X health and X of Spell Power, as well as 1% of maximum health."
+				},
+				"madu-drunken-master": {
+					"name": "Drunken Master",
+					"description": "The first cast makes Madu dash to the target. The second cast deals magic damage equal to X of Spell Power plus X additional damage and applies the \"Dizziness\" effect to the enemy for X sec. Defenders and monsters take X extra damage."
+				},
+				"madu-explosive-cocktail": {
+					"name": "Explosive Cocktail",
+					"description": "Throws an exploding barrel that damages enemies and knocks them back. Deals magic damage equal to X of Spell Power plus X additional damage."
+				},
+				"black-morphida-power-flow": {
+					"name": "Power Flow",
+					"description": "Using skills applies the \"Power Flow\" effect. Each stack of this effect increases basic attack damage by 10%. The effect can stack up to three times. Each basic attack consumes 1 stack."
+				},
+				"black-morphida-decisive-measures": {
+					"name": "Decisive Measures",
+					"description": "A series of spectral strikes deals damage to the target and applies the \"Dizziness\" effect. Deals magic damage equal to X of Spell Power plus X additional damage. The \"Dizziness\" effect lasts X sec."
+				},
+				"black-morphida-dark-wings": {
+					"name": "Dark Wings",
+					"description": "Allows Morphida to leap to the selected point and deal area damage. The closer the enemy is to the landing point, the higher the damage. Deals X physical damage. Defenders and monsters take X extra damage. Additionally deals X physical damage if Morphida lands 4-5 m from the enemy, and another X physical damage if the landing point is closer than 3 m."
+				},
+				"black-morphida-butterfly-wings": {
+					"name": "Butterfly Wings",
+					"description": "Temporarily increases attack speed. Attack speed is increased by X for X sec."
+				},
+				"black-morphida-blade-dance": {
+					"name": "Blade Dance",
+					"description": "A deadly blade dance deals heavy damage to all enemies in the skill area. For 5.5 sec., every 0.5 sec., deals physical damage equal to X of Attack Power plus X additional damage. For all hits except the first, critical damage is reduced by 50%. During the skill, Morphida gains \"Unstoppability\"."
+				},
+				"white-morphida-cocoon": {
+					"name": "Cocoon",
+					"description": "When Morphida takes damage, she gains the \"Cocoon\" effect for 3 sec., absorbing damage equal to 5% of maximum health. Triggers no more than once every 8 seconds."
+				},
+				"white-morphida-stars-from-eyes": {
+					"name": "Stars from Eyes",
+					"description": "Allows Morphida to damage and slow enemies, while also restoring health. Deals magic damage equal to X of Spell Power plus X additional damage. Slows all enemies in the skill area by X. If Morphida deals damage to an enemy, she gains the \"Revitalization\" effect for X sec. Every X sec., X HP is restored."
+				},
+				"white-morphida-silence-is-golden": {
+					"name": "Silence Is Golden",
+					"description": "A golden seal appears beneath the target, dealing damage to all enemies in the skill area and applying negative effects to them. Deals magic damage equal to X of Spell Power plus X additional damage. Periodically applies the \"Silence\" effect to enemies for 1.5 sec. When the effect ends, it deals X magic damage to enemies and immobilizes them for 1 sec."
+				},
+				"white-morphida-power-of-tree": {
+					"name": "Power of the Tree",
+					"description": "Restores an ally's health at the cost of the caster's health. Restores the target's health by X and additionally by X of Spell Power. If no target is selected, the skill restores health to a random allied hero within range. The caster loses 5% of maximum health. If the caster has the \"Revitalization\" effect, the target also receives this effect."
+				},
+				"white-morphida-healing": {
+					"name": "Healing",
+					"description": "Restores health to all allied heroes within the skill radius. Restores X health and X of Spell Power. If an ally's health is below 40%, the skill additionally restores health equal to X of Spell Power."
+				},
+				"perfect-morphida-weak-link": {
+					"name": "Weak Link",
+					"description": "Each basic attack reduces the target's defense by 3% for 5 sec. The effect stacks up to 5 times."
+				},
+				"perfect-morphida-crushing-dash": {
+					"name": "Crushing Dash",
+					"description": "Allows a swift dash that damages all enemies in the path. Deals damage equal to X of Attack Power plus X additional damage. If the skill deals damage to at least one enemy, it can be cast again immediately, but no more than 2 times in a row. Defenders and monsters take X extra damage."
+				},
+				"perfect-morphida-cocoon": {
+					"name": "Cocoon",
+					"description": "Reflects part of the damage received back to the attacker and grants immunity to physical damage. The effect lasts 1.2 sec."
+				},
+				"perfect-morphida-butterfly-lightness": {
+					"name": "Butterfly Lightness",
+					"description": "Increases movement speed and attack speed. Increases movement speed by X for X sec. Increases attack speed by X for 2 sec."
+				},
+				"perfect-morphida-deadly-flourish": {
+					"name": "Deadly Flourish",
+					"description": "Allows her to strike enemies with six swift attacks. Each hit deals X physical damage and additionally deals damage equal to X of Attack Power to two enemies at once. Each target is chosen randomly. If there is a hero within range, they will be chosen as the first target. If any of these strikes deals a killing blow to an enemy hero, \"Deadly Flourish\" is refreshed instantly."
+				},
+				"azaghal-second-wind": {
+					"name": "Second Wind",
+					"description": "When health falls below 50%, defense and resistance increase by 100."
+				},
+				"azaghal-crushing-blow": {
+					"name": "Crushing Blow",
+					"description": "Azaghal's furious strike deals damage to all enemies within the skill radius and applies the \"Dizziness\" effect. Deals magic damage to all enemies in the skill area equal to X of Spell Power plus X additional damage. Applies the \"Dizziness\" effect to all enemies in range for X sec. Defenders and monsters take X extra damage."
+				},
+				"azaghal-head-on": {
+					"name": "Head-On",
+					"description": "Allows a swift dash that damages all enemies in the way. Azaghal dashes 25 m. Deals magic damage equal to X of Spell Power plus X additional damage."
+				},
+				"azaghal-triumphant-roar": {
+					"name": "Triumphant Roar",
+					"description": "Azaghal's roar restores health to all heroes within range. Restores X health to all allied heroes in the skill area. Restores X more health for each allied hero in the skill area."
+				},
+				"azaghal-barricade": {
+					"name": "Barricade",
+					"description": "Creates an impassable barricade. Enemies standing nearby take damage when it is created. The barricade lasts 8 sec. When the barricade is created, nearby enemies take magic damage equal to X of Spell Power plus X additional damage."
+				},
+				"lunnitsa-lunar-ripple": {
+					"name": "Lunar Ripple",
+					"description": "Each time a skill is used, movement speed increases by 10% for 1 sec."
+				},
+				"lunnitsa-spring-blossom": {
+					"name": "Spring Blossom",
+					"description": "Restores health to Lunnitsa and nearby allies, and also reduces damage taken. Reduces damage taken by X. Restores X health and additionally X of Spell Power for each allied hero within range."
+				},
+				"lunnitsa-lunar-sickle": {
+					"name": "Lunar Sickle",
+					"description": "Deals damage to two targets within range. Heroes are prioritized. Deals magic damage equal to X of Spell Power plus X additional damage."
+				},
+				"lunnitsa-tides": {
+					"name": "Tides",
+					"description": "Increases the movement speed of allies in the skill area and decreases that of enemies. Increases allies' movement speed by X. Reduces enemies' movement speed by X. The effect lasts 2 sec."
+				},
+				"lunnitsa-dark-side-of-moon": {
+					"name": "Dark Side of the Moon",
+					"description": "Deals damage to all enemies in the skill area and applies the \"Dizziness\" effect. Deals magic damage equal to X of Spell Power plus X additional damage. The \"Dizziness\" effect lasts X sec."
+				},
+				"doctor-mechatron-accumulator": {
+					"name": "Accumulator",
+					"description": "Each basic attack reduces the cooldown of standard skills by 0.5 sec."
+				},
+				"doctor-mechatron-pulse-sword": {
+					"name": "Pulse Sword",
+					"description": "A pulse sword strike deals area damage and allows a mechanical trap to be placed on the field. Deals physical damage equal to X of Attack Power plus X additional damage. The first enemy hit takes additional damage equal to X of Attack Power plus X damage. Places a mechanical trap that deals X physical damage to the enemy caught in it."
+				},
+				"doctor-mechatron-recoil-shot": {
+					"name": "Recoil Shot",
+					"description": "Allows him to jump backward and fire, dealing damage to the target and slowing them. Deals magic damage equal to X of Spell Power plus X additional damage. Reduces the target's movement speed by X."
+				},
+				"doctor-mechatron-mechanical-trap": {
+					"name": "Mechanical Trap",
+					"description": "Places a trap on the battlefield that deals damage and immobilizes enemies. Deals X physical damage. Immobilizes the enemy for X sec. No more than 3 traps can be placed at the same time."
+				},
+				"doctor-mechatron-ballistic-missiles": {
+					"name": "Ballistic Missiles",
+					"description": "Launches three missiles one after another, dealing heavy damage to enemy heroes. Each missile deals damage equal to X of Attack Power plus X additional damage."
+				},
+				"lucy-perpetual-engine": {
+					"name": "Perpetual Engine",
+					"description": "Applies the \"Unstoppability\" effect to Lucy for 1 sec. each time she uses a skill, but no more than once every 5 sec."
+				},
+				"lucy-crystal-lattice": {
+					"name": "Crystal Lattice",
+					"description": "Creates an energy field around the target that deals damage. Deals magic damage equal to X of Spell Power plus X additional damage."
+				},
+				"lucy-laser-beam": {
+					"name": "Laser Beam",
+					"description": "Creates a deadly beam that damages all enemies in the skill area. Deals damage to enemies equal to X of Spell Power plus X additional damage up to 6 times in a row."
+				},
+				"lucy-matrix": {
+					"name": "Matrix",
+					"description": "Creates an energy cube on the battlefield inside which time slows down. Every 0.5 sec., applies an effect to enemies in the skill area that slows them by X. Applies the \"Dizziness\" effect to enemies in the skill area for X sec."
+				},
+				"lucy-magnetic-storm": {
+					"name": "Magnetic Storm",
+					"description": "Creates a magnetic field around the target for 7 sec., dealing damage every second to all enemies in the area. If the target dies, the field does not disappear. Each strike deals magic damage equal to X of Spell Power plus X additional damage. The first strike additionally deals magic damage equal to X of Spell Power plus X additional damage. All enemies in the skill area are affected by \"Silence\"."
+				},
+				"kaibuli-acid": {
+					"name": "Acid",
+					"description": "Each time Kaibuli uses a skill, he splashes acid that damages both him and his opponent, but no more than once every 3 seconds."
+				},
+				"kaibuli-sweeping-strike": {
+					"name": "Sweeping Strike",
+					"description": "Deals damage in front of him and restores health. Deals damage in front of him and restores health equal to 30% of the damage dealt. Deals physical damage equal to X of Attack Power plus X additional damage."
+				},
+				"kaibuli-jagged-hook": {
+					"name": "Jagged Hook",
+					"description": "Kaibuli pulls in the first enemy hit and deals damage to them. Deals physical damage equal to X of Attack Power plus X additional damage. Applies the \"Dizziness\" effect for 2 seconds."
+				},
+				"kaibuli-toss-up": {
+					"name": "Toss Up",
+					"description": "Allows him to deal damage to enemies and stun them. Deals physical damage equal to X of Attack Power plus X additional damage. Applies the \"Dizziness\" effect for X sec."
+				},
+				"kaibuli-circular-strike": {
+					"name": "Circular Strike",
+					"description": "Allows him to deal significant damage to enemies. Deals physical damage equal to X of Attack Power plus X additional damage."
+				},
+				"ness-keen-eye": {
+					"name": "Keen Eye",
+					"description": "Enemies attacked by Ness cannot hide in bushes."
+				},
+				"ness-aimed-shot": {
+					"name": "Aimed Shot",
+					"description": "The longer Ness aims, the more damage the shot deals. If Ness fires during the first aiming stage, the target takes physical damage equal to X of Attack Power plus X additional damage. If Ness fires during the second aiming stage, the target takes physical damage equal to X of Attack Power plus X additional damage. If Ness fires during the third aiming stage, the target takes physical damage equal to X of Attack Power plus X additional damage."
+				},
+				"ness-liberation": {
+					"name": "Liberation",
+					"description": "Removes control effects and increases movement speed for a while. Movement speed is increased by X. The effect lasts X sec."
+				},
+				"ness-phantom-arrows": {
+					"name": "Phantom Arrows",
+					"description": "Basic attacks deal damage to three targets at once for a period of time. Heroes are prioritized. Each arrow deals physical damage equal to X of Attack Power. The effect lasts X sec."
+				},
+				"ness-wild-gallop": {
+					"name": "Wild Gallop",
+					"description": "Allows Ness to increase her own movement speed and also boosts the movement speed of all allied heroes within range. The effect gradually weakens. During the first stage, movement speed is increased by X for X sec. During the second stage, movement speed is increased by X for X sec. During the third stage, movement speed is increased by X for X sec."
+				},
+				"mara-swiftness": {
+					"name": "Swiftness",
+					"description": "Using a basic attack increases attack speed. The effect stacks up to five times."
+				},
+				"mara-ice-arrow": {
+					"name": "Ice Arrow",
+					"description": "Allows her to replace a basic attack with an ice arrow that deals extra damage and slows the target. Reduces the target's movement speed by X for X sec. The effect stacks up to 2 times. Each basic attack deals X more physical damage. Each attack consumes 10 mana. At maximum skill level, no mana is consumed."
+				},
+				"mara-ice-fan": {
+					"name": "Ice Fan",
+					"description": "Fires several arrows at once, dealing damage and slowing the target. Each arrow deals physical damage equal to X of Attack Power plus X additional damage. The first arrow that hits the target deals additional physical damage equal to X of Attack Power plus X damage. Reduces the target's movement speed by X for X sec."
+				},
+				"mara-icy-shackles": {
+					"name": "Icy Shackles",
+					"description": "Fires a fan of three arrows that deal damage and immobilize enemies. Each arrow deals magic damage equal to X of Spell Power plus X additional damage. On hit, immobilizes the target for X sec."
+				},
+				"mara-hail-of-arrows": {
+					"name": "Hail of Arrows",
+					"description": "Fires nine volleys of arrows in succession. Each volley deals physical damage equal to X of Attack Power plus X additional damage to all enemies in the skill area. Reduces the target's movement speed by X for X sec."
+				},
+				"roan-hunt": {
+					"name": "Hunt",
+					"description": "Each basic attack temporarily increases movement speed."
+				},
+				"roan-archers-fury": {
+					"name": "Archer's Fury",
+					"description": "Roan gains the \"Archer's Fury\" effect. Each basic attack against a hero, defender, or monster deals increased damage and reduces the cooldown of \"Combat Readiness\" by 0.5 sec. Basic attacks against heroes, defenders, and monsters deal additional damage equal to X of the target's maximum health."
+				},
+				"roan-combat-readiness": {
+					"name": "Combat Readiness",
+					"description": "Allows Roan to roll forward and gains an effect that increases the damage of the next basic attack. The damage of the next basic attack is increased by X of Attack Power."
+				},
+				"roan-retribution": {
+					"name": "Retribution",
+					"description": "Knocks the target back and deals significant damage. Deals magic damage equal to X of Spell Power plus X additional damage. Knocks the target back 20 m and applies the \"Dizziness\" effect for 1 sec."
+				},
+				"roan-rapid-fire": {
+					"name": "Rapid Fire",
+					"description": "Allows up to 9 shots to be fired at targets within range. Each shot deals physical damage equal to X of Attack Power plus X additional damage."
+				},
+				"merit-kuromi-shield": {
+					"name": "Kuromi Shield",
+					"description": "Using any skill applies the \"Kuromi Shield\" effect to Merit. The effect triggers no more than once every 8 seconds."
+				},
+				"merit-freezing": {
+					"name": "Freezing",
+					"description": "Allows her to slow enemies in the skill area and deal damage to them. Deals magic damage equal to X of Spell Power plus X additional damage. Reduces movement speed by X for X sec. Applies the \"Ice Mark\" effect."
+				},
+				"merit-ice-block": {
+					"name": "Ice Block",
+					"description": "Allows her to freeze enemies in the skill area and deal damage to them. Deals magic damage equal to X of Spell Power plus X additional damage. Applies the \"Freeze\" effect for X sec. Enemies marked with Ice Mark take additional magic damage equal to X of Spell Power + X."
+				},
+				"merit-goddess-gift": {
+					"name": "Goddess's Gift",
+					"description": "Restores mana to Merit and nearby allies. Every 2 sec., restores X mana to allies in the area. The effect triggers 5 times."
+				},
+				"merit-ice-rain": {
+					"name": "Ice Rain",
+					"description": "Merit deals damage around herself and slows enemies. While using the skill, she gains the \"Unstoppability\" effect, increased defense, and a refreshed shield. Deals magic damage equal to X of Spell Power plus X additional damage. Reduces enemy movement speed by 30% for X sec. During the effect, grants X defense and immunity to control effects."
+				},
+				"jinren-fire-spirit": {
+					"name": "Fire Spirit",
+					"description": "Using any skill grants Jinren one spark. After collecting 4 sparks, Jinren gains the \"Flame\" effect, empowering his skills."
+				},
+				"jinren-fireball": {
+					"name": "Fireball",
+					"description": "Allows him to deal significant damage to the target. Deals magic damage equal to X of Spell Power plus X additional damage. If Jinren has the \"Flame\" effect, the skill can be used again immediately. On the repeated cast, \"Fireball\" deals magic damage equal to X of Spell Power plus X additional damage."
+				},
+				"jinren-flame-onslaught": {
+					"name": "Flame Onslaught",
+					"description": "Deals damage to all enemies in the skill area. Deals magic damage equal to X of Spell Power plus X additional damage. If Jinren has the \"Flame\" effect, the skill applies the \"Dizziness\" effect to the enemy."
+				},
+				"jinren-enlightenment": {
+					"name": "Enlightenment",
+					"description": "Reduces damage taken. Reduces damage taken by X. The effect lasts X sec."
+				},
+				"jinren-fan-of-blades": {
+					"name": "Fan of Blades",
+					"description": "Deals significant damage to the target and nearby enemies. Deals magic damage to the target and all enemies within 15 m of the target equal to X of Spell Power plus X additional damage. Applies the \"Metabolism Slowdown\" effect to all enemies in the area, reducing healing received by 50%. If Jinren has the \"Flame\" effect, the skill applies the \"Dizziness\" effect to enemies."
+				},
+				"general-sage-feat": {
+					"name": "Feat",
+					"description": "Restores 0.2% of maximum health per second. Upon death, Sage restores part of the health of all allies within a 20 m radius. Using skills consumes Sage's health. Standard skills consume 3% health, while the special skill consumes 20%."
+				},
+				"general-sage-circular-strike": {
+					"name": "Circular Strike",
+					"description": "Deals significant damage to all enemies within the skill radius. Deals physical damage equal to X of Attack Power plus X additional damage."
+				},
+				"general-sage-thunder-peal": {
+					"name": "Thunder Peal",
+					"description": "Increases attack power. Attack power is increased by X for X sec."
+				},
+				"general-sage-heroic-leap": {
+					"name": "Heroic Leap",
+					"description": "Allows instant movement to the target, dealing damage to all enemies within the skill radius and slowing them. Deals physical damage equal to X of Attack Power plus X additional damage. Each time Sage deals damage, this skill's cooldown is reduced by 1 sec. This effect triggers no more than once per second. Applies the \"Slow\" effect to all enemies within the skill area, reducing their movement speed by X for X sec."
+				},
+				"general-sage-inspiring-shout": {
+					"name": "Inspiring Shout",
+					"description": "Increases movement speed and restores health. Movement speed is increased by X. Every 0.5 sec., 4% of total health is restored. The effect lasts 6 sec. Each use reduces health by 20%."
+				},
+				"yasmina-backstab": {
+					"name": "Backstab",
+					"description": "Basic attacks from behind deal additional damage."
+				},
+				"yasmina-piercing-wound": {
+					"name": "Piercing Wound",
+					"description": "Allows her to deal significant damage to the target. Deals physical damage equal to X of Attack Power plus X additional damage. A backstab deals additional damage equal to X of Attack Power + X."
+				},
+				"yasmina-phantom-step": {
+					"name": "Phantom Step",
+					"description": "Allows a swift dash that damages all enemies in the path. Deals physical damage equal to X of Attack Power plus X additional damage. A backstab deals additional damage equal to X of Attack Power + X."
+				},
+				"yasmina-shadow-mark": {
+					"name": "Shadow Mark",
+					"description": "Allows her to deal damage to the target and apply Shadow Mark. Deals physical damage equal to X of Attack Power plus X additional damage. A basic attack against a target marked with Shadow Mark deals additional damage equal to X of Attack Power + X and applies the \"Dizziness\" effect. The mark is removed after the attack ends."
+				},
+				"yasmina-invisibility": {
+					"name": "Invisibility",
+					"description": "The first cast lets Yasmina enter invisibility for 15 sec. The second cast lets her move behind the target, deal damage, and slow them. It also grants Yasmina the \"Assassin's Fury\" effect, increasing Attack Power by X. While invisible, she restores 300 health every 2 sec. Movement speed is increased while invisible."
+				},
+				"albioka-dragonfly": {
+					"name": "Dragonfly",
+					"description": "Movement speed is increased by 30, plus 2 more for each character level."
+				},
+				"albioka-jay-spirit": {
+					"name": "Jay Spirit",
+					"description": "Deals damage to the target and slows them. Deals magic damage equal to X of Spell Power plus X additional magic damage. Reduces the target's movement speed by X for X sec."
+				},
+				"albioka-wren-shield": {
+					"name": "Wren Shield",
+					"description": "Allows her to surround herself and allied heroes in the skill area with a shield. For X sec., the shield absorbs X magic damage."
+				},
+				"albioka-eagle-spirit": {
+					"name": "Eagle Spirit",
+					"description": "Deals damage to enemies in its path. Deals magic damage equal to X of Spell Power plus X additional damage. Knocks targets into the air."
+				},
+				"albioka-spring-shower": {
+					"name": "Spring Shower",
+					"description": "Surrounds herself and nearby allies with a protective sphere that absorbs part of the damage, removes negative effects, restores health, and applies the \"Unstoppability\" effect. Absorbs X damage and applies \"Unstoppability\" for X sec. Restores X health, plus additional health equal to X of Spell Power for each ally in the skill area."
+				},
+				"commander-jet-order-fury": {
+					"name": "Order's Fury",
+					"description": "Basic attacks and skill usage allow Jet to build up rage."
+				},
+				"commander-jet-light-blade": {
+					"name": "Blade of Light",
+					"description": "Allows him to damage all enemies in the skill area and slow them. Deals physical damage equal to X of Attack Power plus X additional damage. Reduces enemies' movement speed by X for X sec. Cost: 10 rage. Restores 15 rage on the first hit against an enemy."
+				},
+				"commander-jet-signature-strike": {
+					"name": "Signature Strike",
+					"description": "Allows him to perform a sweeping strike that damages all enemies within range. Press the Space key while using the skill to make Jet briefly hover in the air. Deals physical damage equal to X of Attack Power plus X additional damage. Restores 10 rage for each enemy hit."
+				},
+				"commander-jet-battle-cry": {
+					"name": "Battle Cry",
+					"description": "Restores health and applies a buff to Jet that increases critical hit chance and Attack Power. Restores X health and additionally X of Spell Power. Applies an effect that increases Attack Power by X and critical hit chance by X. The effect lasts X sec. and stacks up to 3 times. Cost: 20 rage."
+				},
+				"commander-jet-bare-heart": {
+					"name": "Bare Heart",
+					"description": "Reduces Jet's health to 1. At the same time, grants immunity to damage and allows him to restore health by attacking enemies. Grants Jet immunity to damage for X sec. Restores the caster's health equal to X of the damage dealt. Restores 50 rage."
+				}
+			},
+			"skill-type": {
+				"active": "Active",
+				"passive": "Passive"
+			}
+		},
+		"items": {
+			"category": {
+				"physical": "Physical",
+				"magical": "Magical",
+				"defense": "Defense",
+				"other": "Other",
+				"exclusive": "Exclusive"
+			},
+			"name": {
+				"rusted-sword": "Rusted Sword",
+				"daggers": "Daggers",
+				"gloves": "Gloves",
+				"sickle": "Sickle",
+				"iron-halberd": "Iron Halberd",
+				"crit-gauntlets": "Crit Gauntlets",
+				"skyrazer-broadsword": "Skyrazer Broadsword",
+				"cleaver": "Cleaver",
+				"daggers-of-frenzy": "Daggers of Frenzy",
+				"sword-of-justice": "Sword of Justice",
+				"quick-shooter": "Quick Shooter",
+				"glowing-sea-gods-sigh": "Glowing Sea God's Sigh",
+				"frost-pike": "Frost Pike",
+				"skyfeather": "Skyfeather",
+				"seven-star-sword": "Seven-Star Sword",
+				"dual-bloodlust-blades": "Dual Bloodlust Blades",
+				"wolfbane-twin-blades": "Wolfbane Twin Blades",
+				"ten-steps-one-kill": "Ten Steps, One Kill",
+				"dragons-roar": "Dragon's Roar",
+				"spectral-gear-aurora": "Spectral Gear: Aurora",
+				"green-titan-axe": "Green Titan Axe",
+				"ravenous-wolf": "Ravenous Wolf",
+				"spectral-gear-star-stream": "Spectral Gear: Star Stream",
+				"tungsten-chelae": "Tungsten Chelae",
+				"texts": "Texts",
+				"chaos-ice": "Chaos Ice",
+				"jade-pendant": "Jade Pendant",
+				"lambent-codex": "Lambent Codex",
+				"dawns-spirit": "Dawn's Spirit",
+				"thousand-morphs": "Thousand Morphs",
+				"book-of-times": "Book of Times",
+				"nether-spellblade": "Nether Spellblade",
+				"sage-mask": "Sage Mask",
+				"enmity-crystal": "Enmity Crystal",
+				"imps-bolus": "Imp's Bolus",
+				"flaming-legion": "Flaming Legion",
+				"core-of-ruin": "Core of Ruin",
+				"spell-phylactery": "Spell Phylactery",
+				"thousand-morph-staff": "Thousand Morph Staff",
+				"merrymaker-ring": "Merrymaker Ring",
+				"mana-claw": "Mana Claw",
+				"butterfly-cane": "Butterfly Cane",
+				"mask-of-silver-and-shadow": "Mask of Silver and Shadow",
+				"conch-staff": "Conch Staff",
+				"nimbus-codex": "Nimbus Codex",
+				"demonhunter-scroll": "Demonhunter Scroll",
+				"quamaris-crescent": "Qamari's Crescent",
+				"treatise-on-potential": "Treatise on Potential",
+				"bloodsoul": "Bloodsoul",
+				"linen-cloth": "Linen Cloth",
+				"fairytale-hat": "Fairytale Hat",
+				"excelsior": "Excelsior",
+				"rough-cap": "Rough Cap",
+				"flames-heart": "Flame's Heart",
+				"dreamlike-shawl": "Dreamlike Shawl",
+				"steelback-shield": "Steelback Shield",
+				"glorious-armor": "Glorious Armor",
+				"vanguard-pavise": "Vanguard Pavise",
+				"god-of-war": "God of War",
+				"firewalkers-gloves": "Firewalker's Gloves",
+				"elemental-shade": "Elemental Shade",
+				"open-world": "Open World",
+				"dragoon": "Dragoon",
+				"spirited-fighter-bulwark": "Spirited Fighter Bulwark",
+				"cloud-smoke": "Cloud Smoke",
+				"raiment-of-darkness": "Raiment of Darkness",
+				"cold-heart": "Cold Heart",
+				"lingering-song-shirt": "Lingering Song Shirt",
+				"crimson-armor": "Crimson Armor",
+				"refined-sleeves": "Refined Sleeves",
+				"novitiates-shoes": "Novitiate's Shoes",
+				"glorious-war-boots": "Glorious War Boots",
+				"true-voyagers-shoes": "True Voyager's Shoes",
+				"lethal-grasp-waders": "Lethal Grasp Waders",
+				"celestial-patience-waders": "Celestial Patience Waders",
+				"adventurers-war-boots": "Adventurer's War Boots",
+				"breeze-sandals": "Breeze Sandals",
+				"novitiates-halberd": "Novitiate's Halberd",
+				"merciless-broadsword": "Merciless Broadsword",
+				"raging-ape-battleaxe": "Raging Ape Battleaxe",
+				"proudlight-axe": "Proudlight Axe",
+				"broadsword-of-chrysos": "Broadsword of Chrysos",
+				"axe-of-the-headless-warrior": "Axe of the Headless Warrior",
+				"world-breaker": "World Breaker",
+				"twin-blades": "Twin Blades",
+				"butterfly-wings": "Butterfly Wings"
+			},
+			"stat": {
+				"physical-damage": "Physical Damage",
+				"magical-damage": "Magical Damage",
+				"attack-speed": "Attack Speed",
+				"crit-rate": "Crit Rate",
+				"life-steal": "Life Steal",
+				"max-hp": "Max HP",
+				"max-mana": "Max Mana",
+				"movement-speed": "Movement Speed",
+				"cooldown-reduction": "Cooldown Reduction",
+				"physical-pierce": "Physical Pierce",
+				"magical-pierce": "Magical Pierce",
+				"physical-armor": "Physical Armor",
+				"magical-armor": "Magical Armor",
+				"mana-recovery": "Mana Recovery",
+				"health-recovery": "Health Recovery",
+				"punishment-rate": "Punishment Rate"
+			},
+			"sole": {
+				"adrenaline-peak": "[A] Adrenaline Peak: Reduce HP to 1 and gain immunity to all damage and control debuffs. This cannot be dispelled, and it lasts two seconds",
+				"bloodlust-1": "[A]: Bloodlust: Nearby allies gain 10% more damage output and 30% movement speed for four seconds. Cooldown: 60 seconds",
+				"punification": "[A] Punification: Dispel control debuffs from oneself and gain two seconds of Mercurial and 50% Damage Reduction",
+				"star-aegis": "[A] Star Aegis: Become unable to move or use skills, but gain immunity to all attack damage or debuffs for three seconds. Cannot be dispelled",
+				"berserker": "[P] Berserker: After a critical hit, Attack Speed is increased by 50% for five seconds",
+				"bloodthirst": "[P] Bloodthirst: Leech +5% Stacks with Magic Skill Leech",
+				"bloodthirst-2": "[P] Bloodthirst: Magic Skill Leech +15%",
+				"bloody-fury": "[P]: Bloody Fury: When HP falls below 40%, you get Blood Fury upon taking damage. Your Attack attribute is increased by 60 and you get a shield that can absorb a large amount of damage for eight seconds. Cooldown: 90 seconds",
+				"butterfly-wings": "[P] Butterfly Wings: The damage of the Deadly Stroke skill increases. While using the skill, you get the \"Invulnerability\" effect",
+				"coldness-1": "[P] Coldness: Normal attacks reduce target`s movement speed by 20% for four seconds.",
+				"coldness-2": "[P] Coldness: Normal attack reduces target`s Attack Speed by 30% and Movement Speed by 30% for two seconds",
+				"coldness-3": "[P] Coldness: When skill hits an enemy target, its Attack Speed is reduced by 30% and its Movement Speed is reduced by 30% for two seconds",
+				"counter-chomp": "[P] Counter-chomp: Reflects 10% of incoming Magic Damage at the enemy",
+				"damage-overflow": "[P] Damage Overflow: Increases Crit Damage by 50%",
+				"destruction": "[P] Destruction: Magic Damage Insensifier +35%",
+				"divine-way-1": "[P] Divine Way: Movement Speed +57",
+				"divine-way-2": "[P] Divine Way: Movement Speed +114",
+				"divine-way-3": "[P] Divine Way: Movement Speed +171",
+				"explorer-1": "[P] Explorer: Critter XP +20%",
+				"explorer-2": "[P] Explorer: Critter XP +30%",
+				"ice-heart": "[P] Ice Heart: If you suffer a single blow dealing more than 8% HP in damage, It triggers Coldheart Shock, which deals 60-200 magic damage to nearby foes and reduces their Attack Speed and Movement Speed by 30% for four seconds. Cooldown: Two seconds",
+				"ignore": "[P] Ignore: Magic Defense Break Rate +45%",
+				"legion": "[P] Legion: Increases Physical Damage by 60 and Magic Damage by 120 for teammates in a wide area",
+				"mana-recovery": "[P] Mana Recovery: Mana Recovery +30",
+				"mana-shield": "[P] Mana Shield: When HP falls below 50%, being attacked will provide a shield that absorbs 1,500 (+50% Magic Bonus) damage for eight seconds. The effect has a 90-seconds cooldown",
+				"mark": "[P] Mark: Increases HP by 1400",
+				"pain": "[P] Pain: Damage skills now deal bonus Magic Damage equal to 6% of current HP. Cooldown is three seconds",
+				"power-strike-1": "[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Physical Damage equal to 100% Physical Bonus. The effect has a two-second cooldown",
+				"power-strike-2": "[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Magic Damage equal to 50% Physical Damage (+30% Magic Bonus). This effect has a two-second cooldown",
+				"power-strike-3": "[P] Power Strike: After using the skill, the next normal attack within five seconds deals additional Magic Damage equal to 30% Physical Damage (+65% Magic Bonus). The effect has a two-second cooldown",
+				"pursuit-strike-1": "[P] Pursuit Strike: Increases Normal Attack`s Physical Damage by 30",
+				"pursuit-strike-2": "[P] Pursuit Strike: Increases Normal Attack`s Physical Damage by 60",
+				"rampage": "[P] Rampage: Every time you take damage, you get one stack of a buff that increases your Movement Speed by 2% and your Damage Intensifier by 2%. Stacks up to five times. Lasts eight seconds. Has an interval 1.5-second cooldown",
+				"ravenous-wolf": "[P] Ravenous Wolf: When HP falls below 30%, you deal 20% more damage",
+				"recovery": "[P] Recovery: Heals 3% of maximum HP per second when not in combat",
+				"residual-shock": "[P] Residual Shock: Normal attack has a 30% chance to trigger Residual Shock, dealing 100 magic to the target",
+				"resurrection": "[P] Resurrection: One second after dying, you revive with 30% HP. Cooldown: 180 seconds",
+				"serious-injury": "[P] Serious Injury: Hitting an enemy with this skill inflicts Serious Injury, which reduces their healing by 50%",
+				"shatter-armor": "[P] Magic Pierce +75",
+				"shockwave": "[P] Shockwave: When skill hits the target, deals Magic Damage equal to 50 (+50% magic bonus). Cooldown is four seconds",
+				"sunder": "[P] Sunder: Physical Defense Break Rate +45%",
+				"sunscorch-1": "[P] Sunscorch: Deals 150 magic damage every two seconds to enemies nearby",
+				"sunscorch-2": "[P]: Sunscorch: Deals 280 magic damage every two seconds to enemies nearby",
+				"sword-storm": "[P] Blade Dance: Sword Storm`s base damage has been increased to 80%, and a vortex also appears when spinning.",
+				"thorns": "[P] Thorns: Reflects 10% of incoming Physical Damage back at enemy",
+				"torpidity-1": "[P] Torpidity: When attacked, all nearby enemies lose 30% Attack Speed for four seconds",
+				"torpidity-2": "[P] Torpidity: When attacked, nearby enemies lose 30% Attack Speed and 15% Movement Speed for four seconds",
+				"yin-yang": "[P] Yin-Yang: While using the Cocoon skill, you can move around.",
+				"vanquish": "[P] Vanquish: Normal attack deals bonus physical damage equal to 6% of the target`s current HP",
+				"weak-heal": "[P] Weak Heal: Hitting a target with a normal attack triggers a Weak Heal effect that reduces healing by 50%",
+				"winters-chill": "[P] Winter`s Chill: After using the skill, the next normal attack within five seconds deals 170-400 bonus Physical Damage and reduces Movement Speed by 30% for three seconds. Cooldown is three seconds"
+			}
+		}
+	}
 }

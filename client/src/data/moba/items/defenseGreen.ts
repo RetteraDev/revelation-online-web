@@ -1,489 +1,471 @@
-import { MobaItemId, MobaItemCategory, MobaItemColor, MobaItemStatType, MobaItemEffectName, MobaItemSoleType, type MobaItem, MobaItemSoleName } from "@/data/moba/items/values";
+import {
+	type MobaItem,
+	MobaItemCategory,
+	MobaItemColor,
+	MobaItemEffectName,
+	MobaItemId,
+	MobaItemSoleName,
+	MobaItemSoleType,
+	MobaItemStatType,
+} from "@/data/moba/items/values";
 
 export const DEFENSE_GREEN_ITEMS: MobaItem[] = [
-    {
-        key: MobaItemId.VANGUARD_PAVISE,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Щит полководца.png',
+	{
+		key: MobaItemId.VANGUARD_PAVISE,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Щит полководца.png",
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 500
-            },
-            {
-                name: MobaItemEffectName.MovementSpeed,
-                type: MobaItemStatType.Percent,
-                value: 5
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 500,
+			},
+			{
+				name: MobaItemEffectName.MovementSpeed,
+				type: MobaItemStatType.Percent,
+				value: 5,
+			},
+		],
 
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.Legion,
-            },
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.Legion,
+			},
+		],
 
-        recipe: [
-            MobaItemId.BLOODSOUL,
-            MobaItemId.RUSTED_SWORD,
-            MobaItemId.TEXTS,
-        ],
+		recipe: [MobaItemId.BLOODSOUL, MobaItemId.RUSTED_SWORD, MobaItemId.TEXTS],
 
-        buyPrice: 1510,
-        sellPrice: 905,
-    },
+		buyPrice: 1510,
+		sellPrice: 905,
+	},
 
-    {
-        key: MobaItemId.GOD_OF_WAR,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Терновый доспех.png',
+	{
+		key: MobaItemId.GOD_OF_WAR,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Терновый доспех.png",
 
-        stats: [
-            {
-                name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 420
-            },
-            {
-                name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemStatType.Flat,
-                value: 80
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.PhysicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 420,
+			},
+			{
+				name: MobaItemEffectName.PhysicalDamage,
+				type: MobaItemStatType.Flat,
+				value: 80,
+			},
+		],
 
-        soles: [            
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.Thorns,
-            },
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.Thorns,
+			},
+		],
 
-        recipe: [
-            MobaItemId.LINEN_CLOTH,
-            MobaItemId.LINEN_CLOTH,
-            MobaItemId.IRON_HALBERD,
-        ],
+		recipe: [
+			MobaItemId.LINEN_CLOTH,
+			MobaItemId.LINEN_CLOTH,
+			MobaItemId.IRON_HALBERD,
+		],
 
-        buyPrice: 1840,
-        sellPrice: 1103,
-    },
+		buyPrice: 1840,
+		sellPrice: 1103,
+	},
 
-    {
-        key: MobaItemId.FIREWALKERS_GLOVES,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Перчатки инквизитора.png',
+	{
+		key: MobaItemId.FIREWALKERS_GLOVES,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Перчатки инквизитора.png",
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 1000
-            },
-            {
-                name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemStatType.Flat,
-                value: 20
-            },
-        ],
-        
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.BloodyFury,
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 1000,
+			},
+			{
+				name: MobaItemEffectName.PhysicalDamage,
+				type: MobaItemStatType.Flat,
+				value: 20,
+			},
+		],
 
-        recipe: [
-            MobaItemId.BLOODSOUL,
-            MobaItemId.BLOODSOUL,
-            MobaItemId.RUSTED_SWORD,
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.BloodyFury,
+			},
+		],
 
-        buyPrice: 2120,
-        sellPrice: 1271,
-    },
+		recipe: [
+			MobaItemId.BLOODSOUL,
+			MobaItemId.BLOODSOUL,
+			MobaItemId.RUSTED_SWORD,
+		],
 
-    {
-        key: MobaItemId.ELEMENTAL_SHADE,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Эмблема гладиатора.png',
+		buyPrice: 2120,
+		sellPrice: 1271,
+	},
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 400
-            },
-            {
-                name: MobaItemEffectName.MaxMana,
-                type: MobaItemStatType.Flat,
-                value: 400
-            },
-            {
-                name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 100
-            },
-        ],
+	{
+		key: MobaItemId.ELEMENTAL_SHADE,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Эмблема гладиатора.png",
 
-        soles: [
-            {
-                type: MobaItemSoleType.Active,
-                name: MobaItemSoleName.BloodlustV1,
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 400,
+			},
+			{
+				name: MobaItemEffectName.MaxMana,
+				type: MobaItemStatType.Flat,
+				value: 400,
+			},
+			{
+				name: MobaItemEffectName.PhysicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 100,
+			},
+		],
 
-        recipe: [
-            MobaItemId.BLOODSOUL,
-            MobaItemId.CHAOS_ICE,
-            MobaItemId.LINEN_CLOTH,
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Active,
+				name: MobaItemSoleName.BloodlustV1,
+			},
+		],
 
-        buyPrice: 1530,
-        sellPrice: 917,
-    },
+		recipe: [
+			MobaItemId.BLOODSOUL,
+			MobaItemId.CHAOS_ICE,
+			MobaItemId.LINEN_CLOTH,
+		],
 
-    {
-        key: MobaItemId.OPEN_WORLD,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Жилет пироманта.png',
+		buyPrice: 1530,
+		sellPrice: 917,
+	},
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 1200
-            },
-            {
-                name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 240
-            },
-        ],
+	{
+		key: MobaItemId.OPEN_WORLD,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Жилет пироманта.png",
 
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.SunscorchV2,
-            }
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 1200,
+			},
+			{
+				name: MobaItemEffectName.PhysicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 240,
+			},
+		],
 
-        recipe: [
-            MobaItemId.FLAMES_HEART,
-            MobaItemId.LINEN_CLOTH,
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.SunscorchV2,
+			},
+		],
 
-        buyPrice: 1830,
-        sellPrice: 1097,
-    },
+		recipe: [MobaItemId.FLAMES_HEART, MobaItemId.LINEN_CLOTH],
 
-    {
-        key: MobaItemId.DRAGOON,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Объятье Акари.png',
+		buyPrice: 1830,
+		sellPrice: 1097,
+	},
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 2000
-            },
-            {
-                name: MobaItemEffectName.HealthRecovery,
-                type: MobaItemStatType.Flat,
-                value: 20
-            },
-        ],
+	{
+		key: MobaItemId.DRAGOON,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Объятье Акари.png",
 
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.Recovery,
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 2000,
+			},
+			{
+				name: MobaItemEffectName.HealthRecovery,
+				type: MobaItemStatType.Flat,
+				value: 20,
+			},
+		],
 
-        recipe: [
-            MobaItemId.BLOODSOUL,
-            MobaItemId.ROUGH_CAP,
-            MobaItemId.EXCELSIOR,
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.Recovery,
+			},
+		],
 
-        buyPrice: 2370,
-        sellPrice: 1421,
-    },
+		recipe: [MobaItemId.BLOODSOUL, MobaItemId.ROUGH_CAP, MobaItemId.EXCELSIOR],
 
-    {
-        key: MobaItemId.SPIRITED_FIGHTER_BUlWARK,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Эгида Атума.png',
+		buyPrice: 2370,
+		sellPrice: 1421,
+	},
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 1200
-            },
-            {
-                name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 270
-            },
-        ],
+	{
+		key: MobaItemId.SPIRITED_FIGHTER_BUlWARK,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Эгида Атума.png",
 
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.TorpidityV2,
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 1200,
+			},
+			{
+				name: MobaItemEffectName.PhysicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 270,
+			},
+		],
 
-        recipe: [
-            MobaItemId.ROUGH_CAP,
-            MobaItemId.GLORIOUS_ARMOR,
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.TorpidityV2,
+			},
+		],
 
-        buyPrice: 2180,
-        sellPrice: 1307,
-    },
+		recipe: [MobaItemId.ROUGH_CAP, MobaItemId.GLORIOUS_ARMOR],
 
-    {
-        key: MobaItemId.CLOUD_SMOKE,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Камзол иллюзиониста.png',
+		buyPrice: 2180,
+		sellPrice: 1307,
+	},
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 1100
-            },
-            {
-                name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 180
-            },
-            {
-                name: MobaItemEffectName.HealthRecovery,
-                type: MobaItemStatType.Flat,
-                value: 9
-            },
-            {
-                name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemStatType.Percent,
-                value: 10
-            },
-        ],
+	{
+		key: MobaItemId.CLOUD_SMOKE,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Камзол иллюзиониста.png",
 
-        recipe: [
-            MobaItemId.BLOODSOUL,
-            MobaItemId.DREAMLIKE_SHAWL,
-            MobaItemId.EXCELSIOR,
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 1100,
+			},
+			{
+				name: MobaItemEffectName.MagicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 180,
+			},
+			{
+				name: MobaItemEffectName.HealthRecovery,
+				type: MobaItemStatType.Flat,
+				value: 9,
+			},
+			{
+				name: MobaItemEffectName.CooldownReduction,
+				type: MobaItemStatType.Percent,
+				value: 10,
+			},
+		],
 
-        buyPrice: 2100,
-        sellPrice: 1259,
-    },
+		recipe: [
+			MobaItemId.BLOODSOUL,
+			MobaItemId.DREAMLIKE_SHAWL,
+			MobaItemId.EXCELSIOR,
+		],
 
-    {
-        key: MobaItemId.RAIMENT_OF_DARKNESS,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Одеяние тьмы.png',
+		buyPrice: 2100,
+		sellPrice: 1259,
+	},
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 1000
-            },
-            {
-                name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 360
-            },
-        ],
+	{
+		key: MobaItemId.RAIMENT_OF_DARKNESS,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Одеяние тьмы.png",
 
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.CounterChomp,
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 1000,
+			},
+			{
+				name: MobaItemEffectName.MagicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 360,
+			},
+		],
 
-        recipe: [
-            MobaItemId.DREAMLIKE_SHAWL,
-            MobaItemId.ROUGH_CAP,
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.CounterChomp,
+			},
+		],
 
-        buyPrice: 2120,
-        sellPrice: 1271,
-    },
+		recipe: [MobaItemId.DREAMLIKE_SHAWL, MobaItemId.ROUGH_CAP],
 
-    {
-        key: MobaItemId.COLD_HEART,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Небула.png',
+		buyPrice: 2120,
+		sellPrice: 1271,
+	},
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxMana,
-                type: MobaItemStatType.Flat,
-                value: 500
-            },
-            {
-                name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 360
-            },
-            {
-                name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemStatType.Percent,
-                value: 20
-            },
-        ],
+	{
+		key: MobaItemId.COLD_HEART,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Небула.png",
 
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.IceHeart,
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxMana,
+				type: MobaItemStatType.Flat,
+				value: 500,
+			},
+			{
+				name: MobaItemEffectName.PhysicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 360,
+			},
+			{
+				name: MobaItemEffectName.CooldownReduction,
+				type: MobaItemStatType.Percent,
+				value: 20,
+			},
+		],
 
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.IceHeart,
+			},
+		],
 
-        recipe: [
-            MobaItemId.STEELBACK_SHIELD,
-            MobaItemId.GLORIOUS_ARMOR,
-        ],
+		recipe: [MobaItemId.STEELBACK_SHIELD, MobaItemId.GLORIOUS_ARMOR],
 
-        buyPrice: 2100,
-        sellPrice: 1259,
-    },
+		buyPrice: 2100,
+		sellPrice: 1259,
+	},
 
-    {
-        key: MobaItemId.LINGERING_SONG_SHIRT,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Одеяние бессмертного.png',
+	{
+		key: MobaItemId.LINGERING_SONG_SHIRT,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Одеяние бессмертного.png",
 
-        stats: [
-            {
-                name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 140
-            },
-            {
-                name: MobaItemEffectName.MagicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 140
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.PhysicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 140,
+			},
+			{
+				name: MobaItemEffectName.MagicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 140,
+			},
+		],
 
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.Resurrection,
-            },
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.Resurrection,
+			},
+		],
 
-        recipe: [
-            MobaItemId.STEELBACK_SHIELD,
-            MobaItemId.GLORIOUS_ARMOR,
-        ],
+		recipe: [MobaItemId.STEELBACK_SHIELD, MobaItemId.GLORIOUS_ARMOR],
 
-        buyPrice: 2080,
-        sellPrice: 1247,
-    },
+		buyPrice: 2080,
+		sellPrice: 1247,
+	},
 
-    {
-        key: MobaItemId.CRIMSON_ARMOR,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Самурайский доспех.png',
+	{
+		key: MobaItemId.CRIMSON_ARMOR,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Самурайский доспех.png",
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 1000
-            },
-            {
-                name: MobaItemEffectName.PhysicalDamage,
-                type: MobaItemStatType.Flat,
-                value: 60
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 1000,
+			},
+			{
+				name: MobaItemEffectName.PhysicalDamage,
+				type: MobaItemStatType.Flat,
+				value: 60,
+			},
+		],
 
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.Rampage,
-            },
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.Rampage,
+			},
+		],
 
-        recipe: [
-            MobaItemId.DREAMLIKE_SHAWL,
-            MobaItemId.LINEN_CLOTH,
-        ],
+		recipe: [MobaItemId.DREAMLIKE_SHAWL, MobaItemId.LINEN_CLOTH],
 
-        buyPrice: 1820,
-        sellPrice: 1091,
-    },
+		buyPrice: 1820,
+		sellPrice: 1091,
+	},
 
-    {
-        key: MobaItemId.REFINED_SLEEVES,
-        category: MobaItemCategory.DEFENSE,
-        color: MobaItemColor.GREEN,
-        icon: '/moba/items/Рукавицы имперского стража.png',
+	{
+		key: MobaItemId.REFINED_SLEEVES,
+		category: MobaItemCategory.DEFENSE,
+		color: MobaItemColor.GREEN,
+		icon: "/moba/items/Рукавицы имперского стража.png",
 
-        stats: [
-            {
-                name: MobaItemEffectName.MaxHealth,
-                type: MobaItemStatType.Flat,
-                value: 800
-            },
-            {
-                name: MobaItemEffectName.MaxMana,
-                type: MobaItemStatType.Flat,
-                value: 500
-            },
-            {
-                name: MobaItemEffectName.PhysicalArmor,
-                type: MobaItemStatType.Flat,
-                value: 200
-            },
-            {
-                name: MobaItemEffectName.CooldownReduction,
-                type: MobaItemStatType.Percent,
-                value: 10
-            },
-        ],
+		stats: [
+			{
+				name: MobaItemEffectName.MaxHealth,
+				type: MobaItemStatType.Flat,
+				value: 800,
+			},
+			{
+				name: MobaItemEffectName.MaxMana,
+				type: MobaItemStatType.Flat,
+				value: 500,
+			},
+			{
+				name: MobaItemEffectName.PhysicalArmor,
+				type: MobaItemStatType.Flat,
+				value: 200,
+			},
+			{
+				name: MobaItemEffectName.CooldownReduction,
+				type: MobaItemStatType.Percent,
+				value: 10,
+			},
+		],
 
-        soles: [
-            {
-                type: MobaItemSoleType.Passive,
-                name: MobaItemSoleName.WintersChill,
-            },
-        ],
+		soles: [
+			{
+				type: MobaItemSoleType.Passive,
+				name: MobaItemSoleName.WintersChill,
+			},
+		],
 
-        recipe: [
-            MobaItemId.LINEN_CLOTH,
-            MobaItemId.NETHER_SPELLBLADE,
-            MobaItemId.LINEN_CLOTH,
-        ],
+		recipe: [
+			MobaItemId.LINEN_CLOTH,
+			MobaItemId.NETHER_SPELLBLADE,
+			MobaItemId.LINEN_CLOTH,
+		],
 
-        buyPrice: 2020,
-        sellPrice: 1211,
-    },
-]
+		buyPrice: 2020,
+		sellPrice: 1211,
+	},
+];

@@ -1,27 +1,35 @@
-import { MobaSkillButton, type MobaHeroId, type MobaSkillId, type MobaSkillType } from "@/data/moba/heroes"
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
+import {
+	type MobaHeroId,
+	MobaSkillButton,
+	type MobaSkillId,
+	type MobaSkillType,
+} from "@/data/moba/heroes";
 
 export const useMobaHeroTranslation = () => {
-  const { t } = useTranslation()
-  
-  const getHeroName = (heroId: MobaHeroId): string => {
-    return t(`moba.heroes.name.${heroId}`)
-  }
+	const { t } = useTranslation();
 
-  const getSkillName = (skillId: MobaSkillId): string => {
-    return t(`moba.heroes.skill.${skillId}.name`)
-  }
+	const getHeroName = (heroId: MobaHeroId): string => {
+		return t(`moba.heroes.name.${heroId}`);
+	};
 
-  const getSkillDescription = (skillId: MobaSkillId): string => {
-    return t(`moba.heroes.skill.${skillId}.description`)
-  }
-  
-  const getSkillUse = (skillTypeId: MobaSkillType, skillButtonId: MobaSkillButton): string => {
-    const skillTypeText = t(`moba.heroes.skill-type.${skillTypeId}`)
-    return skillButtonId === MobaSkillButton.NONE 
-        ? skillTypeText 
-        : `${skillTypeText} [${skillButtonId}]`;
-    }
+	const getSkillName = (skillId: MobaSkillId): string => {
+		return t(`moba.heroes.skill.${skillId}.name`);
+	};
 
-  return { getHeroName, getSkillName, getSkillDescription, getSkillUse }
-}
+	const getSkillDescription = (skillId: MobaSkillId): string => {
+		return t(`moba.heroes.skill.${skillId}.description`);
+	};
+
+	const getSkillUse = (
+		skillTypeId: MobaSkillType,
+		skillButtonId: MobaSkillButton,
+	): string => {
+		const skillTypeText = t(`moba.heroes.skill-type.${skillTypeId}`);
+		return skillButtonId === MobaSkillButton.NONE
+			? skillTypeText
+			: `${skillTypeText} [${skillButtonId}]`;
+	};
+
+	return { getHeroName, getSkillName, getSkillDescription, getSkillUse };
+};
