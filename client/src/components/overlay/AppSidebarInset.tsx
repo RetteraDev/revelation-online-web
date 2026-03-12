@@ -2,7 +2,8 @@ import { Separator } from "@radix-ui/react-separator";
 import type { ReactNode } from "react";
 import { BreadcrumbNav } from "@/components/overlay/BreadcrumbNav";
 import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
-import LanguageChanger from "../common/buttons/LanguageChanger";
+import LanguageChanger from "@/components/common/buttons/LanguageChanger";
+import ThemeChanger from "@/components/common/buttons/ThemeChanger";
 
 interface AppSidebarInsetProps {
 	children: ReactNode;
@@ -17,10 +18,15 @@ function AppSidebarInset({ children }: AppSidebarInsetProps) {
 					orientation="vertical"
 					className="mr-2 data-[orientation=vertical]:h-4"
 				/>
+
 				<div className="grow">
 					<BreadcrumbNav />
 				</div>
-				<LanguageChanger />
+
+				<div className="flex flex-row gap-6">
+					<ThemeChanger />
+					<LanguageChanger />
+				</div>
 			</header>
 			<main className="flex-1 flex-col p-4 md:p-6 lg:p-8">
 				<div className="mx-auto max-w-6xl">{children}</div>
