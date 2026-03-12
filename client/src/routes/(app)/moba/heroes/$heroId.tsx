@@ -98,6 +98,7 @@ function RouteComponent() {
 								autoPlay
 								loop
 								muted
+								playsInline
 							>
 								<source src={selectedSkill.preview} type="video/mp4" />
 							</video>
