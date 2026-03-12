@@ -31,7 +31,7 @@ function RouteComponent() {
 		<div className="flex flex-col gap-4">
 			<div className="flex items-center gap-3">
 				<Button asChild variant="ghost" size="icon">
-					<Link to="/moba/heroes">
+					<Link to="/moba/items">
 						<ChevronLeft className="h-5 w-5" />
 					</Link>
 				</Button>
