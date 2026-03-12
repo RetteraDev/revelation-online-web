@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { getItem } from "@/data/moba/items/all";
 import type { MobaItemId } from "@/data/moba/items/values";
 import { useMobaItemTranslation } from "@/hooks/i18n/useMobaItemTranslation";
+import CardsHeader from "@/components/common/cards/CardsHeader";
+import CardsBody from "@/components/common/cards/CardsBody";
+import CardsFooter from "@/components/common/cards/CardsFooter";
 
 export const Route = createFileRoute("/(app)/moba/items/$itemId")({
 	component: RouteComponent,
@@ -28,20 +31,26 @@ function RouteComponent() {
 	const { getItemName } = useMobaItemTranslation();
 
 	return (
-		<div className="flex flex-col gap-4">
-			<div className="flex items-center gap-3">
-				<Button asChild variant="ghost" size="icon">
-					<Link to="/moba/items">
-						<ChevronLeft className="h-5 w-5" />
-					</Link>
-				</Button>
+		<div className="flex flex-1 flex-col w-full">
+			<CardsHeader>
+				<div className="flex flex-1 flex-row gap-6">
+					<Button asChild size="icon">
+						<Link to="/moba/items">
+							<ChevronLeft/>
+						</Link>
+					</Button>
 
-				<h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
-					{getItemName(item.key)}
-				</h2>
-			</div>
-
-			<ItemCard item={item} />
+					<h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+						{getItemName(item.key)}
+					</h2>
+				</div>
+			</CardsHeader>
+			<CardsBody className="grow">
+				<ItemCard item={item} />
+			</CardsBody>
+			<CardsFooter>
+				<></>
+			</CardsFooter>
 		</div>
 	);
 }

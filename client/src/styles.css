@@ -3,7 +3,15 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-beige: oklch(0.865 0.045 82.5);
+  --color-beige-dark: oklch(0.765 0.045 75.5);
+  --color-chocolate: oklch(12% 0.01 75);
+}
+
 :root {
+  --texture-old-sheet: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22a%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.006%22%20numOctaves%3D%224%22%20result%3D%22noise%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200.717%200%200%200%200%200.564%200%200%200%200%200.360%201%200%200%200%20-0.4%22%20result%3D%22coloredStains%22%2F%3E%3C%2Ffilter%3E%3Cfilter%20id%3D%22c%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.05%22%20numOctaves%3D%223%22%20result%3D%22noise%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%200.717%200%200%200%200%200.564%200%200%200%200%200.360%200.3%200%200%200%200%22%2F%3E%3C%2Ffilter%3E%3CradialGradient%20id%3D%22b%22%20cx%3D%2250%25%22%20cy%3D%2250%25%22%20r%3D%2275%25%22%3E%3Cstop%20offset%3D%2235%25%22%20stop-color%3D%22%23efdfc4%22%20stop-opacity%3D%220%22%2F%3E%3Cstop%20offset%3D%2285%25%22%20stop-color%3D%22%23b7905c%22%20stop-opacity%3D%22.4%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23b7905c%22%20stop-opacity%3D%22.8%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23efdfc4%22%2F%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22transparent%22%20filter%3D%22url(%23a)%22%20style%3D%22mix-blend-mode%3Amultiply%22%20opacity%3D%22.8%22%2F%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23b)%22%20style%3D%22mix-blend-mode%3Amultiply%22%2F%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22transparent%22%20filter%3D%22url(%23c)%22%20style%3D%22mix-blend-mode%3Amultiply%22%20opacity%3D%22.6%22%2F%3E%3C%2Fsvg%3E");
+
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -123,21 +131,56 @@
 }
 
 h1 {
-  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  @apply scroll-m-20 text-4xl text-beige font-extrabold tracking-tight lg:text-5xl;
 }
 
 h2 {
-  @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+  @apply scroll-m-20 text-3xl text-beige font-semibold tracking-tight transition-colors first:mt-0;
 }
 
 h3 {
-  @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  @apply scroll-m-20 text-2xl text-beige font-semibold tracking-tight;
 }
 
 h4 {
-  @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  @apply scroll-m-20 text-xl text-beige font-semibold tracking-tight;
+}
+
+p {
+  @apply scroll-m-2 text-beige
 }
 
 html {
   scrollbar-gutter: stable;
+}
+
+
+.bg-main {
+  background-image: var(--texture-old-sheet);
+}
+
+.bg-outlet-wrapper {
+  box-shadow: -2px 10px 38px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -2px 10px 38px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 10px 38px 0px rgba(0,0,0,0.75);
+}
+
+.bg-outlet-header {
+  background-color: rgba(35, 33, 27, 0.8);
+  border: 1px solid #cbaf80;
+}
+
+.bg-outlet-body {
+  background-color: rgba(35, 33, 27);
+  border-left: 1px solid #cbaf80;
+  border-right: 1px solid #cbaf80;
+}
+
+.bg-outlet-footer {
+  background-color: rgba(35, 33, 27, 0.8);
+  border: 1px solid #cbaf80;
+}
+
+.hover-scale {
+    @apply transition-transform duration-200 ease-in-out hover:scale-105;
 }

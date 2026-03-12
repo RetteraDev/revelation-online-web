@@ -6,7 +6,7 @@ export const Route = createFileRoute("/(app)/404")({
 
 function RouteComponent() {
 	return (
-		<div className="flex items-center justify-center px-4">
+		<div className="flex flex-1 flex-col items-center justify-center px-4">
 			<div className="text-center flex flex-col items-center">
 				<h1 className="text-7xl font-bold mb-2 tracking-tighter">404</h1>
 

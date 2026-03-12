@@ -11,21 +11,10 @@ function HeroListItem({ hero }: HeroListItemProps) {
 
 	return (
 		<Link to="/moba/heroes/$heroId" params={{ heroId: hero.key }}>
-			<div
-				className="flex flex-col items-center gap-3 p-3"
-				style={{
-					border: "1px solid black",
-				}}
-			>
-				<div className="w-28 h-28 sm:w-32 sm:h-32">
-					<div
-						className="rounded-full p-1"
-						style={{
-							background: "linear-gradient(135deg, #3c3c41, #1e2328)",
-							transition: "0.4s ease, transform 0.4s ease",
-						}}
-					>
-						<div className="w-full h-full rounded-full border-2">
+			<div className="flex flex-col items-center gap-3 p-3 border-1 border-beige bg-chocolate hover-scale">
+				<div className="w-32 h-32">
+					<div className="rounded-full">
+						<div className="w-full h-full rounded-full border-2 border-beige">
 							<img
 								src={hero.image}
 								alt={getHeroName(hero.key)}

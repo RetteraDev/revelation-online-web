@@ -21,7 +21,7 @@ function ItemCard({ item }: ItemPreviewProps) {
 		useMobaItemTranslation();
 
 	return (
-		<div className="flex flex-col w-full max-w-sm bg-[rgb(32,30,28)]">
+		<div className="flex flex-col w-full max-w-sm bg-[rgb(32,30,28)] border-beige border-1">
 			<div className="mb-3">
 				<ItemCardHeader item={item} />
 			</div>

@@ -29,14 +29,14 @@ const items: NavSidebarContentItems[] = [
 				title: "page.name.moba.items",
 				url: "/moba/items",
 			},
-			{
-				title: "page.name.moba.guides",
-				url: "/moba/guides",
-			},
-			{
-				title: "page.name.moba.builds",
-				url: "/moba/builds",
-			},
+			// {
+			// 	title: "page.name.moba.guides",
+			// 	url: "/moba/guides",
+			// },
+			// {
+			// 	title: "page.name.moba.builds",
+			// 	url: "/moba/builds",
+			// },
 		],
 	},
 ];

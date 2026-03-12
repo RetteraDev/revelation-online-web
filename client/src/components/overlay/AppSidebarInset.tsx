@@ -28,8 +28,10 @@ function AppSidebarInset({ children }: AppSidebarInsetProps) {
 					<LanguageChanger />
 				</div>
 			</header>
-			<main className="flex-1 flex-col p-4 md:p-6 lg:p-8">
-				<div className="mx-auto max-w-6xl">{children}</div>
+			<main className="bg-main flex flex-1 flex-col p-4 md:p-6 lg:p-8">
+				<div className="bg-outlet-wrapper bg-white mx-auto flex flex-1 max-w-6xl w-full">
+					{children}
+				</div>
 			</main>
 		</SidebarInset>
 	);
