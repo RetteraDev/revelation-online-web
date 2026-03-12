@@ -1,0 +1,55 @@
+---
+name: ✨ Предложение новой функциональности
+description: Предложите идею по улучшению проекта Revelation Online
+labels: enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что нашли время предложить идею по улучшению проекта!
+
+        Прежде чем продолжить, пожалуйста, убедитесь, что подобная функциональность ещё не была [предложена ранее][issue search]
+
+        [issue search]: https://github.com/retteradev/revelation-online-web/issues?q=is%3Aissue
+        [discussions]: https://github.com/retteradev/revelation-online-web/discussions
+  - type: textarea
+    id: overview
+    attributes:
+      label: Описание функциональности
+      description: Чёткое и краткое описание того, что вы хотите предложить.
+      placeholder: Я бы хотел(-a), чтобы проект умел делать "X"...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Связано с проблемой?
+      description: Опишите проблему, которую решит данная функциональность. Если проблема не связана с функциональностью, просто напишите "Не связано".
+      placeholder: Меня не устраивает, что сейчас нельзя сделать "X", потому что...
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Рассматриваемые альтернативы
+      description: Опишите любые альтернативные решения или обходные пути, которые вы рассматривали или использовали.
+      placeholder: Сейчас я делаю "X" через "Y", но это неудобно, потому что...
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Дополнительный контекст
+      description: Добавьте любой другой контекст к предложению здесь.
+      placeholder: Можете добавить скриншоты, примеры кода, ссылки на похожие реализации в других проектах или любую другую информацию, которая может быть полезной.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Подтверждение
+      description: Перед отправкой убедитесь, что ваше предложение соответствует правилам проекта.
+      options:
+        - label: Я подтверждаю, что данная функциональность ещё не была предложена ранее
+          required: true
+        - label: Я готов предоставить дополнительную информацию и участвовать в обсуждении
+          required: true
+---

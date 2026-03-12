@@ -1,0 +1,115 @@
+---
+name: 🐛 Сообщение об ошибке
+description: Сообщите об ошибке, чтобы помочь нам улучшить проект Revelation Online
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что помогаете нам находить ошибки!
+
+        Прежде чем создать отчёт, пожалуйста:
+        - Убедитесь, что подобная ошибка ещё не была [сообщена ранее][issue search]
+        - Если вы не уверены, что это ошибка, начните обсуждение в [GitHub discussions][discussions]
+
+        [issue search]: https://github.com/retteradev/revelation-online-web/issues?q=is%3Aissue
+        [discussions]: https://github.com/retteradev/revelation-online-web/discussions
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание ошибки
+      description: Чёткое и краткое описание того, в чём заключается ошибка.
+      placeholder: Когда я делаю "X", происходит "Y", хотя должно происходить "Z"...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги для воспроизведения
+      description: Как мы можем воспроизвести эту ошибку?
+      placeholder: |
+        1. Перейти на страницу '...'
+        2. Нажать на '...'
+        3. Проскроллить до '...'
+        4. Увидеть ошибку
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+      description: Что должно было произойти?
+      placeholder: Должно было открыться модальное окно с информацией о персонаже...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+      description: Что произошло на самом деле?
+      placeholder: Страница перезагрузилась, и ничего не произошло...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Скриншоты / Видео
+      description: Если применимо, добавьте скриншоты или видео, чтобы наглядно показать проблему.
+      placeholder: Перетащите файлы сюда или вставьте ссылку
+
+  - type: input
+    id: browser
+    attributes:
+      label: Браузер
+      description: В каком браузере вы столкнулись с ошибкой?
+      placeholder: Например, Chrome 120.0, Firefox 121.0, Safari 17.0
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Операционная система
+      description: На какой ОС вы используете проект?
+      placeholder: Например, Windows 11, macOS Sonoma, Android 14, iOS 17
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Логи / Ошибки в консоли
+      description: Если есть ошибки в консоли браузера (F12 -> Console), вставьте их сюда.
+      render: shell
+      placeholder: |
+        Uncaught TypeError: Cannot read property '...' of undefined
+        at ...
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Дополнительный контекст
+      description: Добавьте любую другую информацию, которая может помочь в решении проблемы.
+      placeholder: |
+        - Проблема возникает только при входе с определённого браузера, в другом работает корректно
+        - Раньше всё работало, ошибка появилась после обновления от [дата]
+        - Использовал VPN/прокси
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Проверки перед отправкой
+      description: Убедитесь, что вы выполнили следующие шаги
+      options:
+        - label: Я проверил, что подобной ошибки нет в [issue][issue search]
+          required: true
+        - label: Я предоставил всю необходимую информацию для воспроизведения ошибки
+          required: true
+        - label: Я готов предоставить дополнительные данные, если потребуется
+          required: false
+---
