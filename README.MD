@@ -8,5 +8,5 @@ pre-commit install
 # Running
 Hot Reload is also worked
 ```bash
-docker-compose -f .\docker-compose.dev.yaml up --build
+docker compose -f "docker-compose.dev.yaml" up --build
 ```
