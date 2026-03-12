@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { getHero, type MobaHeroId } from "@/data/moba/heroes";
 import { useMobaHeroTranslation } from "@/hooks/i18n/useMobaHeroTranslation";
-import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/(app)/moba/heroes/$heroId")({
 	component: RouteComponent,

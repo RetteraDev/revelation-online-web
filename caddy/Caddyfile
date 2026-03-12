@@ -1,0 +1,4 @@
+revelation-online.ru {
+    root * /var/www/html
+    file_server
+}
