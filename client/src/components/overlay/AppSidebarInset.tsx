@@ -3,7 +3,6 @@ import type { ReactNode } from "react";
 import { BreadcrumbNav } from "@/components/overlay/BreadcrumbNav";
 import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import LanguageChanger from "@/components/common/buttons/LanguageChanger";
-import ThemeChanger from "@/components/common/buttons/ThemeChanger";
 
 interface AppSidebarInsetProps {
 	children: ReactNode;
@@ -24,7 +23,6 @@ function AppSidebarInset({ children }: AppSidebarInsetProps) {
 				</div>
 
 				<div className="flex flex-row gap-6">
-					<ThemeChanger />
 					<LanguageChanger />
 				</div>
 			</header>
