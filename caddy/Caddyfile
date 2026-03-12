@@ -1,4 +1,17 @@
 revelation-online.ru {
     root * /var/www/html
+    encode gzip zstd
+
+    try_files {path} /index.html
     file_server
+
+    # Cache public folder assets
+    header /public/* {
+        Cache-Control "public, max-age=86400"
+    }
+
+    # No cache for HTML
+    header / {
+        Cache-Control "no-cache, no-store, must-revalidate"
+    }
 }
