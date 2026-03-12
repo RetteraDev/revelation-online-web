@@ -1,6 +1,7 @@
 {
-  "short_name": "TanStack App",
-  "name": "Create TanStack App Sample",
+  "short_name": "Revelation Online",
+  "name": "Revelation Online - гайды и база знаний",
+  "description": "Гайды, билды и полезная информация по игре",
   "icons": [
     {
       "src": "favicon.ico",
