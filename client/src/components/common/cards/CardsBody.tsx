@@ -7,7 +7,7 @@ interface CardsBodyProps {
 
 function CardsBody({ children, className }: CardsBodyProps) {
     return (
-        <div className={`bg-outlet-body p-3 ${className}`}>
+        <div className={`p-3 bg-chocolate border-x border-beige ${className}`}>
             {children}
         </div>
     )

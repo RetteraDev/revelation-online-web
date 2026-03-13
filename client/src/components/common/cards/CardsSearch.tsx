@@ -21,7 +21,7 @@ function CardsSearch(props: CardsSearchProps) {
 
 	return (
 		<>
-			<InputGroup className="max-w-sm border-beige bg-chocolate rounded-sm">
+			<InputGroup className="max-w-sm border-beige bg-chocolate-dark rounded-sm">
 				<InputGroupInput
 					className="text-beige"
 					placeholder="Поиск..."

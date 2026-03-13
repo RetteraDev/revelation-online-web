@@ -53,7 +53,7 @@ function RouteComponent() {
 			</CardsHeader>
 			{/* Баннер героя */}
 			<CardsBody className="!p-0">
-				<section className="relative overflow-hidden bg-chocolate">
+				<section className="relative overflow-hidden bg-chocolate-dark">
 					<div
 						className="absolute inset-0 bg-no-repeat"
 						style={{

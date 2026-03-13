@@ -11,7 +11,7 @@ function HeroListItem({ hero }: HeroListItemProps) {
 
 	return (
 		<Link to="/moba/heroes/$heroId" params={{ heroId: hero.key }}>
-			<div className="flex flex-col items-center gap-3 p-3 border-1 border-beige bg-chocolate hover-scale">
+			<div className="flex flex-col items-center gap-3 p-3 border-1 border-beige bg-chocolate-dark hover-scale">
 				<div className="w-32 h-32">
 					<div className="rounded-full">
 						<div className="w-full h-full rounded-full border-2 border-beige">
