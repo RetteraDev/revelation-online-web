@@ -27,7 +27,7 @@ function AppSidebarInset({ children }: AppSidebarInsetProps) {
 				</div>
 			</header>
 			<main className="bg-main flex flex-1 flex-col p-4 md:p-6 lg:p-8">
-				<div className="bg-outlet-wrapper bg-white mx-auto flex flex-1 max-w-6xl w-full">
+				<div className="shadow-smooth bg-white mx-auto flex flex-1 max-w-6xl w-full">
 					{children}
 				</div>
 			</main>

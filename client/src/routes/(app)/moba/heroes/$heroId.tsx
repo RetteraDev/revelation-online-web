@@ -152,7 +152,7 @@ function RouteComponent() {
 						<div className="basis-2/5 w-full">
 							<div className="flex flex-col">
 								{/* Шапка выбранного скилла */}
-								<div className="flex flex-col bg-outlet-wrapper">
+								<div className="flex flex-col shadow-smooth">
 									<CardsHeader>
 										<div className="flex flex-1 flex-row gap-3 items-center">
 											<img
