@@ -12,7 +12,7 @@ function CardsFooter({ children, className }: CardsFooterProps) {
                 {children}
             </div>
             
-            <div className="relative h-2 bg-outlet-body">
+            <div className="relative h-2 bg-outlet-body border-b border-beige">
                 <img src={'/decor/card.png'} className="absolute -left-1 -scale-y-100"/>
                 <img src={'/decor/card.png'} className="absolute -right-1 -scale-100"/>
             </div>
